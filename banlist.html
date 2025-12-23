@@ -1,115 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Totem Format Banlist</title>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    /* Tabla específica para Banlist */
-    .banlist-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 2rem;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Totem Format Banlist</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        /* Tabla específica para Banlist */
+        .banlist-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
 
-    .banlist-table th,
-    .banlist-table td {
-      padding: 0.8rem 1rem;
-      border: 1px solid var(--border);
-      text-align: left;
-    }
+        .banlist-table th,
+        .banlist-table td {
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
 
-    .banlist-table th {
-      background: var(--bg-soft);
-      color: var(--accent);
-    }
+        .banlist-table th {
+            background: var(--bg-soft);
+            color: var(--accent);
+        }
 
-    .banlist-table tbody tr:nth-child(even) {
-      background: var(--card);
-    }
+        .banlist-table tbody tr:nth-child(even) {
+            background: var(--card);
+        }
 
-    .banlist-table tbody tr:nth-child(odd) {
-      background: var(--bg-soft);
-    }
+        .banlist-table tbody tr:nth-child(odd) {
+            background: var(--bg-soft);
+        }
 
-    .banlist-table td {
-      color: var(--text);
-    }
-  </style>
+        .banlist-table td {
+            color: var(--text);
+        }
+    </style>
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container">
-      <a class="logo" href="index.html">Totem Format</a>
-      <ul class="nav-links">
-        <li><a href="rules.html">Rules</a></li>
-        <li><a href="banlist.html">Banlist</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">Totem Format</a>
+            <ul class="nav-links">
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="banlist.html">Banlist</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <header class="hero">
-    <h1>Banlist – Totem Format</h1>
-    <p class="subtitle">
-      Official list of banned cards in the Totem Format. Updated for easy future expansion.
-    </p>
-    <a class="cta" href="index.html">Back to Home</a>
-  </header>
+    <header class="hero">
+        <h1>Banlist – Totem Format</h1>
+        <p class="subtitle">
+            Official list of banned cards in the Totem Format. Updated for easy future expansion.
+        </p>
+        <p class="subtitle">
+            Be free to create your own ban list and house rules.
+        </p>
+        <a class="cta" href="index.html">Back to Home</a>
+    </header>
 
-  <main class="container">
-    <table class="banlist-table">
-      <thead>
-        <tr>
-          <th>Card Name</th>
-          <th>Set</th>
-          <th>Number(s)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-            <td><div class="card-tooltip">Archeops<img src="images/archeops.png" alt="Archeops" class="tooltip-image"/></div></td><td>Black & White—Noble Victories</td><td>67/101</td></tr>
-        <tr><td>Archeops</td><td>Black & White—Dark Explorers</td><td>110/108</td></tr>
-        <tr><td>Chip-Chip Ice Axe</td><td>Sun & Moon—Unbroken Bonds</td><td>165/214</td></tr>
-        <tr><td>Delinquent</td><td>XY—BREAKpoint</td><td>98/122, 98a/122, 98b/122</td></tr>
-        <tr><td>Duskull</td><td>Sun & Moon—Cosmic Eclipse</td><td>83/236</td></tr>
-        <tr><td>Flabébé</td><td>Sun & Moon—Forbidden Light</td><td>83/131</td></tr>
-        <tr><td>Forest of Giant Plants</td><td>XY—Ancient Origins</td><td>74/98</td></tr>
-        <tr><td>Ghetsis</td><td>Black & White—Plasma Freeze</td><td>101/116, 115/116</td></tr>
-        <tr><td>Hex Maniac</td><td>XY—Ancient Origins</td><td>75/98, 75a/98</td></tr>
-        <tr><td>Island Challenge Amulet</td><td>Sun & Moon—Cosmic Eclipse</td><td>194/236, 265/236</td></tr>
-        <tr><td>Jessie & James</td><td>Hidden Fates</td><td>58/68, 68/68</td></tr>
-        <tr><td>Lt. Surge’s Strategy</td><td>Sun & Moon—Unbroken Bonds; Hidden Fates</td><td>178/214; 60/68</td></tr>
-        <tr><td>Lysandre’s Trump Card</td><td>XY—Phantom Forces</td><td>99/119, 118/119</td></tr>
-        <tr><td>Marshadow</td><td>Shining Legends; Black Star Promo</td><td>45/73; SM85</td></tr>
-        <tr><td>Maxie’s Hidden Ball Trick</td><td>XY—Primal Clash</td><td>133/160, 158/160</td></tr>
-        <tr><td>Milotic</td><td>XY—Flashfire</td><td>23/106</td></tr>
-        <tr><td>Mismagius</td><td>Sun & Moon—Unbroken Bonds</td><td>78/214</td></tr>
-        <tr><td>Oranguru</td><td>Sun & Moon—Ultra Prism</td><td>114/156</td></tr>
-        <tr><td>Puzzle of Time</td><td>XY—BREAKpoint</td><td>109/122</td></tr>
-        <tr><td>Red Card</td><td>XY; Generations</td><td>124/146; 71/83</td></tr>
-        <tr><td>Reset Stamp</td><td>Sun & Moon—Unified Minds</td><td>206/236, 206a/236, 253/236</td></tr>
-        <tr><td>Sableye</td><td>Black & White—Dark Explorers</td><td>62/108</td></tr>
-        <tr><td>Scoop Up Net</td><td>Sword & Shield—Rebel Clash</td><td>165/192, 207/192</td></tr>
-        <tr><td>Shaymin-EX</td><td>XY—Roaring Skies</td><td>77/108, 77a/108, 106/108</td></tr>
-        <tr><td>Unown</td><td>Sun & Moon—Lost Thunder</td><td>90/214</td></tr>
-        <tr><td>Unown</td><td>Sun & Moon—Lost Thunder</td><td>91/214</td></tr>
-      </tbody>
-    </table>
-  </main>
+    <main class="container">
+        <table class="banlist-table">
+            <thead>
+                <tr>
+                    <th>Card Name</th>
+                    <th>Set</th>
+                    <th>Number(s)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Archeops<img src="images/archeops.png" alt="Archeops"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>Black & White—Noble Victories</td>
+                    <td>67/101</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Archeops<img src="images/archeops.png" alt="Archeops"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>Black & White—Dark Explorers</td>
+                    <td>110/108</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Chip-Chip Ice Axe<img src="images/chip-chip_ice_axe.png"
+                                alt="Chip-Chip Ice Axe" class="tooltip-image" /></div>
+                    </td>
+                    <td>Sun & Moon—Unbroken Bonds</td>
+                    <td>165/214</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Delinquent<img src="images/delinquent.png" alt="Delinquent"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>XY—BREAKpoint</td>
+                    <td>98/122, 98a/122, 98b/122</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Duskull<img src="images/duskull.png" alt="Duskull"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>Sun & Moon—Cosmic Eclipse</td>
+                    <td>83/236</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Flabébé<img src="images/flabebe.png" alt="Flabébé"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>Sun & Moon—Forbidden Light</td>
+                    <td>83/131</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Forest of Giant Plants<img src="images/forest_of_giant_plants.png"
+                                alt="Forest of Giant Plants" class="tooltip-image" /></div>
+                    </td>
+                    <td>XY—Ancient Origins</td>
+                    <td>74/98</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Ghetsis<img src="images/ghetsis.png" alt="Ghetsis"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>Black & White—Plasma Freeze</td>
+                    <td>101/116, 115/116</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Hex Maniac<img src="images/hex_maniac.png" alt="Hex Maniac"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>XY—Ancient Origins</td>
+                    <td>75/98, 75a/98</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Island Challenge Amulet<img src="images/island_challenge_amulet.png"
+                                alt="Island Challenge Amulet" class="tooltip-image" /></div>
+                    </td>
+                    <td>Sun & Moon—Cosmic Eclipse</td>
+                    <td>194/236, 265/236</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Jessie & James<img src="images/jessie_and_james.png"
+                                alt="Jessie & James" class="tooltip-image" /></div>
+                    </td>
+                    <td>Hidden Fates</td>
+                    <td>58/68, 68/68</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Lt. Surge’s Strategy<img src="images/lt_surges_strategy.png"
+                                alt="Lt. Surge’s Strategy" class="tooltip-image" /></div>
+                    </td>
+                    <td>Sun & Moon—Unbroken Bonds; Hidden Fates</td>
+                    <td>178/214; 60/68</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Lysandre’s Trump Card<img src="images/lysandres_trump_card.png"
+                                alt="Lysandre’s Trump Card" class="tooltip-image" /></div>
+                    </td>
+                    <td>XY—Phantom Forces</td>
+                    <td>99/119, 118/119</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Marshadow<img src="images/marshadow.png" alt="Marshadow"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>Shining Legends; Black Star Promo</td>
+                    <td>45/73; SM85</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Maxie’s Hidden Ball Trick<img
+                                src="images/maxies_hidden_ball_trick.png" alt="Maxie’s Hidden Ball Trick"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>XY—Primal Clash</td>
+                    <td>133/160, 158/160</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Milotic<img src="images/milotic.png" alt="Milotic"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>XY—Flashfire</td>
+                    <td>23/106</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Mismagius<img src="images/mismagius.png" alt="Mismagius"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>Sun & Moon—Unbroken Bonds</td>
+                    <td>78/214</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Oranguru<img src="images/oranguru.png" alt="Oranguru"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>Sun & Moon—Ultra Prism</td>
+                    <td>114/156</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Puzzle of Time<img src="images/puzzle_of_time.png"
+                                alt="Puzzle of Time" class="tooltip-image" /></div>
+                    </td>
+                    <td>XY—BREAKpoint</td>
+                    <td>109/122</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Red Card<img src="images/red_card.png" alt="Red Card"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>XY; Generations</td>
+                    <td>124/146; 71/83</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Reset Stamp<img src="images/reset_stamp.png" alt="Reset Stamp"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>Sun & Moon—Unified Minds</td>
+                    <td>206/236, 206a/236, 253/236</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Sableye<img src="images/sableye.png" alt="Sableye"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>Black & White—Dark Explorers</td>
+                    <td>62/108</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Scoop Up Net<img src="images/scoop_up_net.png" alt="Scoop Up Net"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>Sword & Shield—Rebel Clash</td>
+                    <td>165/192, 207/192</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Shaymin-EX<img src="images/shaymin-ex.png" alt="Shaymin-EX"
+                                class="tooltip-image" /></div>
+                    </td>
+                    <td>XY—Roaring Skies</td>
+                    <td>77/108, 77a/108, 106/108</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Unown<img src="images/unown1.png" alt="Unown" class="tooltip-image" />
+                        </div>
+                    </td>
+                    <td>Sun & Moon—Lost Thunder</td>
+                    <td>90/214</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card-tooltip">Unown<img src="images/unown2.png" alt="Unown" class="tooltip-image" />
+                        </div>
+                    </td>
+                    <td>Sun & Moon—Lost Thunder</td>
+                    <td>91/214</td>
+                </tr>
 
-  <footer>
-    <p>
-      Totem Format is a fan-made, non-commercial Pokémon TCG format.<br />
-      Pokémon and Pokémon TCG are © The Pokémon Company.<br />
-      Hosted on GitHub Pages.
-    </p>
-    <a class="cta" href="index.html">Back to Home</a>
-  </footer>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>
+            Totem Format is a fan-made, non-commercial Pokémon TCG format.<br />
+            Pokémon and Pokémon TCG are © The Pokémon Company.<br />
+            Hosted on GitHub Pages.
+        </p>
+        <a class="cta" href="index.html">Back to Home</a>
+    </footer>
 
 </body>
+
 </html>
