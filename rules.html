@@ -381,16 +381,77 @@
             </ul>
         </section>
 
+        <section>
+            <h2>12. Global Effect Restrictions</h2>
+            <p>
+                To preserve balance and prevent excessive disruption in multiplayer games, the Totem Format restricts
+                the use of cards that affect all players simultaneously.
+            </p>
+
+            <h3>General Rule</h3>
+            <ul>
+                <li>
+                    <strong>There are no Supporter, Item, or Tool cards that may affect all players at the same
+                        time.</strong>
+                </li>
+                <li>
+                    Any card whose effect would normally apply to “each player”, “all players”, or “both players” must
+                    instead be resolved by choosing a <strong>single target player</strong>, unless the card explicitly
+                    affects the entire game state (e.g., Stadiums).
+                </li>
+            </ul>
+
+            <h3>How to Apply Effects</h3>
+            <ul>
+                <li>The player who plays the card chooses one opponent as the target.</li>
+                <li>The effect is applied only between the active player and the chosen opponent.</li>
+                <li>All costs of the card are paid by the player who plays it.</li>
+            </ul>
+
+            <h3>Exceptions</h3>
+            <ul>
+                <li><strong>Stadium cards</strong> are the only card type allowed to affect multiple players at once.
+                </li>
+                <li>Cards that affect only the controller (e.g., “draw cards”, “search your deck”) are unaffected by
+                    this rule.</li>
+            </ul>
+
+            <h3>Examples</h3>
+            <ul>
+                <li>
+                    <strong>Example 1:</strong> A Supporter that says “each player shuffles their hand into their deck
+                    and draws 4 cards”
+                    → The active player chooses one opponent. Only those two players resolve the effect.
+                </li>
+                <li>
+                    <strong>Example 2:</strong> An Item that discards Tools from all Pokémon in play
+                    → The active player chooses one opponent. Tools are discarded only from Pokémon belonging to those
+                    two players.
+                </li>
+                <li>
+                    <strong>Example 3:</strong> A Tool that affects “both Active Pokémon”
+                    → The effect applies only between the active player and the chosen opponent’s Active Pokémon.
+                </li>
+            </ul>
+
+            <h3>Design Intent</h3>
+            <p>
+                This rule prevents a single card from disproportionately impacting multiple players at once, encourages
+                targeted interaction,
+                and reinforces negotiation and political decision-making in multiplayer games.
+            </p>
+        </section>
+
 
 
         <section>
-            <h2>12. Player Elimination</h2>
+            <h2>13. Player Elimination</h2>
             <p>Players eliminated when out of Prize cards. Upon elimination, they are removed from objectives and all
                 in-play cards are discarded. Discarded cards do not trigger "when discarded" effects.</p>
         </section>
 
         <section>
-            <h2>13. Victory Condition</h2>
+            <h2>14. Victory Condition</h2>
             <p>Last player standing wins.</p>
         </section>
 
