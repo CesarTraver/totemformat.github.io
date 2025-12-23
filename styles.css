@@ -187,3 +187,35 @@ footer {
   visibility: visible;
 }
 
+/* Estilo general para todas las secciones */
+main section {
+  margin: 30px 15px;         /* espacio externo: separa secciones */
+  padding: 20px;             /* espacio interno: contenido no pegado al borde */
+  background-color: var(--card, #f9f9f9); /* fondo neutro */
+  border-radius: 8px;        /* esquinas redondeadas */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* sombra ligera */
+}
+
+/* Títulos dentro de sección */
+main section h2 {
+  margin-bottom: 15px;
+  font-size: 1.6em;
+  color: var(--text, #222);
+}
+
+/* Listas dentro de sección */
+main section ul, main section ol {
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+/* Estilo especial para la sección Pokémon with Rule Box */
+main section:first-of-type {
+  background-color: #222; /* fondo diferente para destacar */
+  border-left: 5px solid #ffcb05; /* borde lateral amarillo */
+}
+
+main section:first-of-type ul li {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
