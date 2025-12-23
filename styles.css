@@ -21,6 +21,54 @@ body {
   line-height: 1.6;
 }
 
+/* ---------- Navbar ---------- */
+.navbar {
+  width: 100%;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+}
+
+.navbar .logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar .nav-links li a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-links li a:hover {
+  color: var(--accent);
+}
+
+/* Ajuste hero para no quedar debajo de navbar sticky */
+.hero {
+  padding-top: 6rem; /* Ajusta según altura de navbar */
+}
+
 /* ---------- Hero ---------- */
 
 .hero {
