@@ -43,7 +43,8 @@
                 <li>M Pokémon EX</li>
                 <li>Mega Pokémon EX</li>
                 <li>Pokémon BREAK cards</li>
-                <li>Pokémon EX (old & modern)</li>
+                <li>Pokémon EX</li>
+                <li>Pokémon ex</li>
                 <li>Pokémon V</li>
                 <li>Pokémon V-UNION</li>
                 <li>Pokémon VMAX</li>
@@ -290,85 +291,107 @@
 
 
         <section>
-            <h2>8. Rounds & Objectives</h2>
-            <p>Matches in the Totem format are divided into <strong>full rounds</strong>, where each player gets a turn
-                in order. The primary focus is on assigned targets to create strategic gameplay.</p>
+            <h2>8. Rounds & Free Interaction</h2>
+
+            <p>Matches in the Totem format are divided into <strong>full rounds</strong>, where each active player takes
+                one
+                turn in order. Unlike traditional target-based systems, the Totem format allows <strong>free
+                    interaction</strong>
+                between players, encouraging natural political decisions and dynamic gameplay.</p>
 
             <br>
-            <h3>Objective Assignment</h3>
+            <h3>General Rules</h3>
             <ul>
-                <li>At the beginning of each round, each player is assigned a <strong>Primary Target</strong>.</li>
-                <li>The assignment is done using a <strong>dX die</strong>, where <em>X</em> equals the number of active
-                    players.</li>
-                <li>Players <strong>cannot target themselves</strong>, but targets may repeat across rounds.</li>
-                <li>Eliminated players are removed from the target pool and will not receive new objectives.</li>
-                <li>If a player is eliminated in the middle of a round and other players were assigned to attack them,
-                    those players can <strong>choose new targets</strong> for the remainder of the round.</li>
-                <li>The goal of this system is to balance attacks and encourage negotiation and alliances between
-                    players.</li>
+                <li>During your turn, you may attack <strong>any opponent</strong>, provided you follow standard Pokémon
+                    TCG
+                    rules.</li>
+                <li>There are no assigned targets or mandatory opponents.</li>
+                <li>Players are free to negotiate, form temporary alliances, or shift aggression based on the current
+                    board
+                    state.</li>
+                <li>Eliminated players are immediately removed from the game and are no longer considered for any
+                    effects.</li>
             </ul>
 
             <br>
-            <h3>Example 1: Objective Assignment</h3>
-            <p>Four players (A, B, C, D) are active. At the start of the round:</p>
-            <ul>
-                <li>Player 1 rolls d4 → Target assigned: Player 3</li>
-                <li>Player 2 rolls d4 → Target assigned: Player 4</li>
-                <li>Player 3 rolls d4 → Target assigned: Player 1</li>
-                <li>Player 4 rolls d4 → Target assigned: Player 3</li>
-            </ul>
-            <p>Players then must direct their attacks toward their assigned targets during the round.</p>
-            <img src="ruleImages/players.png" alt="Players-Order" class="section-image" />
-
-
-            <br>
-            <h3>Notes</h3>
-            <ul>
-                <li>If a player is eliminated mid-game, the die pool for subsequent rounds is adjusted to exclude them.
-                </li>
-                <li>Players can strategize and negotiate with others to influence attacks or defend against specific
-                    opponents.</li>
-                <li>This rotation ensures that no single player can be consistently targeted unfairly while encouraging
-                    political gameplay.</li>
-            </ul>
+            <h3>Design Note</h3>
+            <p>This free interaction model is designed to preserve player agency while allowing political pressure to
+                emerge
+                organically. Other rules within the Totem format prevent early focus and unfair eliminations.</p>
         </section>
 
 
         <section>
-            <h2>9. Mandatory Attacks</h2>
-            <p>In the Totem format, players are required to attack their assigned <strong>Primary Target</strong> each
-                turn. This ensures active gameplay and enforces strategic political decision-making.</p>
+            <h2>9. Combat & Anti-Focus Protection</h2>
+
+            <p>To prevent early player elimination and repeated focus on a single opponent, the Totem format uses a
+                <strong>progressive protection system</strong> based on repeated attacks.
+            </p>
 
             <br>
-            <h3>Rules</h3>
+            <h3>Repeated Attack Protection</h3>
             <ul>
-                <li>You must attack your assigned Primary Target if you are able to do so.</li>
-                <li>If you choose to attack a different player instead of your assigned target, you must discard
-                    <strong>7 cards</strong> from your hand as a penalty before performing the attack.
-                </li>
-                <li>Players may choose which cards to discard for the penalty.</li>
+                <li>If you attack the <strong>same player in consecutive rounds</strong>, all damage dealt by your
+                    Pokémon to
+                    that player is reduced by <strong>20</strong> for each consecutive round.</li>
+                <li>This reduction only applies <strong>between the same two players</strong>.</li>
+                <li>The damage reduction resets immediately if you attack a different player.</li>
+                <li>This effect only reduces damage and does not prevent other effects such as Special Conditions,
+                    discards,
+                    or Ability effects.</li>
             </ul>
 
             <br>
-            <h3>Example 1: Attacking Assigned Target</h3>
-            <p>Player A is assigned Player B as a target. Player A attacks Player B normally. No penalty applies.</p>
-
-            <br>
-            <h3>Example 2: Attacking a Different Player</h3>
-            <p>Player C is assigned Player D as a target but prefers to attack Player B. Before doing so, Player C must
-                discard 7 cards from their hand. The attack can then proceed.</p>
+            <h3>Example</h3>
+            <ul>
+                <li>Round 1: Player A attacks Player B → No reduction.</li>
+                <li>Round 2: Player A attacks Player B again → Damage −20.</li>
+                <li>Round 3: Player A attacks Player B again → Damage −40.</li>
+                <li>Round 4: Player A attacks Player C → Reduction resets.</li>
+            </ul>
 
             <br>
             <h3>Strategic Notes</h3>
             <ul>
-                <li>This rule encourages players to carefully weigh the cost of attacking someone other than their
-                    assigned target.</li>
-                <li>Discarding 7 cards is a significant cost, so players must plan hand management and Pokémon placement
-                    wisely.</li>
-                <li>The mechanic maintains political tension, as players must decide between attacking their target or
-                    paying to change focus.</li>
+                <li>Players may still focus an opponent, but doing so becomes progressively inefficient.</li>
+                <li>This system naturally encourages spreading damage and interacting with multiple players.</li>
+                <li>Political agreements and threat assessment emerge without forced targeting.</li>
             </ul>
         </section>
+
+        <section>
+            <h2>10. Grace Totem Turn</h2>
+
+            <p>To prevent unfair early eliminations, the Totem format includes a <strong>Grace Totem Turn</strong> rule.
+            </p>
+
+            <br>
+            <h3>Grace Totem Turn Rules</h3>
+            <ul>
+                <li>If a player has <strong>no Pokémon in play</strong> at any point outside of their own turn, they are
+                    <strong>not immediately eliminated</strong>.
+                </li>
+                <li>That player gains a Grace Totem Turn and remains in the game until the end of their next turn.</li>
+                <li>During their Grace Totem Turn, the player may:
+                    <ul>
+                        <li>Play Pokémon normally.</li>
+                        <li>Use Trainer cards that <strong>search for Pokémon</strong>.</li>
+                        <li>Activate their Totem Pokémon if possible.</li>
+                    </ul>
+                </li>
+                <li>If the player still has no Pokémon in play at the end of their Grace Totem Turn, they are
+                    eliminated.</li>
+            </ul>
+
+            <br>
+            <h3>Important Notes</h3>
+            <ul>
+                <li>This rule does not prevent elimination due to running out of Prize Cards.</li>
+                <li>The Grace Totem Turn only applies once per instance of having no Pokémon in play.</li>
+                <li>This rule significantly reduces early focus and allows players a fair chance to recover.</li>
+            </ul>
+        </section>
+
 
 
 
