@@ -110,7 +110,6 @@
             <img src="ruleImages/Tablero.png" alt="Totem Format Setup example" class="section-image" />
         </section>
 
-
         <section>
             <h2>4. Totem Pokémon</h2>
 
@@ -120,44 +119,98 @@
             <ul>
                 <li>It is not active at the beginning of the game.</li>
                 <li>It <strong>cannot attack or use abilities</strong> until it enters play.</li>
-                <li>During your turn, you can assign energy to the Totem instead of your Pokémon; this counts as your
-                    turn energy.</li>
+                <li>During your turn, you may assign energy to the Totem instead of your Pokémon; this counts as your
+                    manual energy attachment for the turn.</li>
                 <li>The Totem <strong>cannot receive energies</strong> by card effects while it is outside the play
                     area.</li>
                 <li>When the Totem has enough energy and there is space on the field, it <strong>automatically enters
-                        play</strong> on the bench or active spot, replacing the current active Pokémon for free.</li>
+                        play</strong> on the Bench or Active Spot, replacing the current Active Pokémon for free.</li>
                 <li>If there are already 6 Pokémon in play, the Totem <strong>cannot enter</strong> until a space
                     becomes available.</li>
-                <li>Any energy card that provides more than 1 energy at once counts for its full amount.
-                    <strong>Example:</strong>
-                    <div class="card-tooltip"><strong>Neo Upper Energy</strong><img
-                            src="ruleImages/neo-upper-energy.png" alt="NeoUpperEnergy" class="tooltip-image" /></div>
-                    gives 2 multicolor energy to any Stage 2 Pokémon →
-                    assigned to a Stage 2 Totem, it counts as 2 energies for the cost of 1.
+                <li>When the Totem enters play, it follows standard Pokémon TCG rules, including
+                    <strong>Evolution Sickness</strong>: if it evolves that turn, it cannot attack unless an effect
+                    states otherwise.
                 </li>
             </ul>
+
             <br>
+
+            <h3>Totem Invocation Cost</h3>
+            <p>The energy required to summon the Totem depends on its <strong>Evolution Stage</strong> and
+                <strong>Retreat Cost</strong>, according to the following table:
+            </p>
+
+            <table border="1" cellpadding="6">
+                <tr>
+                    <th>Retreat</th>
+                    <th>Basic</th>
+                    <th>Stage 1</th>
+                    <th>Stage 2</th>
+                </tr>
+                <tr>
+                    <td>None</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>o</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>oo</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>ooo</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>oooo</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>ooooo</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+            </table>
+
+            <br>
+
+            <p><strong>Prize Modifier:</strong></p>
+            <ul>
+                <li>If the Totem gives <strong>3 Prize cards</strong> when defeated, its Invocation Cost increases by
+                    <strong>+1 energy</strong>.
+                </li>
+                <li>This modifier is applied after calculating the base cost from the table.</li>
+            </ul>
+
+            <br>
+
             <h3>Totem Defeat</h3>
             <ul>
-                <li>First defeat: invocation cost <strong>does not increase</strong>.</li>
+                <li>First defeat: Invocation Cost <strong>does not increase</strong>.</li>
                 <li>Subsequent defeats: cost increases <strong>permanently by 1</strong> and cannot be reduced by card
                     effects.</li>
             </ul>
 
             <br>
-            <h3>Invocation Cost by Stage</h3>
-            <ul>
-                <li>Basic: 2 energies</li>
-                <li>Stage 1: 3 energies</li>
-                <li>Stage 2: 4 energies</li>
-            </ul>
 
-            <br>
             <p><strong>Example:</strong></p>
             <ul>
-                <li>Your Basic Totem enters play with 2 energies and is defeated → returns to Totem zone without
-                    increasing cost.</li>
-                <li>The second defeat → invocation cost increases permanently to 3 energies.</li>
+                <li>A Stage 2 Totem with retreat <strong>oo</strong> requires 4 energies.</li>
+                <li>If it gives 3 Prizes, it requires <strong>5 energies</strong> instead.</li>
+                <li>After being defeated twice, its cost increases permanently by +1.</li>
             </ul>
         </section>
 
@@ -294,18 +347,16 @@
             <h2>8. Rounds & Free Interaction</h2>
 
             <p>Matches in the Totem format are divided into <strong>full rounds</strong>, where each active player takes
-                one
-                turn in order.
+                one turn in order.</p>
 
             <br>
+
             <h3>General Rules</h3>
             <ul>
                 <li>During your turn, you may attack <strong>any opponent</strong>, provided you follow standard Pokémon
-                    TCG
-                    rules.</li>
+                    TCG rules.</li>
                 <li>Players are free to negotiate, form temporary alliances, or shift aggression based on the current
-                    board
-                    state.</li>
+                    board state.</li>
                 <li>Eliminated players are immediately removed from the game and are no longer considered for any
                     effects.</li>
             </ul>
