@@ -17,7 +17,6 @@ It is designed to make multiplayer Pokémon games balanced, social, and replayab
 - 3–6 players  
 - 100-card singleton decks  
 - A special **Totem Pokémon** that defines your deck  
-- Rotating attack restrictions  
 - Political mechanics and table negotiation  
 - Custom banlist and rule set  
 
@@ -28,14 +27,12 @@ It is designed to make multiplayer Pokémon games balanced, social, and replayab
 Standard Pokémon TCG is designed for 1v1 competitive play.  
 Multiplayer games often suffer from:
 
-- Focus fire  
 - Snowball leaders  
 - Long waiting times  
 - Unbalanced power spikes  
 
 Totem Format solves this by:
 
-- Preventing repeated attacks on the same player  
 - Encouraging alliances  
 - Adding strategic deck identity  
 - Introducing Commander-style deck building  
@@ -56,7 +53,6 @@ Totem Format solves this by:
 
 - 3–6 players  
 - Turn order rotates normally  
-- You cannot attack the same opponent twice in a row  
 - Special Totem interactions influence the table  
 - Politics and diplomacy are encouraged  
 
