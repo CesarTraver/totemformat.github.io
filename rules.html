@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Totem Format Rules v1.5</title>
+    <title>Totem Format Rules v1.6</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -25,7 +25,7 @@
     </nav>
 
     <header class="hero">
-        <h1>Totem Format Rules – Version 1.5</h1>
+        <h1>Totem Format Rules – Version 1.6</h1>
         <p class="subtitle">
             Full rule set for the Pokémon TCG Totem Format. This page explains the Totem Pokémon mechanics, Prize
             interactions, and multiplayer policies.
@@ -115,8 +115,9 @@
             <h2>4. Totem Pokémon</h2>
 
             <h3>Definition and Gameplay Rules</h3>
-            <p>The Totem is a Pokémon with a rule box that starts <strong>outside the deck</strong>, in the top-right
-                corner.</p>
+            <p>The Totem is a Pokémon with a Rule Box that starts <strong>outside the deck</strong>, in the top-right
+                corner.
+                Unlike other Rule Box Pokémon, the Totem follows special invocation rules described below.</p>
             <ul>
                 <li>It is not active at the beginning of the game.</li>
                 <li>It <strong>cannot attack or use abilities</strong> until it enters play.</li>
@@ -128,7 +129,8 @@
                         play</strong> on the Bench or Active Spot, replacing the current Active Pokémon for free.</li>
                 <li>If there are already 6 Pokémon in play, the Totem <strong>cannot enter</strong> until a space
                     becomes available. (You can't attach the last energy to it)</li>
-                <li>If the Totem is an evolved Pokémon, it enters in play without evolving. Ex: You don't need a Drakloak to put your Dragapult ex in play.</li>
+                <li>If the Totem is an evolved Pokémon, it enters in play without evolving. Ex: You don't need a
+                    Drakloak to put your Dragapult ex in play.</li>
                 <li>When the Totem enters play, it follows standard Pokémon TCG rules, including
                     <strong>Evolution Sickness</strong>(if it evolves that turn, it cannot attack unless an effect
                     states otherwise).
@@ -228,7 +230,8 @@
                     quantity.</li>
                 <li><strong>Repeated Pokémon:</strong> Allowed only if from different expansions and have different
                     stats, attacks, or abilities.</li>
-                <li><strong>Forbidden:</strong> No cards with rule boxes (only the Totem can have one).</li>
+                <li><strong>Rule Box Cards:</strong> Cards with Rule Boxes are allowed in the deck and follow standard
+                    Pokémon TCG rules.</li>
                 <li><strong>Pokémon types:</strong> All Pokémon must belong to the Totem’s allowed types.</li>
                 <li><strong>Attacks:</strong> No attack may require Energy outside the Totem-defined types.</li>
             </ul>
@@ -289,59 +292,63 @@
             <p>Each player starts with 6 Prize cards.</p>
             <p>When a Pokémon is defeated, the controller takes:</p>
             <ul>
-                <li>Normal Pokémon: 1 Prize</li>
-                <li>Totem depends on rule box</li>
+                <li>Single-Prize Pokémon: 1 Prize card.</li>
+                <li>Rule Box Pokémon: Prize cards according to their printed rule (2 or 3 Prizes).</li>
+                <li>The Totem awards Prize cards according to its printed rule.</li>
             </ul>
         </section>
 
         <section>
             <h2>7. Prize Interactions</h2>
-            <p>In the Totem format, Prize cards act similarly to "lives" and affect certain attacks, abilities, or
-                effects. To maintain consistency:</p>
-            <ul>
-                <li>Whenever an effect, attack, or ability refers to the <strong>player's own prizes</strong> or an
-                    opponent's prizes, <strong>swap the values of prizes</strong> between the active player and the
-                    targeted opponent <em>for resolution purposes only</em>.</li>
-                <li>This means that any calculations or effects that depend on the number of prizes will temporarily
-                    consider the opponent’s prizes as the active player’s prizes and vice versa.</li>
-                <li>The actual number of prize cards in hand or on the table does <strong>not change</strong>—only the
-                    value used to resolve the effect is swapped.</li>
-            </ul>
-
-            <br>
-            <h3>Example 1: Attack Reduction Based on Prizes</h3>
             <p>
-            <div class="card-tooltip"><strong>Ursaluna Crimson Moon EX</strong><img
-                    src="ruleImages/CrimsonUrsalunaEX.png" alt="UrsalunaEX" class="tooltip-image" /></div> has an
-            ability that reduces attack cost by 1 Colorless for every Prize the
-            opponent has. In Totem format:</p>
-            <ul>
-                <li>If you (active player) have 1 Prize and your target opponent has 5 Prizes, for the purpose of
-                    resolving Ursaluna's ability, it is considered as if your opponent has 1 Prize and you have 5.</li>
-                <li>Effectively, you can now attack because the ability resolves according to the swapped values.</li>
-            </ul>
+                In the Totem format, Prize cards are resolved exactly as in the standard Pokémon TCG.
+                Any attack, Ability, or effect that references Prize cards uses the real,
+                current number of remaining Prize cards of the player specified in the card text.
+            </p>
 
-            <br>
-            <h3>Example 2: <div class="card-tooltip"><strong>Iono</strong><img src="ruleImages/iono.png" alt="Iono"
-                        class="tooltip-image" /></div>
-            </h3>
-            <p>
-            <div class="card-tooltip"><strong>Iono</strong><img src="ruleImages/iono.png" alt="Iono"
-                    class="tooltip-image" /></div> effect: "Each player shuffles the cards in their hand and puts them
-            on the bottom of their deck.
-            Then, for each Prize card remaining, the player draws 1 card."</p>
-            <p>In Totem format:</p>
             <ul>
-                <li>If you choose a rival and the effect depends on the number of Prize cards, the prizes are swapped
-                    for resolution purposes.</li>
-                <li>For example, if you have 2 Prizes left and the opponent has 5, when resolving the draw effect of
-                    <div class="card-tooltip"><strong>Iono</strong><img src="ruleImages/iono.png" alt="Iono"
-                            class="tooltip-image" /></div>, it is as if you have 5 Prizes and the opponent has 2.
+                <li>
+                    If an effect refers to <strong>your Prize cards</strong>, it uses your actual remaining Prize count.
                 </li>
-                <li>Each player then draws cards according to these temporary values, following the normal instructions
-                    of <div class="card-tooltip"><strong>Iono</strong><img src="ruleImages/iono.png" alt="Iono"
-                            class="tooltip-image" /></div>.</li>
+                <li>
+                    If an effect refers to <strong>your opponent’s Prize cards</strong>, it uses that opponent’s actual
+                    remaining Prize count.
+                </li>
+                <li>
+                    If an effect refers to <strong>each player’s Prize cards</strong>, each player uses their own actual
+                    remaining Prize count.
+                </li>
+                <li>
+                    Prize values are never swapped, inverted, or modified for resolution purposes.
+                </li>
+                <li>
+                    Prize conditions are checked at the moment the effect resolves, unless the card explicitly states
+                    otherwise.
+                </li>
             </ul>
+
+            <br>
+
+            <h3>Example 1: Iono</h3>
+            <p>
+                <strong>Iono</strong> instructs each player to draw cards equal to their remaining Prize cards.
+            </p>
+            <ul>
+                <li>
+                    Each player draws cards according to their own actual remaining Prize count.
+                </li>
+                <li>
+                    No adjustments or reinterpretations are applied.
+                </li>
+            </ul>
+
+            <br>
+
+            <h3>Example 2: Prize Comparison</h3>
+            <p>
+                If a card states, “If you have more Prize cards remaining than your opponent,”
+                the comparison uses the real Prize counts of both players at the time of resolution.
+            </p>
         </section>
 
         <section>
@@ -506,134 +513,96 @@
         </section>
 
         <section>
-            <h2>12. Global Effect Restrictions</h2>
+            <h2>12. Global Effect Resolution</h2>
 
             <p>
-                To preserve balance and prevent excessive disruption in multiplayer games, the Totem Format restricts
-                how effects
-                that would normally impact multiple players or the entire board are resolved.
+                In the Totem Format, card effects resolve exactly according to their printed text.
+                The scope of an effect is determined solely by the wording of the card.
+                No reinterpretation or limitation of multi-player effects is applied.
             </p>
 
             <br>
-            <h3>General Rule</h3>
+
+            <h3>Player Scope</h3>
             <ul>
                 <li>
-                    <strong>Supporter, Item, and Tool cards cannot affect all players at the same time.</strong>
+                    If a card says <strong>“each player”</strong>, the effect applies to all players in the game.
                 </li>
                 <li>
-                    Any effect that would normally apply to “each player”, “all players”, or “both players” must instead
-                    be resolved
-                    by choosing a <strong>single opponent</strong>, unless the effect explicitly affects all Pokémon in
-                    play or the
-                    global game state.
+                    If a card says <strong>“all players”</strong>, it affects all players.
+                </li>
+                <li>
+                    If a card says <strong>“your opponent”</strong>, the effect targets a single opponent.
+                </li>
+                <li>
+                    If a card requires choosing an opponent, the controller selects one legal opponent at resolution.
                 </li>
             </ul>
 
             <br>
-            <h3>Player-Targeted Effects</h3>
+
+            <h3>Pokémon Scope</h3>
             <ul>
                 <li>
-                    Supporters and Items that affect a player directly (such as drawing cards, discarding cards, or
-                    shuffling hands)
-                    apply only to the player who played the card and one chosen opponent.
+                    If an effect refers to <strong>all Pokémon in play</strong>, it affects Pokémon belonging to all
+                    players.
                 </li>
                 <li>
-                    The player who plays the card chooses the affected opponent and pays all costs.
+                    If an effect refers to <strong>each Pokémon</strong> that meets a condition, all Pokémon that
+                    satisfy that condition are affected, regardless of controller.
                 </li>
                 <li>
-                    The effect is resolved only between those two players.
+                    If an effect refers to <strong>your opponent’s Pokémon</strong>, it affects only Pokémon belonging
+                    to the chosen opponent.
+                </li>
+                <li>
+                    If an effect instructs a player to choose a Pokémon, the chosen Pokémon must belong to the opponent
+                    specified by the card text.
                 </li>
             </ul>
 
             <br>
-            <h3>Pokémon-Targeted Effects</h3>
+
+            <h3>Continuous Abilities</h3>
             <ul>
                 <li>
-                    Effects or Abilities that affect <strong>all Pokémon in play</strong> affect Pokémon belonging to
-                    all players.
+                    Continuous Abilities apply according to their printed wording and remain active while their source
+                    is in play.
                 </li>
                 <li>
-                    Attacks that affect all Pokémon in play affect:
-                    <ul>
-                        <li>All Pokémon of the targeted opponent.</li>
-                        <li>The attacking player’s Pokémon, if the attack text applies to them.</li>
-                        <li>No Pokémon belonging to other non-targeted players.</li>
-                    </ul>
+                    If a Continuous Ability says <strong>“your opponent”</strong>, it affects only that opponent.
+                </li>
+                <li>
+                    If a Continuous Ability says <strong>“each player”</strong> or affects all Pokémon in play, it
+                    applies globally.
+                </li>
+                <li>
+                    Game state legality is checked immediately after any action resolves.
                 </li>
             </ul>
 
             <br>
-            <h3>Exceptions</h3>
-            <ul>
-                <li>
-                    <strong>Stadium cards</strong> are the only card type allowed to affect multiple players
-                    simultaneously.
-                </li>
-                <li>
-                    Cards that affect only the controller (for example, “draw cards” or “search your deck”) are not
-                    restricted by
-                    this rule.
-                </li>
-            </ul>
 
-            <br>
             <h3>Examples</h3>
             <ul>
                 <li>
-                    <strong>Example 1:</strong> A Supporter that says “Each player shuffles their hand into their deck
-                    and draws 4
-                    cards.”
-                    → The active player chooses one opponent. Only those two players resolve the effect.
+                    A Supporter that says “Each player shuffles their hand into their deck and draws 4 cards.”
+                    → All players resolve the effect.
                 </li>
                 <li>
-                    <strong>Example 2:</strong> An Item that says “Discard all Tools attached to Pokémon in play.”
-                    → All Pokémon in play discard their Tools, regardless of controller.
+                    An Ability that says “During Pokémon Checkup, put 1 damage counter on each Pokémon that has an
+                    Ability.”
+                    → All Pokémon in play that meet the condition are affected.
                 </li>
                 <li>
-                    <strong>Example 3:</strong> A Tool that affects “both Active Pokémon.”
-                    → The effect applies only to the active player’s Active Pokémon and the chosen opponent’s Active
-                    Pokémon.
+                    An Ability that says “Switch 1 of your opponent’s Benched Pokémon with their Active Pokémon.”
+                    → The controller chooses one opponent and only that opponent’s Pokémon are affected.
                 </li>
                 <li>
-                    <strong>Example 4:</strong> An attack that says “This attack does 20 damage to each Pokémon in
-                    play.”
-                    → Damage is applied to the targeted opponent’s Pokémon and to the attacker’s Pokémon if applicable,
-                    but not to
-                    other players.
+                    Sudowoodo’s Ability “Your opponent can’t have more than 4 Benched Pokémon.”
+                    → The Ability is continuous and affects only a single opponent, as specified by the text.
                 </li>
-                <li>
-                    <strong>Example 5:</strong> Froslass has an Ability that says
-                    “During Pokémon Checkup, put 1 damage counter on each Pokémon that has an Ability
-                    (both yours and your opponent’s), except Froslass.”
-                    → This type of Ability affects <strong>all Pokémon with Abilities belonging to all
-                        opponents</strong>,
-                    as well as the controller’s Pokémon, following the card text.
-                </li>
-                <img src="ruleImages/froslass.png" alt="froslass" class="section-image" />
-
-                <li>
-                    <strong>Example 6:</strong> A Pokémon has an Ability that says:
-                    “Once during your turn, when you play this Pokémon from your hand to evolve one of your Pokémon,
-                    you may use this Ability. Switch 1 of your opponent’s Benched Pokémon with their Active Pokémon.”
-                    → This is a <strong>targeted effect</strong> that refers to “your opponent”, not to “all Pokémon in
-                    play”.
-                    The player using the Ability chooses <strong>one opponent</strong>, and only that opponent’s Active
-                    and
-                    Benched Pokémon are affected. Other players’ Pokémon are not affected because the Ability does not
-                    create a global game-state effect.
-                </li>
-                <img src="ruleImages/hariyama.png" alt="hariyama" class="section-image" />
-
-
             </ul>
-
-            <br>
-            <h3>Design Intent</h3>
-            <p>
-                These restrictions prevent a single card from disproportionately impacting multiple players at once,
-                maintain
-                strategic balance, and reinforce negotiation and political decision-making in multiplayer games.
-            </p>
         </section>
 
 
