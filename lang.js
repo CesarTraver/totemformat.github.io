@@ -1,7 +1,5 @@
-// lang.js
 const langBtn = document.getElementById('lang-btn');
 
-// Al cargar la página, revisa si hay idioma guardado
 let currentLang = localStorage.getItem('lang') || 'en';
 setLanguage(currentLang);
 
@@ -15,16 +13,25 @@ function setLanguage(lang) {
   if (lang === 'en') {
     langBtn.textContent = 'ES';
     document.documentElement.lang = 'en';
-    // Muestra contenido en inglés
     document.querySelectorAll('[data-en]').forEach(el => {
       el.textContent = el.getAttribute('data-en');
     });
   } else {
     langBtn.textContent = 'EN';
     document.documentElement.lang = 'es';
-    // Muestra contenido en español
     document.querySelectorAll('[data-es]').forEach(el => {
       el.textContent = el.getAttribute('data-es');
     });
   }
 }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) {
+      setTimeout(() => e.target.classList.add('visible'), i * 80);
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
