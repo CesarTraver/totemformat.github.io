@@ -41,18 +41,18 @@ Totem Format solves this by:
 
 ## Deck Construction
 
-- Exactly 100 cards  
+- Exactly 100 cards (99 + your Totem)  
 - Singleton rule (only one copy of each card, except basic Energy)  
-- One Totem Pokémon that represents your deck  
-- All Pokémon must share at least one type with your Totem  
-- Expanded card pool  
+- One Totem Pokémon that represents your deck and defines its type identity  
+- All Pokémon must fit the Totem's type identity  
+- Full card pool: every Pokémon TCG card ever printed is legal (minus the banlist)  
 
 ---
 
 ## Gameplay Overview
 
-- 3–6 players  
-- Turn order rotates normally  
+- 3–6 players, free-for-all battle royale  
+- Prize cards are your life: when your Pokémon are Knocked Out, you take your own Prizes, and you are eliminated when they run out  
 - Special Totem interactions influence the table  
 - Politics and diplomacy are encouraged  
 

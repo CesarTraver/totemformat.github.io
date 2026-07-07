@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-en="FAQ – Totem Format" data-es="FAQ – Formato Tótem">FAQ – Totem Format</title>
+<title>FAQ – Totem Format</title>
 <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,600;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
@@ -26,12 +26,12 @@
 <body>
 
 <nav>
-<a class="logo" href="index.html" data-en="Totem Format" data-es="Formato Tótem">Totem Format</a>
+<a class="logo" href="index.html">Totem Format</a>
 <ul class="nav-links">
-<li><a href="rules.html" data-en="Rules" data-es="Reglas">Rules</a></li>
-<li><a href="banlist.html" data-en="Banlist" data-es="Lista Prohibida">Banlist</a></li>
-<li><a href="faq.html" class="active" data-en="FAQ" data-es="Preguntas Frecuentes">FAQ</a></li>
-<li><a href="about.html" data-en="About" data-es="Acerca de">About</a></li>
+<li><a href="rules.html">Rules</a></li>
+<li><a href="banlist.html">Banlist</a></li>
+<li><a href="faq.html" class="active">FAQ</a></li>
+<li><a href="about.html">About</a></li>
 </ul>
 <button id="lang-btn">ES</button>
 </nav>
@@ -41,33 +41,165 @@
   <div class="dot-live"></div>
   FAQ
 </div>
-<h1 data-en="FAQ" data-es="Preguntas Frecuentes">FAQ</h1>
-<p class="subtitle" data-en="Frequently Asked Questions about the Totem Format. Content will be added soon."
-   data-es="Preguntas frecuentes sobre el Formato Tótem. El contenido se añadirá pronto.">
-   Frequently Asked Questions about the Totem Format. Content will be added soon.
+<h1>FAQ</h1>
+<p class="subtitle">
+   Frequently Asked Questions and official clarifications for the Totem Format (Rules v2.0).
 </p>
 <div class="hero-actions">
-  <a class="btn btn-fill" href="index.html" data-en="← Back to Home" data-es="← Volver al Inicio">← Back to Home</a>
+  <a class="btn btn-fill" href="rules.html">Read the Full Rules</a>
 </div>
 </header>
 
 <main>
+
+<!-- ============================================================ -->
 <section class="reveal">
-<div class="section-tag" data-en="Coming soon" data-es="Próximamente">Coming soon</div>
-<h2 data-en="Under Construction" data-es="En Construcción">Under Construction</h2>
-<p data-en="This page is under construction. FAQ content will be added here in future updates."
-   data-es="Esta página está en construcción. El contenido de FAQ se añadirá en futuras actualizaciones.">
-   This page is under construction. FAQ content will be added here in future updates.
-</p>
+<div class="section-tag">Prizes &amp; Elimination</div>
+<h2>Prize Cards and Elimination</h2>
+
+<h3>Why do Prize cards work as "life" instead of like in the official game?</h3>
+<p>In the official 1v1 game, you take Prize cards when you Knock Out your opponent's Pokémon. In a battle
+royale, that would encourage <strong>kill stealing</strong>: sniping a weakened Pokémon that another player
+worked to damage, just to grab the reward. In Totem Format nobody profits directly from a Knock Out — the
+defeated player takes their own Prize cards into their hand (a small comeback boost) and simply gets closer
+to elimination.</p>
+
+<h3>Who takes Prize cards when a Pokémon is Knocked Out by Poison or another effect?</h3>
+<p>The same as always: the <strong>controller of the Knocked Out Pokémon</strong> takes Prize cards from their
+own pile, no matter what caused the Knock Out (attack, Ability, Special Condition, or self-damage).</p>
+
+<h3>How do cards that compare Prize counts work, like "if you have more Prize cards remaining than your opponent"?</h3>
+<p>"Your opponent" in multiplayer always means <strong>one opponent</strong>: the one you are targeting with
+the attack, or one you choose when the effect resolves. You never compare against the whole table. Keep in
+mind that in this format the player who is <em>winning</em> is the one with <em>more</em> Prize cards left —
+so these cards work best against the table leader. That is intentional: it gives the losing players tools to
+gang up on whoever is ahead.</p>
+
+<h3>Is Iono good or bad for me?</h3>
+<p>Iono makes each player draw cards equal to their own remaining Prize cards. Players who have taken a
+beating have fewer Prizes left, so they draw fewer cards. Unlike the official game, Iono punishes the players
+who are already behind — time it carefully, and expect it to make you no friends.</p>
+
+<h3>What happens if I must take more Prize cards than I have left?</h3>
+<p>You take all your remaining Prize cards and you are eliminated, exactly as if you had taken your last
+one.</p>
+
+<h3>Can I run out of cards in my deck?</h3>
+<p>Yes. If you cannot draw a card at the beginning of your turn because your deck is empty, you are
+eliminated — unless a card effect says otherwise.</p>
 </section>
+
+<!-- ============================================================ -->
+<section class="reveal">
+<div class="section-tag">The Totem</div>
+<h2>Totem Pokémon</h2>
+
+<h3>Can my Totem attack the same turn it enters play?</h3>
+<p><strong>Yes.</strong> The Totem enters play as it is — it does not evolve, so Evolution Sickness does not
+apply. If it has the Energy its attack requires, it can attack immediately.</p>
+
+<h3>Can the Totem be evolved or devolved?</h3>
+<p><strong>No, never.</strong> The Totem has no pre-Evolutions and cannot be evolved into anything else. Cards
+that devolve Pokémon have no effect on it.</p>
+
+<h3>What happens to my Totem when it is Knocked Out?</h3>
+<p>You take your own Prize cards according to its Rule Box, then <strong>you choose</strong>: return it to the
+Totem Zone (the first return is free; each later return permanently increases its Invocation Cost by 1), or
+send it to the discard pile (no cost increase, but it is stuck there until a card effect moves it — and then
+you may redirect it to the Totem Zone).</p>
+
+<h3>An effect wants to send my Totem to the Lost Zone / my deck / my hand. What happens?</h3>
+<p>You choose: it goes where the effect says, or it goes to the Totem Zone instead — a bit like Commander.
+Remember that the Totem can only enter play by invocation from the Totem Zone.</p>
+
+<h3>Can I put Special Energy on my Totem in the Totem Zone?</h3>
+<p>Yes, but while in the Totem Zone it counts as <strong>1 Colorless Energy</strong> toward the Invocation
+Cost and is completely inert. Effects that trigger "when you attach this card" never resolve, because the
+attachment happened outside of play. Once the Totem enters play, the Energy works normally again — for
+example, Double Turbo Energy provides 2 Colorless from that moment on.</p>
+
+<h3>Can opponents interact with my Totem or its Energy while it is in the Totem Zone?</h3>
+<p><strong>No.</strong> While in the Totem Zone, the Totem is not in play: it cannot be targeted, damaged, or
+affected by anything, and its attached Energy cannot be discarded or moved by card effects.</p>
+
+<h3>What Stage does my VMAX, VSTAR, BREAK, or Mega Totem use on the cost table?</h3>
+<p>VMAX and VSTAR count as <strong>Stage 1</strong> (they evolve from a Basic Pokémon V). BREAK Pokémon count
+as one Stage above the Pokémon they evolve from — a BREAK of a Stage 2 uses the <strong>Stage 3</strong>
+column. Mega Evolution and Primal Reversion Pokémon always use the <strong>Stage 3</strong> column.</p>
+
+<h3>Can my Totem be a V-UNION or a LEGEND card?</h3>
+<p>Not for now. V-UNION and LEGEND cards are not legal in the format (neither as Totem nor in the deck).
+Specific rules for them may come in a future revision.</p>
+</section>
+
+<!-- ============================================================ -->
+<section class="reveal">
+<div class="section-tag">Deck Building</div>
+<h2>Deck Building</h2>
+
+<h3>Which cards are legal?</h3>
+<p><strong>Every Pokémon TCG card ever printed</strong>, from the original Base Set to the newest expansion,
+except the cards on the <a href="banlist.html">Banlist</a> (and V-UNION / LEGEND cards, which are on hold).</p>
+
+<h3>It's a singleton format — can I play several ACE SPEC cards, since each is a different card?</h3>
+<p><strong>No.</strong> Official global limits still apply: maximum <strong>1 ACE SPEC in total</strong> and
+maximum <strong>1 Radiant Pokémon in total</strong> per deck. Your Totem counts toward these limits: if your
+Totem is a Radiant Pokémon, you cannot include another Radiant in your 99.</p>
+
+<h3>My Pokémon's attack costs include Colorless symbols. Does that break my type identity?</h3>
+<p><strong>No.</strong> Colorless symbols in attack costs are generic — they can be paid with any Energy and
+never count as a "required type". Only named Energy types (Fire, Water, Psychic…) count for identity. The
+Colorless restriction for Retreat Cost 0 Totems only affects <strong>Colorless-type Pokémon</strong> and
+<strong>Special Energy that provides Colorless</strong>.</p>
+
+<h3>How do dual-type Pokémon work with type identity?</h3>
+<p>If your <strong>Totem</strong> is dual-type, both of its types are part of your identity. If a dual-type
+Pokémon is in your <strong>deck</strong>, both of its types must be allowed by your Totem's identity.</p>
+
+<h3>Do opponents draw extra cards when I mulligan?</h3>
+<p><strong>No.</strong> Mulligans are free for everyone (reveal your hand, shuffle it back, draw 7). With
+100-card singleton decks, mulligans are more common than in the official game, so the official compensation
+draw is removed.</p>
+</section>
+
+<!-- ============================================================ -->
+<section class="reveal">
+<div class="section-tag">Multiplayer &amp; Timing</div>
+<h2>Multiplayer and Timing</h2>
+
+<h3>A card says "your opponent". Who is that in a 4-player game?</h3>
+<p><strong>One opponent</strong>, chosen by the player resolving the effect (or the opponent already being
+targeted, for attacks). Cards that say "each player" or "all players" affect the whole table. See Rules
+Section 9 for the full scope rules.</p>
+
+<h3>When exactly can I play my 1 off-turn Item?</h3>
+<p>The exact timing windows (and what an off-turn Item can respond to) are <strong>still being
+playtested</strong> and will be defined in a future revision. Until then, we recommend this house rule: play
+off-turn Items <strong>between turns</strong> (after a player's Pokémon Checkup, before the next player draws),
+and never in response to an attack that has already been declared. Agree on the details as a table before the
+game.</p>
+
+<h3>Can I attack any player?</h3>
+<p>Yes. On your turn you declare an attack against <strong>one opponent of your choice</strong>. There is no
+forced rotation — politics, threat assessment, and deals decide who gets hit.</p>
+
+<h3>Are deals binding?</h3>
+<p>No. Negotiation is encouraged, betrayal is legal.</p>
+
+<h3>What happens to an eliminated player's cards?</h3>
+<p>All of their in-play cards (including their Stadium, if it was theirs) are discarded without triggering any
+"when discarded" effects, and the player is removed from the game entirely — no effect considers them
+anymore.</p>
+</section>
+
 </main>
 
 <footer>
 <p>
-  <span data-en="Totem Format is a fan-made, non-commercial Pokémon TCG format." data-es="Formato Tótem es un formato de Pokémon TCG hecho por fans y no comercial.">Totem Format is a fan-made, non-commercial Pokémon TCG format.</span><br>
-  <span data-en="Pokémon and Pokémon TCG are © The Pokémon Company." data-es="Pokémon y Pokémon TCG son © The Pokémon Company.">Pokémon and Pokémon TCG are © The Pokémon Company.</span>
+  Totem Format is a fan-made, non-commercial Pokémon TCG format.<br>
+  Pokémon and Pokémon TCG are © The Pokémon Company.
 </p>
-<a class="cta" href="index.html" data-en="← Back to Home" data-es="← Volver al Inicio">← Back to Home</a>
+<a class="cta" href="index.html">← Back to Home</a>
 </footer>
 
 <script src="lang.js"></script>

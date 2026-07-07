@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Totem Format Rules v1.6</title>
+    <title>Totem Format Rules v2.0</title>
     <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,600;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 
@@ -42,18 +42,19 @@
     <header class="hero">
         <div class="hero-badge">
             <div class="dot-live"></div>
-            Rules v1.6
+            Rules v2.0
         </div>
         <h1>
             Totem Format<br>
             <span class="hi">Rules</span>
         </h1>
         <p class="subtitle">
-            Full rule set for the Pokémon TCG Totem Format. This page explains the Totem Pokémon mechanics, Prize
-            interactions, and multiplayer policies.
+            Full rule set for the Pokémon TCG Totem Format: a multiplayer battle royale with
+            100-card singleton decks built around a Totem Pokémon. Everything not covered here
+            follows the official Pokémon TCG rules.
         </p>
         <p class="subtitle">
-            Be free to create your own house rules.
+            Feel free to create your own house rules.
         </p>
         <div class="hero-actions">
             <a class="btn btn-fill" href="index.html">← Back to Home</a>
@@ -63,115 +64,159 @@
     <div class="divider"><div class="divider-line"></div><div class="divider-label">Full Rules</div><div class="divider-line"></div></div>
 
     <main>
-        <section class="reveal">
-            <div class="section-tag">Reference</div>
-            <h2>Pokémon with Rule Box</h2>
-            <ul>
-                <li>M Pokémon EX</li>
-                <li>Mega Pokémon EX</li>
-                <li>Pokémon BREAK cards</li>
-                <li>Pokémon EX</li>
-                <li>Pokémon ex</li>
-                <li>Pokémon V</li>
-                <li>Pokémon V-UNION</li>
-                <li>Pokémon VMAX</li>
-                <li>Pokémon VSTAR</li>
-                <li>Primal Pokémon EX</li>
-                <li>Pokémon EX tera</li>
-                <li>Pokémon GX</li>
-                <li>Prism Star Pokémon</li>
-                <li>Radiant Pokémon</li>
-                <li>TAG TEAM Pokémon</li>
-            </ul>
-        </section>
 
+        <!-- ============================================================ -->
         <section class="reveal">
             <div class="section-tag">Section 1</div>
             <h2>1. Overview</h2>
-            <p>This format adapts Pokémon TCG for multiplayer play (3–X players), keeping Prize Cards compatible.
-                Matches use negotiation, and thematic singleton decks centered on a Totem Pokémon.
-            </p>
+            <p>Totem Format adapts the Pokémon TCG for free-for-all multiplayer play (3 or more players,
+                recommended 3–6). It is a <strong>battle royale</strong>: every player fights for themselves,
+                negotiation and temporary alliances are part of the game, and the last player standing wins.</p>
+            <ul>
+                <li>Decks are <strong>100-card singleton</strong> decks built around a <strong>Totem Pokémon</strong>
+                    that defines the deck's type identity.</li>
+                <li>Prize cards work as your <strong>life total</strong>: when your Pokémon are Knocked Out,
+                    <em>you</em> take your own Prize cards, and you are eliminated when they run out
+                    (see Section 7).</li>
+                <li>Anything not modified by these rules works exactly as in the official Pokémon TCG rulebook.</li>
+            </ul>
         </section>
 
+        <!-- ============================================================ -->
         <section class="reveal">
             <div class="section-tag">Section 2</div>
-            <h2>2. Players</h2>
-            <p>3–X players (recommended 3–6). All versus all format.</p>
-        </section>
+            <h2>2. Card Pool and Deck Construction</h2>
 
-        <section class="reveal">
-            <div class="section-tag">Section 3</div>
-            <h2>3. Setup</h2>
-
-            <h3>Game Preparation</h3>
+            <h3>Legal Card Pool</h3>
             <ul>
-                <li>Deck: 100 cards, singleton rules.</li>
-                <li>Each player places their Totem Pokémon in the top-right area, outside the deck.</li>
-                <li>6 Prize cards are placed face down.</li>
-                <li>Players draw a standard Pokémon TCG opening hand (7 cards).</li>
-                <li>Mulligans are free until a Basic Pokémon is in hand (reveal your hand when mulliganing).</li>
-                <li>All players roll a die to determine who starts. The highest roll goes first.</li>
+                <li><strong>Every Pokémon TCG card ever printed is legal</strong>, from the original Base Set to the
+                    newest expansion, except the cards on the <a href="banlist.html">Banlist</a>.</li>
+                <li><strong>Exception:</strong> Pokémon V-UNION and Pokémon LEGEND cards are <strong>not legal</strong>
+                    for now. Specific rules for them may be added in a future revision.</li>
             </ul>
 
-            <h3>Turn Structure</h3>
-            <p>Turns follow the standard Pokémon TCG structure:</p>
-            <ol>
-                <li><strong>Draw Phase:</strong> Draw 1 card.</li>
-                <li><strong>Action Phase:</strong>
+            <h3>Deck Rules</h3>
+            <ul>
+                <li><strong>Size:</strong> 100 cards (99 deck cards + 1 Totem Pokémon, which starts outside the
+                    deck).</li>
+                <li><strong>Singleton:</strong> Only one copy of each card, except Basic Energy, which can be included
+                    in any quantity.</li>
+                <li><strong>Repeated Pokémon:</strong> Two cards with the same Pokémon name are allowed only if they
+                    come from different expansions <em>and</em> are mechanically different (different HP, attacks, or
+                    Abilities).</li>
+                <li><strong>Rule Box cards:</strong> Pokémon with Rule Boxes are allowed in the deck and follow their
+                    standard Pokémon TCG rules (including the Prize cards they give when Knocked Out).</li>
+                <li><strong>Official global limits still apply, and your Totem counts toward them:</strong>
                     <ul>
-                        <li>Play Pokémon</li>
-                        <li>Attach 1 Energy</li>
-                        <li>Use Abilities</li>
-                        <li>Play Trainers</li>
-                        <li>Retreat Pokémon</li>
-                        <li>Evolve Pokémon</li>
+                        <li>Maximum <strong>1 <em>ACE SPEC</em> card in total</strong> per deck.</li>
+                        <li>Maximum <strong>1 Radiant Pokémon in total</strong> per deck. If your Totem is a Radiant
+                            Pokémon, you cannot include another one in the 99.</li>
+                        <li>Maximum 1 Prism Star card of each name (and they go to the Lost Zone instead of the
+                            discard pile, as printed).</li>
                     </ul>
                 </li>
-                <li><strong>Attack Phase:</strong> You may declare an attack.</li>
-                <li><strong>Pokémon Checkup:</strong> Apply status effects and end-of-turn effects.</li>
-            </ol>
-
-            <h3>First Round Rule</h3>
-            <ul>
-                <li>During the <strong>first round of the game</strong>, players <strong>cannot attack and use
-                        Supporters</strong>.</li>
-                <li>All other actions are allowed as normal.</li>
+                <li><strong>Type identity:</strong> All Pokémon and Energy in the deck must respect the Totem's type
+                    identity (see Section 3).</li>
             </ul>
-
-            <img src="ruleImages/Tablero.png" alt="Totem Format Setup example" class="section-image" />
         </section>
 
+        <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 4</div>
-            <h2>4. Totem Pokémon</h2>
+            <div class="section-tag">Section 3</div>
+            <h2>3. Deck Type Identity</h2>
 
-            <h3>Definition and Gameplay Rules</h3>
-            <p>The Totem is a Pokémon with a Rule Box that starts <strong>outside the deck</strong>, in the top-right
-                corner.
-                Unlike other Rule Box Pokémon, the Totem follows special invocation rules described below.</p>
+            <p>Your deck is built <strong>around your Totem</strong>. The Totem defines a set of allowed types
+                — its <strong>type identity</strong> — and every Pokémon in your deck must belong to those types.</p>
+
+            <h3>What Defines Your Identity</h3>
+            <ol>
+                <li><strong>The Totem's own type</strong> is always allowed. If the Totem is a dual-type Pokémon,
+                    <strong>both</strong> of its types are allowed.</li>
+                <li><strong>Every Energy type required by the Totem's attacks</strong> is also allowed
+                    (Colorless does not count here — see below).</li>
+                <li><strong>Colorless:</strong> If the Totem's Retreat Cost is <strong>1 or more</strong>, Colorless
+                    is part of your identity. If its Retreat Cost is <strong>0</strong>, Colorless is
+                    <strong>not allowed</strong>: you cannot include Colorless-type Pokémon or Special Energy that
+                    provides Colorless Energy — even if the Totem's own attacks show Colorless symbols.</li>
+                <li><strong>Extra types:</strong> If the Totem's Retreat Cost is 2 or more, you may add
+                    <strong>freely chosen extra types</strong> equal to its Retreat Cost minus 1
+                    (the first retreat point grants Colorless; each additional point grants one type of your
+                    choice).</li>
+                <li><strong>Colorless Totem:</strong> If the Totem itself is a Colorless Pokémon, Colorless is its base
+                    type, so you do not "spend" a retreat point on it: you may choose extra types equal to the full
+                    Retreat Cost.</li>
+            </ol>
+
+            <h3>Clarifications</h3>
             <ul>
-                <li>It is not active at the beginning of the game.</li>
-                <li>It <strong>cannot attack or use abilities</strong> until it enters play.</li>
-                <li>During your turn, you may assign energy to the Totem instead of your Pokémon; this counts as your
-                    manual energy attachment for the turn.</li>
-                <li>The Totem <strong>cannot receive energies</strong> by card effects while it is outside the play
-                    area.</li>
-                <li>When the Totem has enough energy and there is space on the field, it <strong>automatically enters
-                        play</strong> on the Bench or Active Spot, replacing the current Active Pokémon for free.</li>
-                <li>If there are already 6 Pokémon in play, the Totem <strong>cannot enter</strong> until a space
-                    becomes available. (You can't attach the last energy to it)</li>
-                <li>If the Totem is an evolved Pokémon, it enters in play without evolving. Ex: You don't need a
-                    Drakloak to put your Dragapult ex in play.</li>
-                <li>When the Totem enters play, it follows standard Pokémon TCG rules, including
-                    <strong>Evolution Sickness</strong>(if it evolves that turn, it cannot attack unless an effect
-                    states otherwise).
-                </li>
+                <li><strong>Colorless symbols in attack costs are generic.</strong> An attack cost like
+                    <strong>[W][C][C]</strong> only <em>requires</em> Water; the Colorless symbols can be paid with
+                    any Energy. They never add a type to (or break) your identity. Only named Energy types count as
+                    "required".</li>
+                <li><strong>Dual-type Pokémon in the deck:</strong> both of their types must be allowed by your
+                    identity. (A dual-type <em>Totem</em> grants both of its types, as stated above.)</li>
+                <li><strong>Dragon Totems:</strong> there is no Dragon Energy, so a Dragon Totem's identity comes from
+                    the Energy types its attacks require, plus its retreat bonuses.</li>
             </ul>
 
-            <h3>Totem Invocation Cost</h3>
-            <p>The energy required to summon the Totem depends on its <strong>Evolution Stage</strong> and
-                <strong>Retreat Cost</strong>, according to the following table:
-            </p>
+            <h3>Practical Examples</h3>
+            <ul>
+                <li>Totem type Dragon, attack requires Fire + Psychic + Colorless, Retreat Cost 1 → your deck can
+                    include Dragon, Fire, Psychic, and Colorless Pokémon.</li>
+                <img src="ruleImages/dragapult-ex.png" alt="DragapultEX" class="section-image" />
+                <li>Totem type Water, attacks require Water only, Retreat Cost 2 → Water and Colorless are allowed,
+                    plus 1 extra type of your choice (e.g., Fire).</li>
+                <img src="ruleImages/Chienpao-ex.png" alt="Chien-PaoEX" class="section-image" />
+                <li>Colorless Totem, Retreat Cost 2 → Colorless counts as its base type; you may freely choose 2 extra
+                    types for the deck.</li>
+                <img src="ruleImages/Kangaskhan-ex.png" alt="KangaskhanEX" class="section-image" />
+                <li>Totem with Retreat Cost 0 → Colorless is <strong>not allowed</strong>, even though its attacks show
+                    Colorless symbols in their costs.</li>
+                <img src="ruleImages/Noivern-ex.png" alt="NoivernEX" class="section-image" />
+            </ul>
+        </section>
+
+        <!-- ============================================================ -->
+        <section class="reveal">
+            <div class="section-tag">Section 4</div>
+            <h2>4. The Totem Pokémon</h2>
+
+            <h3>Definition</h3>
+            <p>Your Totem is a <strong>Pokémon with a Rule Box</strong> (see the Appendix for the full list;
+                V-UNION and LEGEND cards cannot be Totems for now). It starts the game in the
+                <strong>Totem Zone</strong>: a special area in the top-right corner of your side of the table,
+                outside your deck.</p>
+
+            <h3>The Totem Zone</h3>
+            <ul>
+                <li>While in the Totem Zone, the Totem is <strong>not in play</strong>: it cannot attack, cannot use
+                    Abilities, and its Abilities have no effect.</li>
+                <li>It cannot be targeted, damaged, or affected by any card, attack, or Ability while it is in the
+                    Totem Zone.</li>
+                <li>It does not count toward the limit of 6 Pokémon in play, and it is ignored by any effect that
+                    counts or refers to Pokémon in play.</li>
+            </ul>
+
+            <h3>Charging the Totem</h3>
+            <ul>
+                <li>During your turn, you may attach your <strong>manual Energy attachment of the turn</strong> to the
+                    Totem instead of to one of your Pokémon in play.</li>
+                <li>The Totem <strong>cannot receive Energy from card effects</strong> while it is in the Totem Zone —
+                    only your manual attachment.</li>
+                <li>Each Energy card in the Totem Zone counts as <strong>exactly 1 Energy</strong> toward the
+                    Invocation Cost, regardless of its type or how much Energy it provides in play.</li>
+                <li><strong>Special Energy</strong> may be attached to the Totem, but while in the Totem Zone it counts
+                    as <strong>1 Colorless Energy</strong> and is completely inert: it has no effects, and any
+                    "when you attach this card" effect never triggers (the attachment happened outside of play).
+                    Once the Totem enters play, attached Special Energy works normally from that moment on
+                    (for example, <div class="card-tooltip"><strong>Neo Upper Energy</strong><img
+                        src="ruleImages/neo-upper-energy.png" alt="Neo Upper Energy" class="tooltip-image" /></div>
+                    provides its printed Energy again).</li>
+            </ul>
+
+            <h3>Invocation Cost</h3>
+            <p>The Energy required to summon the Totem depends on its <strong>Stage</strong> and
+                <strong>Retreat Cost</strong>:</p>
 
             <table>
                 <thead>
@@ -180,6 +225,7 @@
                     <th>Basic</th>
                     <th>Stage 1</th>
                     <th>Stage 2</th>
+                    <th>Stage 3</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -188,441 +234,457 @@
                     <td>1</td>
                     <td>2</td>
                     <td>3</td>
+                    <td>4</td>
                 </tr>
                 <tr>
                     <td>o</td>
                     <td>1</td>
                     <td>2</td>
                     <td>3</td>
+                    <td>4</td>
                 </tr>
                 <tr>
                     <td>oo</td>
                     <td>2</td>
                     <td>3</td>
                     <td>4</td>
+                    <td>5</td>
                 </tr>
                 <tr>
                     <td>ooo</td>
                     <td>2</td>
                     <td>3</td>
                     <td>4</td>
+                    <td>5</td>
                 </tr>
                 <tr>
                     <td>oooo</td>
                     <td>3</td>
                     <td>4</td>
                     <td>5</td>
+                    <td>6</td>
                 </tr>
                 <tr>
                     <td>ooooo</td>
                     <td>3</td>
                     <td>4</td>
                     <td>5</td>
+                    <td>6</td>
                 </tr>
                 </tbody>
             </table>
 
-            <h3>Prize Modifier</h3>
+            <h3>Which Stage Does My Totem Use?</h3>
             <ul>
-                <li>If the Totem gives <strong>3 Prize cards</strong> when defeated, its Invocation Cost increases by
-                    <strong>+1 energy</strong>.
-                </li>
-                <li>This modifier is applied after calculating the base cost from the table.</li>
+                <li><strong>Printed Stage:</strong> Basic, Stage 1, and Stage 2 Pokémon use their printed Stage.
+                    (Basic Pokémon V, EX, ex, GX, and TAG TEAM all count as Basic.)</li>
+                <li><strong>VMAX and VSTAR:</strong> they evolve from a Basic Pokémon V, so they count as
+                    <strong>Stage 1</strong>.</li>
+                <li><strong>BREAK:</strong> one Stage above the Pokémon they evolve from. A BREAK of a Basic counts as
+                    Stage 1, a BREAK of a Stage 1 counts as Stage 2, and a BREAK of a Stage 2 counts as
+                    <strong>Stage 3</strong>.</li>
+                <li><strong>Mega Evolution and Primal Reversion Pokémon</strong> (M Pokémon-EX, Primal Pokémon-EX, and
+                    Mega Pokémon ex): they represent the peak of Evolution, so they count as
+                    <strong>Stage 3</strong>.</li>
             </ul>
 
-            <h3>Totem Defeat</h3>
+            <h3>Prize Modifier</h3>
             <ul>
-                <li>First defeat: Invocation Cost <strong>does not increase</strong>.</li>
-                <li>Subsequent defeats: cost increases <strong>permanently by 1</strong> and cannot be reduced by card
-                    effects.</li>
+                <li>If the Totem gives <strong>3 Prize cards</strong> when Knocked Out, its Invocation Cost increases
+                    by <strong>+1 Energy</strong>.</li>
+                <li>This modifier is applied after finding the base cost on the table.</li>
+            </ul>
+
+            <h3>Entering Play</h3>
+            <ul>
+                <li>When the Totem has enough Energy and there is space on your side of the field, it
+                    <strong>automatically enters play</strong>. You choose whether it enters on your Bench or in the
+                    Active Spot; if it enters the Active Spot, your current Active Pokémon moves to the Bench for
+                    free.</li>
+                <li>If you already have 6 Pokémon in play, the Totem cannot enter — and you
+                    <strong>cannot attach the final Energy</strong> to it until a space opens up.</li>
+                <li>The Totem enters play <strong>as it is, without evolving</strong>. It needs no pre-Evolutions
+                    (you don't need a Drakloak in play to summon your Dragapult ex Totem).</li>
+                <li>The Totem <strong>can never be evolved or devolved</strong>, by any means.</li>
+                <li>Because it does not evolve, the Totem does <strong>not</strong> suffer Evolution Sickness:
+                    it may attack the same turn it enters play, if its attack costs are met.</li>
+                <li>Once in play, the Totem follows all standard Pokémon TCG rules like any other Pokémon.</li>
+            </ul>
+
+            <h3>Totem Defeat and Leaving Play</h3>
+            <ul>
+                <li>When your Totem is Knocked Out, <strong>you</strong> take Prize cards from your own Prize pile
+                    according to its printed Rule Box (see Section 7), and then <strong>you choose</strong> where the
+                    Totem goes: back to the <strong>Totem Zone</strong>, or to the <strong>discard pile</strong>.</li>
+                <li>The same applies to any effect that would move your Totem out of play (to the hand, the deck, the
+                    discard pile, or the Lost Zone): you may send it where the effect says, <strong>or</strong> put it
+                    in the Totem Zone instead.</li>
+                <li>Whenever the Totem leaves play, all cards attached to it are discarded, and all damage and effects
+                    on it are removed.</li>
+                <li><strong>Cost increase:</strong> the first time your Knocked Out Totem returns to the Totem Zone,
+                    its Invocation Cost does <strong>not</strong> increase. Each time after that, returning it to the
+                    Totem Zone increases its Invocation Cost <strong>permanently by 1</strong>. This increase cannot be
+                    reduced by card effects.</li>
+                <li>If you send your Totem to another zone instead (e.g., the discard pile), its cost does not
+                    increase — but it stays there. It can only return to the Totem Zone when a card effect would move
+                    it again (you may redirect it to the Totem Zone at that moment), and it can
+                    <strong>only enter play by invocation from the Totem Zone</strong>.</li>
             </ul>
 
             <h3>Example</h3>
             <ul>
-                <li>A Stage 2 Totem with retreat <strong>oo</strong> requires 4 energies.</li>
-                <li>If it gives 3 Prizes, it requires <strong>5 energies</strong> instead.</li>
-                <li>After being defeated twice, its cost increases permanently by +1.</li>
+                <li>A Stage 2 Totem with Retreat Cost <strong>oo</strong> requires 4 Energy.</li>
+                <li>If it gives 3 Prize cards, it requires <strong>5 Energy</strong> instead.</li>
+                <li>The first time it is Knocked Out and returns to the Totem Zone, its cost stays the same. The second
+                    time, its cost increases permanently by +1.</li>
             </ul>
         </section>
 
+        <!-- ============================================================ -->
         <section class="reveal">
             <div class="section-tag">Section 5</div>
-            <h2>5. Deck Construction and Type Identity</h2>
-
-            <p>Decks are built <strong>around the Totem</strong>, respecting its allowed types and attacks.</p>
-
-            <h3>Deck Rules</h3>
-            <ul>
-                <li><strong>Size:</strong> 100 cards (99 normal cards + 1 Totem).</li>
-                <li><strong>Duplicates:</strong> Not allowed, except Basic Energy, which can be included in any
-                    quantity.</li>
-                <li><strong>Repeated Pokémon:</strong> Allowed only if from different expansions and have different
-                    stats, attacks, or abilities.</li>
-                <li><strong>Rule Box Cards:</strong> Cards with Rule Boxes are allowed in the deck and follow standard
-                    Pokémon TCG rules.</li>
-                <li><strong>Pokémon types:</strong> All Pokémon must belong to the Totem's allowed types.</li>
-                <li><strong>Attacks:</strong> No attack may require Energy outside the Totem-defined types.</li>
-            </ul>
-
-            <h3>Deck Type Identity</h3>
+            <h2>5. Game Setup</h2>
             <ol>
-                <li>Totem's <strong>base type</strong> is always allowed.</li>
-                <li>Any Energy type required by the Totem's attacks also counts as a <strong>base type</strong>, except
-                    Colorless.</li>
-                <li>If the Totem has <strong>retreat cost &gt; 0</strong>, Colorless Energy is allowed.</li>
-                <li>If the Totem has <strong>retreat cost 0</strong>, Colorless Energy and Colorless Pokémon are not
-                    allowed.</li>
-                <li>If a Totem attack requires Colorless but the Totem has retreat cost 0:
-                    <ul>
-                        <li>Colorless <strong>does not count</strong> for deck construction.</li>
-                        <li>Colorless Pokémon and special Energy providing Colorless <strong>cannot be
-                                included</strong>.</li>
-                    </ul>
-                </li>
-                <li>If the Totem's <strong>retreat cost &gt; 1</strong>, your deck identity can include additional types
-                    equal to the retreat cost minus 1:
-                    <ul>
-                        <li>One extra type is automatically assigned to Colorless.</li>
-                        <li>Each remaining extra type can be chosen by you, but only one type per additional retreat
-                            point.</li>
-                    </ul>
-                </li>
-                <li><strong>In the case of a Colorless Totem:</strong>
-                    <ul>
-                        <li>You may freely choose additional types for your deck based on the retreat cost, without
-                            subtracting 1 for Colorless.</li>
-                    </ul>
-                </li>
+                <li>Place your <strong>Totem</strong> in the Totem Zone (top-right corner, outside the deck).</li>
+                <li>Shuffle your 99-card deck and draw a hand of <strong>7 cards</strong>.</li>
+                <li><strong>Mulligans are free:</strong> if you have no Basic Pokémon in hand, reveal your hand,
+                    shuffle it back, and draw 7 new cards. Repeat until you have a Basic Pokémon. Opponents do
+                    <strong>not</strong> draw extra cards for your mulligans.</li>
+                <li>Put one Basic Pokémon face down as your <strong>Active Pokémon</strong>, and up to 5 more face down
+                    on your <strong>Bench</strong>.</li>
+                <li>Place the top <strong>6 cards</strong> of your deck face down as your <strong>Prize
+                    cards</strong>. Every player has exactly 6 Prize cards, no matter how many players are in the
+                    game.</li>
+                <li>All players roll a die: the <strong>highest roll goes first</strong>, and play proceeds clockwise
+                    from that player.</li>
+                <li>All players flip their Active and Benched Pokémon face up and the game begins.</li>
             </ol>
 
-            <h3>Practical Examples</h3>
-            <ul>
-                <li>Totem type Dragon, attack requires Fire + Psychic + Colorless, retreat cost 1 → your deck can
-                    include Dragon, Fire, Psychic, and Colorless Pokémon.</li>
-                <img src="ruleImages/dragapult-ex.png" alt="DragapultEX" class="section-image" />
-                <li>Totem type Water, attack requires Water only, retreat cost 2 → your deck must include Water and
-                    Colorless; you may choose 1 additional type (e.g., Fire) as the second type.</li>
-                <img src="ruleImages/Chienpao-ex.png" alt="Chien-PaoEX" class="section-image" />
-                <li>Colorless Totem, retreat cost 2 → Colorless counts as base; you may freely choose 2 additional types
-                    for the deck.</li>
-                <img src="ruleImages/Kangaskhan-ex.png" alt="KangaskhanEX" class="section-image" />
-                <li>Totem with retreat cost 0 → Colorless is <strong>not allowed</strong>, even if the attack requires
-                    it.</li>
-                <img src="ruleImages/Noivern-ex.png" alt="NoivernEX" class="section-image" />
-            </ul>
+            <img src="ruleImages/Tablero.png" alt="Totem Format Setup example" class="section-image" />
         </section>
 
-
+        <!-- ============================================================ -->
         <section class="reveal">
             <div class="section-tag">Section 6</div>
-            <h2>6. Prize Cards</h2>
-            <p>Each player starts with 6 Prize cards.</p>
-            <p>When a Pokémon is defeated, the controller takes:</p>
+            <h2>6. Turn Structure</h2>
+
+            <p>Turns follow the standard Pokémon TCG structure:</p>
+            <ol>
+                <li><strong>Draw Phase:</strong> Draw 1 card. If you cannot draw because your deck is empty, you are
+                    eliminated (see Section 13).</li>
+                <li><strong>Action Phase</strong> — in any order:
+                    <ul>
+                        <li>Play Basic Pokémon to your Bench</li>
+                        <li>Evolve Pokémon</li>
+                        <li>Attach 1 Energy (to a Pokémon in play, or to your Totem)</li>
+                        <li>Use Abilities</li>
+                        <li>Play Trainer cards (1 Supporter and 1 Stadium per turn)</li>
+                        <li>Retreat your Active Pokémon (once per turn)</li>
+                    </ul>
+                </li>
+                <li><strong>Attack Phase:</strong> You may declare an attack against <strong>one opponent of your
+                    choice</strong>. Attacking ends your turn.</li>
+                <li><strong>Pokémon Checkup:</strong> Apply Special Conditions and end-of-turn effects, in the standard
+                    official order.</li>
+            </ol>
+
+            <h3>First Round Rule</h3>
             <ul>
-                <li>Single-Prize Pokémon: 1 Prize card.</li>
-                <li>Rule Box Pokémon: Prize cards according to their printed rule (2 or 3 Prizes).</li>
-                <li>The Totem awards Prize cards according to its printed rule.</li>
+                <li>During the <strong>first round of the game</strong>, no player may <strong>attack</strong> or
+                    <strong>play Supporter cards</strong>.</li>
+                <li>All other actions are allowed as normal.</li>
+            </ul>
+
+            <h3>Evolution Sickness</h3>
+            <ul>
+                <li>A Pokémon that evolves during a turn <strong>cannot attack</strong> that same turn (standard TCG
+                    rule), and no Pokémon can evolve the turn it comes into play or during each player's first turn.</li>
+                <li>The Totem is exempt when it enters play, because it <strong>does not evolve</strong> — it is
+                    summoned as it is and may attack immediately.</li>
             </ul>
         </section>
 
+        <!-- ============================================================ -->
         <section class="reveal">
             <div class="section-tag">Section 7</div>
-            <h2>7. Prize Interactions</h2>
-            <p>
-                In the Totem format, Prize cards are resolved exactly as in the standard Pokémon TCG.
-                Any attack, Ability, or effect that references Prize cards uses the real,
-                current number of remaining Prize cards of the player specified in the card text.
-            </p>
+            <h2>7. Prize Cards Are Your Life</h2>
+
+            <p>In Totem Format, Prize cards work as your <strong>life total</strong>. This is the biggest difference
+                from the official 1v1 game, where you take Prize cards when you Knock Out your
+                <em>opponent's</em> Pokémon.</p>
 
             <ul>
-                <li>
-                    If an effect refers to <strong>your Prize cards</strong>, it uses your actual remaining Prize count.
+                <li>Every player starts with <strong>6 Prize cards</strong>, regardless of the number of players.</li>
+                <li>When one of <strong>your</strong> Pokémon is Knocked Out — by an attack, an Ability, a Special
+                    Condition like Poison, or any other effect — <strong>you</strong> take Prize cards from
+                    <strong>your own</strong> Prize pile and put them into your hand:
+                    <ul>
+                        <li>Single-Prize Pokémon: you take <strong>1</strong> Prize card.</li>
+                        <li>Rule Box Pokémon (including your Totem): you take <strong>2 or 3</strong> Prize cards,
+                            according to its printed rule.</li>
+                    </ul>
                 </li>
-                <li>
-                    If an effect refers to <strong>your opponent's Prize cards</strong>, it uses that opponent's actual
-                    remaining Prize count.
-                </li>
-                <li>
-                    If an effect refers to <strong>each player's Prize cards</strong>, each player uses their own actual
-                    remaining Prize count.
-                </li>
-                <li>
-                    Prize values are never swapped, inverted, or modified for resolution purposes.
-                </li>
-                <li>
-                    Prize conditions are checked at the moment the effect resolves, unless the card explicitly states
-                    otherwise.
-                </li>
+                <li>When you take your <strong>last</strong> Prize card (or you must take more Prize cards than you
+                    have left), you are <strong>eliminated</strong> (see Section 13).</li>
+            </ul>
+
+            <h3>Why This Design?</h3>
+            <ul>
+                <li>In a battle royale, rewarding the attacker with Prize draws would encourage
+                    <strong>kill stealing</strong>. Here, no one "profits" from a Knock Out except by pushing that
+                    player closer to elimination.</li>
+                <li>Taking your own Prize cards when you get hit is a small <strong>comeback mechanic</strong>: the
+                    player being attacked gains resources.</li>
+            </ul>
+
+            <h3>Cards That Reference Prize Cards</h3>
+            <p>Effects that reference Prize cards always use the <strong>real, current</strong> number of remaining
+                Prize cards, at the moment the effect resolves:</p>
+            <ul>
+                <li>"<strong>Your</strong> Prize cards" → your actual remaining Prize count.</li>
+                <li>"<strong>Your opponent's</strong> Prize cards" → in multiplayer, this means <strong>one opponent
+                    you choose (or the opponent you are targeting)</strong> when the effect resolves. It never
+                    compares you against the whole table at once.</li>
+                <li>"<strong>Each player's</strong> Prize cards" → each player uses their own count.</li>
+                <li>Prize values are never swapped, inverted, or reinterpreted.</li>
             </ul>
 
             <h3>Example 1: Iono</h3>
-            <p>
-                <strong>Iono</strong> instructs each player to draw cards equal to their remaining Prize cards.
-            </p>
-            <ul>
-                <li>
-                    Each player draws cards according to their own actual remaining Prize count.
-                </li>
-                <li>
-                    No adjustments or reinterpretations are applied.
-                </li>
-            </ul>
+            <p><span class="card-tooltip"><strong>Iono</strong><img src="ruleImages/iono.png" alt="Iono"
+                class="tooltip-image" /></span> makes each player shuffle their hand and draw cards equal to their
+                remaining Prize cards. Each player simply counts their own remaining Prizes and draws that many. Note
+                that in this format, players who have taken many hits have <em>fewer</em> Prizes left — so Iono hits
+                the weakened players hardest. Choose your moment.</p>
 
             <h3>Example 2: Prize Comparison</h3>
-            <p>
-                If a card states, "If you have more Prize cards remaining than your opponent,"
-                the comparison uses the real Prize counts of both players at the time of resolution.
-            </p>
+            <p>A card that says "if you have more Prize cards remaining than your opponent" compares your count against
+                <strong>the one opponent</strong> you choose or are targeting with that card or attack — not against
+                every player. Since players who are <em>winning</em> keep more Prizes in this format, these "comeback"
+                cards now work best against the table leader: use them to gang up on whoever is ahead.</p>
         </section>
 
-        <section class="reveal">
-            <div class="section-tag">Mechanic</div>
-            <h2>Evolution Sickness</h2>
-
-            <p>To prevent early power spikes, evolved Pokémon suffer from <strong>Evolution Sickness</strong>.</p>
-
-            <ul>
-                <li>A Pokémon that evolves during a turn <strong>cannot attack</strong> during that same turn.</li>
-                <li>This applies to all evolutions, including Totem Pokémon.</li>
-                <li>This restriction does not affect Pokémon that did not evolve during that turn.</li>
-            </ul>
-        </section>
-
-
+        <!-- ============================================================ -->
         <section class="reveal">
             <div class="section-tag">Section 8</div>
-            <h2>8. Rounds & Free Interaction</h2>
+            <h2>8. Rounds and Free Interaction</h2>
 
-            <p>Matches in the Totem format are divided into <strong>full rounds</strong>, where each active player takes
-                one turn in order.</p>
+            <p>Matches are divided into <strong>full rounds</strong>: each active player takes one turn, in
+                order.</p>
 
-            <h3>General Rules</h3>
             <ul>
-                <li>During your turn, you may attack <strong>any opponent</strong>, provided you follow standard Pokémon
-                    TCG rules.</li>
-                <li>Players are free to negotiate, form temporary alliances, or shift aggression based on the current
-                    board state.</li>
+                <li>During your turn, you may attack <strong>any opponent</strong>, following standard Pokémon TCG
+                    rules. Declare your target when you attack.</li>
+                <li>Players are free to negotiate, form temporary alliances, or shift aggression based on the board
+                    state. Deals are not binding.</li>
                 <li>Eliminated players are immediately removed from the game and are no longer considered for any
-                    effects.</li>
+                    effect (see Section 13).</li>
             </ul>
         </section>
 
+        <!-- ============================================================ -->
         <section class="reveal">
             <div class="section-tag">Section 9</div>
-            <h2>9. Grace Totem Turn</h2>
+            <h2>9. Multiplayer Effect Resolution</h2>
 
-            <p>To prevent unfair early eliminations, the Totem format includes a <strong>Grace Totem Turn</strong> rule.
-            </p>
+            <p>Card effects resolve <strong>exactly according to their printed text</strong>. The scope of an effect is
+                determined solely by its wording — no reinterpretation is applied.</p>
 
-            <h3>Grace Totem Turn Rules</h3>
+            <h3>Player Scope</h3>
             <ul>
-                <li>If a player has <strong>no Pokémon in play</strong> at any point outside of their own turn, they are
-                    <strong>not immediately eliminated</strong>.
-                </li>
-                <li>That player gains a Grace Totem Turn and remains in the game until the end of their next turn.</li>
-                <li>During their Grace Totem Turn, the player may:
-                    <ul>
-                        <li>Play Pokémon normally.</li>
-                        <li>Use Trainer cards that <strong>search for Pokémon</strong>.</li>
-                        <li>Activate their Totem Pokémon if possible.</li>
-                    </ul>
-                </li>
-                <li>If the player still has no Pokémon in play at the end of their Grace Totem Turn, they are
-                    eliminated.</li>
+                <li>"<strong>Each player</strong>" / "<strong>all players</strong>" → applies to every player in the
+                    game.</li>
+                <li>"<strong>Your opponent</strong>" → applies to <strong>one</strong> opponent. The player resolving
+                    the effect chooses one legal opponent at resolution (or the opponent already being targeted, for
+                    attacks).</li>
+                <li>If a card requires choosing an opponent, the controller selects one legal opponent when it
+                    resolves.</li>
             </ul>
 
-            <h3>Important Notes</h3>
+            <h3>Pokémon Scope</h3>
             <ul>
-                <li>This rule does not prevent elimination due to running out of Prize Cards.</li>
-                <li>The Grace Totem Turn only applies once per instance of having no Pokémon in play.</li>
-                <li>This rule significantly reduces early focus and allows players a fair chance to recover.</li>
+                <li>"<strong>All Pokémon in play</strong>" → affects Pokémon belonging to all players.</li>
+                <li>"<strong>Each Pokémon</strong>" meeting a condition → all Pokémon that satisfy it, regardless of
+                    controller.</li>
+                <li>"<strong>Your opponent's Pokémon</strong>" → only Pokémon belonging to the chosen opponent.</li>
+            </ul>
+
+            <h3>Continuous Abilities</h3>
+            <ul>
+                <li>Continuous Abilities apply per their printed wording while their source is in play.</li>
+                <li>If a Continuous Ability says "your opponent", its controller chooses the affected opponent when it
+                    comes into play, and it affects only that opponent while it remains in play.</li>
+                <li>If it says "each player" or affects all Pokémon in play, it applies globally.</li>
+                <li>Game state legality is checked immediately after any action resolves.</li>
+            </ul>
+
+            <h3>Examples</h3>
+            <ul>
+                <li>"Each player shuffles their hand into their deck and draws 4 cards." → All players do it.</li>
+                <li>"During Pokémon Checkup, put 1 damage counter on each Pokémon that has an Ability." → Every
+                    Pokémon in play that qualifies is affected.</li>
+                <li>"Switch 1 of your opponent's Benched Pokémon with their Active Pokémon." → The controller chooses
+                    one opponent; only that opponent's Pokémon are affected.</li>
+                <li>Sudowoodo's Ability "Your opponent can't have more than 4 Benched Pokémon." → Continuous; affects
+                    only the one chosen opponent.</li>
             </ul>
         </section>
 
+        <!-- ============================================================ -->
         <section class="reveal">
             <div class="section-tag">Section 10</div>
-            <h2>10. Items</h2>
-            <p>Items in the Totem format can be played outside of your turn, allowing players to strategically influence
-                the game even when it is not their turn.</p>
+            <h2>10. Items Outside Your Turn</h2>
+
+            <p>Item cards can be played outside of your turn, letting you influence the game even when it is not your
+                turn. This is the heart of the format's political gameplay.</p>
 
             <h3>Rules</h3>
             <ul>
-                <li>Each player may play a maximum of <strong>1 Item</strong> outside of their turn per round.</li>
-                <li>Items can target your own Pokémon or an opponent's Pokémon. When targeting an opponent, you pay all
-                    costs yourself.</li>
-                <li>Item effects follow the standard Pokémon TCG rules unless otherwise specified by Totem format
-                    mechanics.</li>
+                <li>Each player may play a maximum of <strong>1 Item outside of their own turn per round</strong>.</li>
+                <li>Items can target your own Pokémon or another player's Pokémon. Whoever plays the Item
+                    <strong>pays all of its costs</strong>.</li>
+                <li>When your Item affects another player's cards or zones, that player is treated as "you" for
+                    resolving the card's instructions, and <strong>they make any choices involving their own
+                    cards</strong> (their deck, their hand, their Bench).</li>
+                <li>Item effects otherwise follow standard Pokémon TCG rules.</li>
+                <li><strong>Timing:</strong> exact timing windows (when during another player's turn an Item can be
+                    played, and what it can respond to) are still being playtested — see the FAQ for the current
+                    recommendation.</li>
             </ul>
 
             <h3>Examples</h3>
             <ul>
                 <li><strong>Example 1:</strong> Player A uses a "<div class="card-tooltip"><strong>Potion</strong><img
                             src="ruleImages/potion.png" alt="Potion" class="tooltip-image" /></div>" on their own
-                    Pokémon during Player B's turn.
-                    The Pokémon heals normally.</li>
+                    Pokémon during Player B's turn. The Pokémon heals normally.</li>
                 <li><strong>Example 2:</strong> Player C uses an "<div class="card-tooltip"><strong>Ultra
                             Ball</strong><img src="ruleImages/ultraball.png" alt="ultraball" class="tooltip-image" />
-                    </div>" to search for a Pokémon for Player D.
-                    Player C pays the cost (discard 2 cards) and Player D chooses which Pokémon is added to their hand.
-                </li>
+                    </div>" for Player D's benefit. Player C pays the cost (discards 2 cards from their own hand), and
+                    Player D searches their own deck and chooses which Pokémon goes to their hand.</li>
                 <li><strong>Example 3:</strong> Player E plays a "<div class="card-tooltip"><strong>Switch</strong><img
                             src="ruleImages/switch.png" alt="Switch" class="tooltip-image" /></div>" on an opponent's
-                    Pokémon, moving it from
-                    Active to Bench. Player E pays any costs associated with the Item.</li>
+                    Active Pokémon. That opponent switches it with one of their Benched Pokémon (their choice), and
+                    Player E pays any costs.</li>
             </ul>
 
             <h3>Strategic Notes</h3>
             <ul>
-                <li>This mechanic allows for political gameplay, enabling temporary alliances or interference with rival
-                    strategies.</li>
-                <li>Careful timing of Item use can significantly influence the flow of the round.</li>
-                <li>Since only one Item can be used per round outside your turn, planning is critical to maximize
-                    impact.</li>
+                <li>This mechanic enables temporary alliances and interference with rival strategies.</li>
+                <li>Since you only get 1 off-turn Item per round, timing is critical.</li>
             </ul>
         </section>
 
-
+        <!-- ============================================================ -->
         <section class="reveal">
             <div class="section-tag">Section 11</div>
             <h2>11. Stadiums</h2>
-            <p>In the Totem format, Stadium cards function mostly like in standard Pokémon TCG, with a few
-                clarifications for multiplayer play.</p>
+
+            <p>Stadium cards work as in the standard game, with clarifications for multiplayer.</p>
 
             <h3>Rules</h3>
             <ul>
-                <li>Only <strong>one Stadium</strong> may be in play at any time.</li>
-                <li>If a new Stadium is played, the existing Stadium is discarded (as per standard TCG rules).</li>
-                <li>All other Stadium rules follow the standard Pokémon TCG format, including effects that impact all
-                    players.</li>
-                <li>For Stadiums with directional effects (e.g., <em>
+                <li>Only <strong>one Stadium</strong> may be in play at a time, for the whole table. Playing a new one
+                    discards the old one and ends its effects.</li>
+                <li>Stadium effects that affect "each player" or "all Pokémon" apply to the whole table, including
+                    Totem Pokémon in play (but never to Totems in the Totem Zone).</li>
+                <li>For Stadiums with <strong>directional effects</strong> (e.g., <em>
                         <div class="card-tooltip"><strong>Parallel City</strong><img src="ruleImages/parallelcity.png"
                                 alt="parallelcity" class="tooltip-image" /></div>
-                    </em>), the player who plays the
-                    Stadium chooses the facing. The chosen effect applies to the player who played it, and the opposite
-                    effect applies to all other players.</li>
-                <li>Effects that reference "your Stadium" or "opponent's Stadium" in standard TCG apply to the
-                    controlling player and the targeted opponent respectively.</li>
+                    </em>), the player who plays it chooses the facing: the chosen effect applies to that player, and
+                    the opposite effect applies to all other players.</li>
             </ul>
 
-            <h3>Examples</h3>
+            <h3>Example</h3>
             <ul>
-                <li><strong>Example 1:</strong> Player A plays <em>
-                        <div class="card-tooltip"><strong>Parallel City</strong><img src="ruleImages/parallelcity.png"
-                                alt="parallelcity" class="tooltip-image" /></div>
-                    </em>. They choose the facing that
-                    reduces damage from Grass, Fire, and Water Pokémon by 20. All other players receive the effect that
-                    limits them to 3 Benched Pokémon.</li>
-                <li><strong>Example 2:</strong> Any Stadium that affects all Pokémon applies its effects to Totem
-                    Pokémon as well, provided it does not contradict Totem-specific rules (e.g., energy assignment
-                    restrictions).</li>
-            </ul>
-
-            <h3>Strategic Notes</h3>
-            <ul>
-                <li>The facing mechanic allows the player who plays the Stadium to benefit themselves while imposing
-                    constraints on opponents.</li>
-                <li>Timing and selection of the facing are critical in multiplayer matches, as it can shift alliances or
-                    influence which players are disadvantaged.</li>
+                <li>Player A plays <em>Parallel City</em> and chooses the facing that reduces damage from Grass, Fire,
+                    and Water Pokémon by 20 for themselves. All other players get the effect that limits them to 3
+                    Benched Pokémon.</li>
             </ul>
         </section>
 
+        <!-- ============================================================ -->
         <section class="reveal">
             <div class="section-tag">Section 12</div>
-            <h2>12. Global Effect Resolution</h2>
+            <h2>12. Grace Totem Turn</h2>
 
-            <p>
-                In the Totem Format, card effects resolve exactly according to their printed text.
-                The scope of an effect is determined solely by the wording of the card.
-                No reinterpretation or limitation of multi-player effects is applied.
-            </p>
+            <p>To prevent unfair early eliminations, a player who is left with no Pokémon in play gets one
+                <strong>rescue turn</strong> before being eliminated.</p>
 
-            <h3>Player Scope</h3>
+            <h3>Rules</h3>
             <ul>
-                <li>
-                    If a card says <strong>"each player"</strong>, the effect applies to all players in the game.
+                <li>If you have <strong>no Pokémon in play</strong> at any point outside of your own turn, you are
+                    <strong>not</strong> immediately eliminated: you get a <strong>Grace Totem Turn</strong> and stay
+                    in the game until the end of your next turn.</li>
+                <li>Your Grace Totem Turn is a <strong>restricted turn</strong>. You draw your card normally, and then
+                    you may <strong>only</strong>:
+                    <ul>
+                        <li>Put Basic Pokémon from your hand onto your Bench.</li>
+                        <li>Play Trainer cards that <strong>search for Pokémon</strong>.</li>
+                        <li>Attach your Energy for the turn <strong>to your Totem</strong>.</li>
+                        <li>Invoke your Totem, if its Invocation Cost is met.</li>
+                    </ul>
                 </li>
-                <li>
-                    If a card says <strong>"all players"</strong>, it affects all players.
-                </li>
-                <li>
-                    If a card says <strong>"your opponent"</strong>, the effect targets a single opponent.
-                </li>
-                <li>
-                    If a card requires choosing an opponent, the controller selects one legal opponent at resolution.
-                </li>
+                <li>No other cards or actions are allowed during a Grace Totem Turn. If your Totem enters play this
+                    turn, it may attack normally.</li>
+                <li>If you still have no Pokémon in play at the end of your Grace Totem Turn, you are
+                    eliminated.</li>
             </ul>
 
-            <h3>Pokémon Scope</h3>
+            <h3>Important Notes</h3>
             <ul>
-                <li>
-                    If an effect refers to <strong>all Pokémon in play</strong>, it affects Pokémon belonging to all
-                    players.
-                </li>
-                <li>
-                    If an effect refers to <strong>each Pokémon</strong> that meets a condition, all Pokémon that
-                    satisfy that condition are affected, regardless of controller.
-                </li>
-                <li>
-                    If an effect refers to <strong>your opponent's Pokémon</strong>, it affects only Pokémon belonging
-                    to the chosen opponent.
-                </li>
-                <li>
-                    If an effect instructs a player to choose a Pokémon, the chosen Pokémon must belong to the opponent
-                    specified by the card text.
-                </li>
-            </ul>
-
-            <h3>Continuous Abilities</h3>
-            <ul>
-                <li>
-                    Continuous Abilities apply according to their printed wording and remain active while their source
-                    is in play.
-                </li>
-                <li>
-                    If a Continuous Ability says <strong>"your opponent"</strong>, it affects only that opponent.
-                </li>
-                <li>
-                    If a Continuous Ability says <strong>"each player"</strong> or affects all Pokémon in play, it
-                    applies globally.
-                </li>
-                <li>
-                    Game state legality is checked immediately after any action resolves.
-                </li>
-            </ul>
-
-            <h3>Examples</h3>
-            <ul>
-                <li>
-                    A Supporter that says "Each player shuffles their hand into their deck and draws 4 cards."
-                    → All players resolve the effect.
-                </li>
-                <li>
-                    An Ability that says "During Pokémon Checkup, put 1 damage counter on each Pokémon that has an
-                    Ability."
-                    → All Pokémon in play that meet the condition are affected.
-                </li>
-                <li>
-                    An Ability that says "Switch 1 of your opponent's Benched Pokémon with their Active Pokémon."
-                    → The controller chooses one opponent and only that opponent's Pokémon are affected.
-                </li>
-                <li>
-                    Sudowoodo's Ability "Your opponent can't have more than 4 Benched Pokémon."
-                    → The Ability is continuous and affects only a single opponent, as specified by the text.
-                </li>
+                <li>This rule does <strong>not</strong> prevent elimination from running out of Prize cards or from
+                    decking out.</li>
+                <li>The Grace Totem Turn applies once per instance of having no Pokémon in play.</li>
             </ul>
         </section>
 
+        <!-- ============================================================ -->
         <section class="reveal">
             <div class="section-tag">Section 13</div>
             <h2>13. Player Elimination</h2>
-            <p>Players eliminated when out of Prize cards. Upon elimination, they are removed from objectives and all
-                in-play cards are discarded. Discarded cards do not trigger "when discarded" effects.</p>
+
+            <p>A player is eliminated when any of these happens:</p>
+            <ul>
+                <li>They take their <strong>last Prize card</strong> (or must take more Prize cards than they have
+                    left).</li>
+                <li>They cannot <strong>draw a card</strong> at the beginning of their turn because their deck is
+                    empty (unless a card effect says otherwise).</li>
+                <li>They have <strong>no Pokémon in play</strong> at the end of their Grace Totem Turn (see
+                    Section 12).</li>
+            </ul>
+
+            <h3>Cleanup</h3>
+            <ul>
+                <li>All of the eliminated player's in-play cards (including any Stadium they own) are discarded.
+                    These discards do <strong>not</strong> trigger any "when discarded" effects.</li>
+                <li>The eliminated player is removed from all objectives and is no longer considered for any effect.
+                    Ongoing effects they controlled end immediately.</li>
+            </ul>
         </section>
 
+        <!-- ============================================================ -->
         <section class="reveal">
             <div class="section-tag">Section 14</div>
             <h2>14. Victory Condition</h2>
-            <p>Last player standing wins.</p>
+            <p><strong>Last player standing wins.</strong></p>
+        </section>
+
+        <!-- ============================================================ -->
+        <section class="reveal">
+            <div class="section-tag">Appendix</div>
+            <h2>Appendix: Pokémon with Rule Box</h2>
+            <p>Any of the following can be your Totem, except where noted:</p>
+            <ul>
+                <li>Pokémon ex (including Tera Pokémon ex)</li>
+                <li>Pokémon-EX (including M Pokémon-EX and Primal Pokémon-EX)</li>
+                <li>Mega Pokémon ex</li>
+                <li>Pokémon-GX (including TAG TEAM Pokémon-GX)</li>
+                <li>Pokémon V, VMAX, and VSTAR</li>
+                <li>Pokémon BREAK</li>
+                <li>Radiant Pokémon</li>
+                <li>Prism Star Pokémon</li>
+                <li>Pokémon V-UNION — <strong>not legal for now</strong></li>
+                <li>Pokémon LEGEND — <strong>not legal for now</strong></li>
+            </ul>
         </section>
 
     </main>
