@@ -11,8 +11,15 @@ langBtn.addEventListener('click', () => {
 
 function setLanguage(lang) {
   langBtn.textContent = lang === 'en' ? 'ES' : 'EN';
-  // Setting <html lang> also toggles the .lang-en / .lang-es blocks via CSS
+  // The CSS rules on html[lang] hide the inactive .lang-* blocks before
+  // this script runs; the inline styles below repeat it as a fallback
   document.documentElement.lang = lang;
+  document.querySelectorAll('.lang-en').forEach(el => {
+    el.style.display = lang === 'en' ? '' : 'none';
+  });
+  document.querySelectorAll('.lang-es').forEach(el => {
+    el.style.display = lang === 'es' ? '' : 'none';
+  });
   document.querySelectorAll('[data-en]').forEach(el => {
     const text = lang === 'en' ? el.getAttribute('data-en') : el.getAttribute('data-es');
     el.textContent = text || el.getAttribute('data-en');
