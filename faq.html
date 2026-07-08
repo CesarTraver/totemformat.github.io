@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FAQ – Totem Format</title>
+<title data-en="FAQ – Totem Format" data-es="Preguntas Frecuentes – Formato Tótem">FAQ – Totem Format</title>
+<script>document.documentElement.lang = localStorage.getItem('lang') || 'en';</script>
 <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,600;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 
@@ -26,12 +27,12 @@
 <body>
 
 <nav>
-<a class="logo" href="index.html">Totem Format</a>
+<a class="logo" href="index.html" data-en="Totem Format" data-es="Formato Tótem">Totem Format</a>
 <ul class="nav-links">
-<li><a href="rules.html">Rules</a></li>
-<li><a href="banlist.html">Banlist</a></li>
-<li><a href="faq.html" class="active">FAQ</a></li>
-<li><a href="about.html">About</a></li>
+<li><a href="rules.html" data-en="Rules" data-es="Reglas">Rules</a></li>
+<li><a href="banlist.html" data-en="Banlist" data-es="Lista Prohibida">Banlist</a></li>
+<li><a href="faq.html" class="active" data-en="FAQ" data-es="Preguntas Frecuentes">FAQ</a></li>
+<li><a href="about.html" data-en="About" data-es="Acerca de">About</a></li>
 </ul>
 <button id="lang-btn">ES</button>
 </nav>
@@ -42,11 +43,13 @@
   FAQ
 </div>
 <h1>FAQ</h1>
-<p class="subtitle">
+<p class="subtitle"
+   data-en="Frequently Asked Questions and official clarifications for the Totem Format (Rules v2.0)."
+   data-es="Preguntas frecuentes y aclaraciones oficiales del Formato Tótem (Reglas v2.0).">
    Frequently Asked Questions and official clarifications for the Totem Format (Rules v2.0).
 </p>
 <div class="hero-actions">
-  <a class="btn btn-fill" href="rules.html">Read the Full Rules</a>
+  <a class="btn btn-fill" href="rules.html" data-en="Read the Full Rules" data-es="Leer las Reglas Completas">Read the Full Rules</a>
 </div>
 </header>
 
@@ -54,152 +57,252 @@
 
 <!-- ============================================================ -->
 <section class="reveal">
-<div class="section-tag">Prizes &amp; Elimination</div>
-<h2>Prize Cards and Elimination</h2>
+<div class="section-tag" data-en="Prizes &amp; Elimination" data-es="Premios y Eliminación">Prizes &amp; Elimination</div>
+<h2 data-en="Prize Cards and Elimination" data-es="Cartas de Premio y Eliminación">Prize Cards and Elimination</h2>
 
-<h3>Why do Prize cards work as "life" instead of like in the official game?</h3>
-<p>In the official 1v1 game, you take Prize cards when you Knock Out your opponent's Pokémon. In a battle
+<h3 class="lang-en">Why do Prize cards work as "life" instead of like in the official game?</h3>
+<h3 class="lang-es">¿Por qué las cartas de Premio funcionan como "vida" en lugar de como en el juego oficial?</h3>
+<p class="lang-en">In the official 1v1 game, you take Prize cards when you Knock Out your opponent's Pokémon. In a battle
 royale, that would encourage <strong>kill stealing</strong>: sniping a weakened Pokémon that another player
 worked to damage, just to grab the reward. In Totem Format nobody profits directly from a Knock Out — the
 defeated player takes their own Prize cards into their hand (a small comeback boost) and simply gets closer
 to elimination.</p>
+<p class="lang-es">En el juego oficial 1 contra 1, robas cartas de Premio cuando dejas Fuera de Combate a los Pokémon de
+tu rival. En un battle royale, eso fomentaría el <strong>robo de bajas (kill stealing)</strong>: rematar un
+Pokémon debilitado que otro jugador se esforzó en dañar, solo para llevarse la recompensa. En el Formato Tótem
+nadie se beneficia directamente de un Fuera de Combate — el jugador derrotado roba sus propias cartas de Premio
+a su mano (un pequeño impulso de remontada) y simplemente se acerca a la eliminación.</p>
 
-<h3>Who takes Prize cards when a Pokémon is Knocked Out by Poison or another effect?</h3>
-<p>The same as always: the <strong>controller of the Knocked Out Pokémon</strong> takes Prize cards from their
+<h3 class="lang-en">Who takes Prize cards when a Pokémon is Knocked Out by Poison or another effect?</h3>
+<h3 class="lang-es">¿Quién roba cartas de Premio cuando un Pokémon queda Fuera de Combate por Envenenamiento u otro efecto?</h3>
+<p class="lang-en">The same as always: the <strong>controller of the Knocked Out Pokémon</strong> takes Prize cards from their
 own pile, no matter what caused the Knock Out (attack, Ability, Special Condition, or self-damage).</p>
+<p class="lang-es">Igual que siempre: el <strong>controlador del Pokémon Fuera de Combate</strong> roba cartas de Premio de su
+propia pila, sin importar qué causó el Fuera de Combate (ataque, Habilidad, Condición Especial o daño propio).</p>
 
-<h3>How do cards that compare Prize counts work, like "if you have more Prize cards remaining than your opponent"?</h3>
-<p>"Your opponent" in multiplayer always means <strong>one opponent</strong>: the one you are targeting with
+<h3 class="lang-en">How do cards that compare Prize counts work, like "if you have more Prize cards remaining than your opponent"?</h3>
+<h3 class="lang-es">¿Cómo funcionan las cartas que comparan Premios, como "si te quedan más cartas de Premio que a tu rival"?</h3>
+<p class="lang-en">"Your opponent" in multiplayer always means <strong>one opponent</strong>: the one you are targeting with
 the attack, or one you choose when the effect resolves. You never compare against the whole table. Keep in
 mind that in this format the player who is <em>winning</em> is the one with <em>more</em> Prize cards left —
 so these cards work best against the table leader. That is intentional: it gives the losing players tools to
 gang up on whoever is ahead.</p>
+<p class="lang-es">"Tu rival" en multijugador siempre significa <strong>un rival</strong>: aquel al que estás atacando, o uno
+que eliges cuando el efecto se resuelve. Nunca te comparas contra toda la mesa. Ten en cuenta que en este
+formato el jugador que va <em>ganando</em> es el que tiene <em>más</em> cartas de Premio — así que estas cartas
+funcionan mejor contra el líder de la mesa. Es intencionado: da a los jugadores que van perdiendo herramientas
+para aliarse contra quien va en cabeza.</p>
 
-<h3>Is Iono good or bad for me?</h3>
-<p>Iono makes each player draw cards equal to their own remaining Prize cards. Players who have taken a
+<h3 class="lang-en">Is Iono good or bad for me?</h3>
+<h3 class="lang-es">¿Iono es buena o mala para mí?</h3>
+<p class="lang-en">Iono makes each player draw cards equal to their own remaining Prize cards. Players who have taken a
 beating have fewer Prizes left, so they draw fewer cards. Unlike the official game, Iono punishes the players
 who are already behind — time it carefully, and expect it to make you no friends.</p>
+<p class="lang-es">Iono hace que cada jugador robe tantas cartas como cartas de Premio le queden. Los jugadores que han
+recibido una paliza tienen menos Premios, así que roban menos cartas. Al contrario que en el juego oficial,
+Iono castiga a los jugadores que ya van por detrás — elige bien el momento, y no esperes hacer amigos con
+ella.</p>
 
-<h3>What happens if I must take more Prize cards than I have left?</h3>
-<p>You take all your remaining Prize cards and you are eliminated, exactly as if you had taken your last
+<h3 class="lang-en">What happens if I must take more Prize cards than I have left?</h3>
+<h3 class="lang-es">¿Qué pasa si debo robar más cartas de Premio de las que me quedan?</h3>
+<p class="lang-en">You take all your remaining Prize cards and you are eliminated, exactly as if you had taken your last
 one.</p>
+<p class="lang-es">Robas todas tus cartas de Premio restantes y quedas eliminado, exactamente igual que si hubieras robado la
+última.</p>
 
-<h3>Can I run out of cards in my deck?</h3>
-<p>Yes. If you cannot draw a card at the beginning of your turn because your deck is empty, you are
+<h3 class="lang-en">Can I run out of cards in my deck?</h3>
+<h3 class="lang-es">¿Puedo quedarme sin cartas en el mazo?</h3>
+<p class="lang-en">Yes. If you cannot draw a card at the beginning of your turn because your deck is empty, you are
 eliminated — unless a card effect says otherwise.</p>
+<p class="lang-es">Sí. Si no puedes robar una carta al principio de tu turno porque tu mazo está vacío, quedas eliminado — a
+menos que un efecto de carta diga lo contrario.</p>
 </section>
 
 <!-- ============================================================ -->
 <section class="reveal">
-<div class="section-tag">The Totem</div>
-<h2>Totem Pokémon</h2>
+<div class="section-tag" data-en="The Totem" data-es="El Tótem">The Totem</div>
+<h2 data-en="Totem Pokémon" data-es="Pokémon Tótem">Totem Pokémon</h2>
 
-<h3>Can my Totem attack the same turn it enters play?</h3>
-<p><strong>Yes.</strong> The Totem enters play as it is — it does not evolve, so Evolution Sickness does not
+<h3 class="lang-en">Can my Totem attack the same turn it enters play?</h3>
+<h3 class="lang-es">¿Puede mi Tótem atacar el mismo turno en que entra en juego?</h3>
+<p class="lang-en"><strong>Yes.</strong> The Totem enters play as it is — it does not evolve, so Evolution Sickness does not
 apply. If it has the Energy its attack requires, it can attack immediately.</p>
+<p class="lang-es"><strong>Sí.</strong> El Tótem entra en juego tal cual es — no evoluciona, así que el mareo de evolución no
+se aplica. Si tiene la Energía que requiere su ataque, puede atacar inmediatamente.</p>
 
-<h3>Can the Totem be evolved or devolved?</h3>
-<p><strong>No, never.</strong> The Totem has no pre-Evolutions and cannot be evolved into anything else. Cards
+<h3 class="lang-en">Can the Totem be evolved or devolved?</h3>
+<h3 class="lang-es">¿Puede el Tótem evolucionar o involucionar?</h3>
+<p class="lang-en"><strong>No, never.</strong> The Totem has no pre-Evolutions and cannot be evolved into anything else. Cards
 that devolve Pokémon have no effect on it.</p>
+<p class="lang-es"><strong>No, nunca.</strong> El Tótem no tiene pre-Evoluciones y no puede evolucionar a nada. Las cartas que
+involucionan Pokémon no tienen efecto sobre él.</p>
 
-<h3>What happens to my Totem when it is Knocked Out?</h3>
-<p>You take your own Prize cards according to its Rule Box, then <strong>you choose</strong>: return it to the
+<h3 class="lang-en">What happens to my Totem when it is Knocked Out?</h3>
+<h3 class="lang-es">¿Qué le pasa a mi Tótem cuando queda Fuera de Combate?</h3>
+<p class="lang-en">You take your own Prize cards according to its Rule Box, then <strong>you choose</strong>: return it to the
 Totem Zone (the first return is free; each later return permanently increases its Invocation Cost by 1), or
 send it to the discard pile (no cost increase, but it is stuck there until a card effect moves it — and then
 you may redirect it to the Totem Zone).</p>
+<p class="lang-es">Robas tus propias cartas de Premio según su Rule Box, y después <strong>tú eliges</strong>: devolverlo a la
+Zona del Tótem (la primera vuelta es gratis; cada vuelta posterior aumenta permanentemente su Coste de
+Invocación en 1), o enviarlo a la pila de descartes (sin aumento de coste, pero se queda allí atascado hasta que
+un efecto de carta lo mueva — y en ese momento puedes redirigirlo a la Zona del Tótem).</p>
 
-<h3>An effect wants to send my Totem to the Lost Zone / my deck / my hand. What happens?</h3>
-<p>You choose: it goes where the effect says, or it goes to the Totem Zone instead — a bit like Commander.
+<h3 class="lang-en">An effect wants to send my Totem to the Lost Zone / my deck / my hand. What happens?</h3>
+<h3 class="lang-es">Un efecto quiere enviar mi Tótem a la Zona Perdida / mi mazo / mi mano. ¿Qué pasa?</h3>
+<p class="lang-en">You choose: it goes where the effect says, or it goes to the Totem Zone instead — a bit like Commander.
 Remember that the Totem can only enter play by invocation from the Totem Zone.</p>
+<p class="lang-es">Tú eliges: va adonde dice el efecto, o va a la Zona del Tótem en su lugar — un poco como en Commander.
+Recuerda que el Tótem solo puede entrar en juego mediante invocación desde la Zona del Tótem.</p>
 
-<h3>Can I put Special Energy on my Totem in the Totem Zone?</h3>
-<p>Yes, but while in the Totem Zone it counts as <strong>1 Colorless Energy</strong> toward the Invocation
+<h3 class="lang-en">Can I put Special Energy on my Totem in the Totem Zone?</h3>
+<h3 class="lang-es">¿Puedo unir Energía Especial a mi Tótem en la Zona del Tótem?</h3>
+<p class="lang-en">Yes, but while in the Totem Zone it counts as <strong>1 Colorless Energy</strong> toward the Invocation
 Cost and is completely inert. Effects that trigger "when you attach this card" never resolve, because the
 attachment happened outside of play. Once the Totem enters play, the Energy works normally again — for
 example, Double Turbo Energy provides 2 Colorless from that moment on.</p>
+<p class="lang-es">Sí, pero mientras está en la Zona del Tótem cuenta como <strong>1 Energía Incolora</strong> para el Coste
+de Invocación y es completamente inerte. Los efectos que se activan "cuando unes esta carta" nunca se
+resuelven, porque la unión ocurrió fuera del juego. Cuando el Tótem entra en juego, la Energía vuelve a
+funcionar con normalidad — por ejemplo, la Energía Turbo Doble proporciona 2 Incoloras a partir de ese
+momento.</p>
 
-<h3>Can opponents interact with my Totem or its Energy while it is in the Totem Zone?</h3>
-<p><strong>No.</strong> While in the Totem Zone, the Totem is not in play: it cannot be targeted, damaged, or
+<h3 class="lang-en">Can opponents interact with my Totem or its Energy while it is in the Totem Zone?</h3>
+<h3 class="lang-es">¿Pueden los rivales interactuar con mi Tótem o su Energía mientras está en la Zona del Tótem?</h3>
+<p class="lang-en"><strong>No.</strong> While in the Totem Zone, the Totem is not in play: it cannot be targeted, damaged, or
 affected by anything, and its attached Energy cannot be discarded or moved by card effects.</p>
+<p class="lang-es"><strong>No.</strong> Mientras está en la Zona del Tótem, el Tótem no está en juego: no puede ser objetivo,
+dañado ni afectado por nada, y su Energía unida no puede descartarse ni moverse con efectos de cartas.</p>
 
-<h3>What Stage does my VMAX, VSTAR, BREAK, or Mega Totem use on the cost table?</h3>
-<p>VMAX and VSTAR count as <strong>Stage 1</strong> (they evolve from a Basic Pokémon V). BREAK Pokémon count
+<h3 class="lang-en">What Stage does my VMAX, VSTAR, BREAK, or Mega Totem use on the cost table?</h3>
+<h3 class="lang-es">¿Qué Fase usa mi Tótem VMAX, VSTAR, BREAK o Mega en la tabla de costes?</h3>
+<p class="lang-en">VMAX and VSTAR count as <strong>Stage 1</strong> (they evolve from a Basic Pokémon V). BREAK Pokémon count
 as one Stage above the Pokémon they evolve from — a BREAK of a Stage 2 uses the <strong>Stage 3</strong>
 column. Mega Evolution and Primal Reversion Pokémon always use the <strong>Stage 3</strong> column.</p>
+<p class="lang-es">Los VMAX y VSTAR cuentan como <strong>Fase 1</strong> (evolucionan de un Pokémon V Básico). Los Pokémon
+BREAK cuentan como una Fase por encima del Pokémon del que evolucionan — un BREAK de una Fase 2 usa la columna
+de <strong>Fase 3</strong>. Los Pokémon de Megaevolución y Regresión Primigenia siempre usan la columna de
+<strong>Fase 3</strong>.</p>
 
-<h3>Can my Totem be a V-UNION or a LEGEND card?</h3>
-<p>Not for now. V-UNION and LEGEND cards are not legal in the format (neither as Totem nor in the deck).
+<h3 class="lang-en">Can my Totem be a V-UNION or a LEGEND card?</h3>
+<h3 class="lang-es">¿Puede mi Tótem ser una carta V-UNION o LEGEND?</h3>
+<p class="lang-en">Not for now. V-UNION and LEGEND cards are not legal in the format (neither as Totem nor in the deck).
 Specific rules for them may come in a future revision.</p>
+<p class="lang-es">Por ahora no. Las cartas V-UNION y LEGEND no son legales en el formato (ni como Tótem ni en el mazo).
+Puede que lleguen reglas específicas para ellas en una futura revisión.</p>
 </section>
 
 <!-- ============================================================ -->
 <section class="reveal">
-<div class="section-tag">Deck Building</div>
-<h2>Deck Building</h2>
+<div class="section-tag" data-en="Deck Building" data-es="Construcción de Mazos">Deck Building</div>
+<h2 data-en="Deck Building" data-es="Construcción de Mazos">Deck Building</h2>
 
-<h3>Which cards are legal?</h3>
-<p><strong>Every Pokémon TCG card ever printed</strong>, from the original Base Set to the newest expansion,
+<h3 class="lang-en">Which cards are legal?</h3>
+<h3 class="lang-es">¿Qué cartas son legales?</h3>
+<p class="lang-en"><strong>Every Pokémon TCG card ever printed</strong>, from the original Base Set to the newest expansion,
 except the cards on the <a href="banlist.html">Banlist</a> (and V-UNION / LEGEND cards, which are on hold).</p>
+<p class="lang-es"><strong>Todas las cartas de Pokémon TCG jamás impresas</strong>, desde el Set Base original hasta la
+expansión más reciente, excepto las cartas de la <a href="banlist.html">Lista Prohibida</a> (y las cartas
+V-UNION / LEGEND, que están en espera).</p>
 
-<h3>It's a singleton format — can I play several ACE SPEC cards, since each is a different card?</h3>
-<p><strong>No.</strong> Official global limits still apply: maximum <strong>1 ACE SPEC in total</strong> and
+<h3 class="lang-en">It's a singleton format — can I play several ACE SPEC cards, since each is a different card?</h3>
+<h3 class="lang-es">Es un formato singleton — ¿puedo jugar varias cartas ACE SPEC, ya que cada una es una carta distinta?</h3>
+<p class="lang-en"><strong>No.</strong> Official global limits still apply: maximum <strong>1 ACE SPEC in total</strong> and
 maximum <strong>1 Radiant Pokémon in total</strong> per deck. Your Totem counts toward these limits: if your
 Totem is a Radiant Pokémon, you cannot include another Radiant in your 99.</p>
+<p class="lang-es"><strong>No.</strong> Los límites globales oficiales siguen aplicándose: máximo <strong>1 ACE SPEC en
+total</strong> y máximo <strong>1 Pokémon Radiante en total</strong> por mazo. Tu Tótem cuenta para estos
+límites: si tu Tótem es un Pokémon Radiante, no puedes incluir otro Radiante en tus 99.</p>
 
-<h3>My Pokémon's attack costs include Colorless symbols. Does that break my type identity?</h3>
-<p><strong>No.</strong> Colorless symbols in attack costs are generic — they can be paid with any Energy and
+<h3 class="lang-en">My Pokémon's attack costs include Colorless symbols. Does that break my type identity?</h3>
+<h3 class="lang-es">Los costes de ataque de mi Pokémon incluyen símbolos incoloros. ¿Eso rompe mi identidad de tipos?</h3>
+<p class="lang-en"><strong>No.</strong> Colorless symbols in attack costs are generic — they can be paid with any Energy and
 never count as a "required type". Only named Energy types (Fire, Water, Psychic…) count for identity. The
 Colorless restriction for Retreat Cost 0 Totems only affects <strong>Colorless-type Pokémon</strong> and
 <strong>Special Energy that provides Colorless</strong>.</p>
+<p class="lang-es"><strong>No.</strong> Los símbolos incoloros en los costes de ataque son genéricos — pueden pagarse con
+cualquier Energía y nunca cuentan como un "tipo requerido". Solo los tipos de Energía con nombre (Fuego, Agua,
+Psíquico…) cuentan para la identidad. La restricción del Incoloro para Tótems con Coste de Retirada 0 solo
+afecta a los <strong>Pokémon de tipo Incoloro</strong> y a las <strong>Energías Especiales que proporcionan
+Incoloro</strong>.</p>
 
-<h3>How do dual-type Pokémon work with type identity?</h3>
-<p>If your <strong>Totem</strong> is dual-type, both of its types are part of your identity. If a dual-type
+<h3 class="lang-en">How do dual-type Pokémon work with type identity?</h3>
+<h3 class="lang-es">¿Cómo funcionan los Pokémon de doble tipo con la identidad de tipos?</h3>
+<p class="lang-en">If your <strong>Totem</strong> is dual-type, both of its types are part of your identity. If a dual-type
 Pokémon is in your <strong>deck</strong>, both of its types must be allowed by your Totem's identity.</p>
+<p class="lang-es">Si tu <strong>Tótem</strong> es de doble tipo, sus dos tipos forman parte de tu identidad. Si un Pokémon de
+doble tipo está en tu <strong>mazo</strong>, sus dos tipos deben estar permitidos por la identidad de tu
+Tótem.</p>
 
-<h3>Do opponents draw extra cards when I mulligan?</h3>
-<p><strong>No.</strong> Mulligans are free for everyone (reveal your hand, shuffle it back, draw 7). With
+<h3 class="lang-en">Do opponents draw extra cards when I mulligan?</h3>
+<h3 class="lang-es">¿Roban los rivales cartas extra cuando hago mulligan?</h3>
+<p class="lang-en"><strong>No.</strong> Mulligans are free for everyone (reveal your hand, shuffle it back, draw 7). With
 100-card singleton decks, mulligans are more common than in the official game, so the official compensation
 draw is removed.</p>
+<p class="lang-es"><strong>No.</strong> Los mulligans son gratis para todos (enseña tu mano, barájala de vuelta y roba 7). Con
+mazos singleton de 100 cartas, los mulligans son más comunes que en el juego oficial, así que el robo de
+compensación oficial se elimina.</p>
 </section>
 
 <!-- ============================================================ -->
 <section class="reveal">
-<div class="section-tag">Multiplayer &amp; Timing</div>
-<h2>Multiplayer and Timing</h2>
+<div class="section-tag" data-en="Multiplayer &amp; Timing" data-es="Multijugador y Timing">Multiplayer &amp; Timing</div>
+<h2 data-en="Multiplayer and Timing" data-es="Multijugador y Timing">Multiplayer and Timing</h2>
 
-<h3>A card says "your opponent". Who is that in a 4-player game?</h3>
-<p><strong>One opponent</strong>, chosen by the player resolving the effect (or the opponent already being
+<h3 class="lang-en">A card says "your opponent". Who is that in a 4-player game?</h3>
+<h3 class="lang-es">Una carta dice "tu rival". ¿Quién es en una partida de 4 jugadores?</h3>
+<p class="lang-en"><strong>One opponent</strong>, chosen by the player resolving the effect (or the opponent already being
 targeted, for attacks). Cards that say "each player" or "all players" affect the whole table. See Rules
 Section 9 for the full scope rules.</p>
+<p class="lang-es"><strong>Un rival</strong>, elegido por el jugador que resuelve el efecto (o el rival al que ya está
+atacando, en el caso de los ataques). Las cartas que dicen "cada jugador" o "todos los jugadores" afectan a
+toda la mesa. Consulta la Sección 9 de las Reglas para las reglas de alcance completas.</p>
 
-<h3>When exactly can I play my 1 off-turn Item?</h3>
-<p>The exact timing windows (and what an off-turn Item can respond to) are <strong>still being
+<h3 class="lang-en">When exactly can I play my 1 off-turn Item?</h3>
+<h3 class="lang-es">¿Cuándo puedo jugar exactamente mi Objeto fuera de turno?</h3>
+<p class="lang-en">The exact timing windows (and what an off-turn Item can respond to) are <strong>still being
 playtested</strong> and will be defined in a future revision. Until then, we recommend this house rule: play
 off-turn Items <strong>between turns</strong> (after a player's Pokémon Checkup, before the next player draws),
 and never in response to an attack that has already been declared. Agree on the details as a table before the
 game.</p>
+<p class="lang-es">Las ventanas exactas de timing (y a qué puede responder un Objeto fuera de turno) todavía se están
+<strong>probando</strong> y se definirán en una futura revisión. Hasta entonces, recomendamos esta regla de
+casa: juega los Objetos fuera de turno <strong>entre turnos</strong> (después del Chequeo Pokémon de un
+jugador, antes de que el siguiente robe), y nunca en respuesta a un ataque ya declarado. Acordad los detalles
+como mesa antes de la partida.</p>
 
-<h3>Can I attack any player?</h3>
-<p>Yes. On your turn you declare an attack against <strong>one opponent of your choice</strong>. There is no
+<h3 class="lang-en">Can I attack any player?</h3>
+<h3 class="lang-es">¿Puedo atacar a cualquier jugador?</h3>
+<p class="lang-en">Yes. On your turn you declare an attack against <strong>one opponent of your choice</strong>. There is no
 forced rotation — politics, threat assessment, and deals decide who gets hit.</p>
+<p class="lang-es">Sí. En tu turno declaras un ataque contra <strong>un rival de tu elección</strong>. No hay rotación
+forzada — la política, la evaluación de amenazas y los pactos deciden quién recibe el golpe.</p>
 
-<h3>Are deals binding?</h3>
-<p>No. Negotiation is encouraged, betrayal is legal.</p>
+<h3 class="lang-en">Are deals binding?</h3>
+<h3 class="lang-es">¿Son vinculantes los pactos?</h3>
+<p class="lang-en">No. Negotiation is encouraged, betrayal is legal.</p>
+<p class="lang-es">No. La negociación se fomenta, la traición es legal.</p>
 
-<h3>What happens to an eliminated player's cards?</h3>
-<p>All of their in-play cards (including their Stadium, if it was theirs) are discarded without triggering any
+<h3 class="lang-en">What happens to an eliminated player's cards?</h3>
+<h3 class="lang-es">¿Qué pasa con las cartas de un jugador eliminado?</h3>
+<p class="lang-en">All of their in-play cards (including their Stadium, if it was theirs) are discarded without triggering any
 "when discarded" effects, and the player is removed from the game entirely — no effect considers them
 anymore.</p>
+<p class="lang-es">Todas sus cartas en juego (incluido su Estadio, si era suyo) se descartan sin activar ningún efecto de
+"cuando se descarta", y el jugador se retira de la partida por completo — ningún efecto lo tiene en cuenta a
+partir de entonces.</p>
 </section>
 
 </main>
 
 <footer>
 <p>
-  Totem Format is a fan-made, non-commercial Pokémon TCG format.<br>
-  Pokémon and Pokémon TCG are © The Pokémon Company.
+  <span data-en="Totem Format is a fan-made, non-commercial Pokémon TCG format."
+    data-es="Formato Tótem es un formato de Pokémon TCG hecho por fans y no comercial.">Totem Format is a fan-made, non-commercial Pokémon TCG format.</span><br>
+  <span data-en="Pokémon and Pokémon TCG are © The Pokémon Company."
+    data-es="Pokémon y Pokémon TCG son © The Pokémon Company.">Pokémon and Pokémon TCG are © The Pokémon Company.</span>
 </p>
-<a class="cta" href="index.html">← Back to Home</a>
+<a class="cta" href="index.html" data-en="← Back to Home" data-es="← Volver al Inicio">← Back to Home</a>
 </footer>
 
 <script src="lang.js"></script>

@@ -10,19 +10,13 @@ langBtn.addEventListener('click', () => {
 });
 
 function setLanguage(lang) {
-  if (lang === 'en') {
-    langBtn.textContent = 'ES';
-    document.documentElement.lang = 'en';
-    document.querySelectorAll('[data-en]').forEach(el => {
-      el.textContent = el.getAttribute('data-en');
-    });
-  } else {
-    langBtn.textContent = 'EN';
-    document.documentElement.lang = 'es';
-    document.querySelectorAll('[data-es]').forEach(el => {
-      el.textContent = el.getAttribute('data-es');
-    });
-  }
+  langBtn.textContent = lang === 'en' ? 'ES' : 'EN';
+  // Setting <html lang> also toggles the .lang-en / .lang-es blocks via CSS
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-en]').forEach(el => {
+    const text = lang === 'en' ? el.getAttribute('data-en') : el.getAttribute('data-es');
+    el.textContent = text || el.getAttribute('data-en');
+  });
 }
 
 const observer = new IntersectionObserver((entries) => {

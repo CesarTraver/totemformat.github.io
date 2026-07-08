@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Totem Format Rules v2.0</title>
+    <title data-en="Totem Format Rules v2.0" data-es="Reglas del Formato Tótem v2.0">Totem Format Rules v2.0</title>
+    <script>document.documentElement.lang = localStorage.getItem('lang') || 'en';</script>
     <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,600;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 
@@ -29,12 +30,12 @@
 
     <!-- Navbar -->
     <nav>
-        <a class="logo" href="index.html">Totem Format</a>
+        <a class="logo" href="index.html" data-en="Totem Format" data-es="Formato Tótem">Totem Format</a>
         <ul class="nav-links">
-            <li><a href="rules.html" class="active">Rules</a></li>
-            <li><a href="banlist.html">Banlist</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="rules.html" class="active" data-en="Rules" data-es="Reglas">Rules</a></li>
+            <li><a href="banlist.html" data-en="Banlist" data-es="Lista Prohibida">Banlist</a></li>
+            <li><a href="faq.html" data-en="FAQ" data-es="Preguntas Frecuentes">FAQ</a></li>
+            <li><a href="about.html" data-en="About" data-es="Acerca de">About</a></li>
         </ul>
         <button id="lang-btn">ES</button>
     </nav>
@@ -42,37 +43,44 @@
     <header class="hero">
         <div class="hero-badge">
             <div class="dot-live"></div>
-            Rules v2.0
+            <span data-en="Rules v2.0" data-es="Reglas v2.0">Rules v2.0</span>
         </div>
         <h1>
-            Totem Format<br>
-            <span class="hi">Rules</span>
+            <span data-en="Totem Format" data-es="Formato Tótem">Totem Format</span><br>
+            <span class="hi" data-en="Rules" data-es="Reglas">Rules</span>
         </h1>
-        <p class="subtitle">
+        <p class="subtitle"
+            data-en="Full rule set for the Pokémon TCG Totem Format: a multiplayer battle royale with 100-card singleton decks built around a Totem Pokémon. Everything not covered here follows the official Pokémon TCG rules."
+            data-es="Reglamento completo del Formato Tótem de Pokémon TCG: un battle royale multijugador con mazos singleton de 100 cartas construidos alrededor de un Pokémon Tótem. Todo lo que no se cubra aquí sigue las reglas oficiales de Pokémon TCG.">
             Full rule set for the Pokémon TCG Totem Format: a multiplayer battle royale with
             100-card singleton decks built around a Totem Pokémon. Everything not covered here
             follows the official Pokémon TCG rules.
         </p>
-        <p class="subtitle">
+        <p class="subtitle"
+            data-en="Feel free to create your own house rules."
+            data-es="Siéntete libre de crear tus propias reglas de casa.">
             Feel free to create your own house rules.
         </p>
         <div class="hero-actions">
-            <a class="btn btn-fill" href="index.html">← Back to Home</a>
+            <a class="btn btn-fill" href="index.html" data-en="← Back to Home" data-es="← Volver al Inicio">← Back to Home</a>
         </div>
     </header>
 
-    <div class="divider"><div class="divider-line"></div><div class="divider-label">Full Rules</div><div class="divider-line"></div></div>
+    <div class="divider"><div class="divider-line"></div><div class="divider-label" data-en="Full Rules" data-es="Reglas Completas">Full Rules</div><div class="divider-line"></div></div>
 
     <main>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 1</div>
-            <h2>1. Overview</h2>
-            <p>Totem Format adapts the Pokémon TCG for free-for-all multiplayer play (3 or more players,
+            <div class="section-tag" data-en="Section 1" data-es="Sección 1">Section 1</div>
+            <h2 data-en="1. Overview" data-es="1. Visión General">1. Overview</h2>
+            <p class="lang-en">Totem Format adapts the Pokémon TCG for free-for-all multiplayer play (3 or more players,
                 recommended 3–6). It is a <strong>battle royale</strong>: every player fights for themselves,
                 negotiation and temporary alliances are part of the game, and the last player standing wins.</p>
-            <ul>
+            <p class="lang-es">El Formato Tótem adapta el Pokémon TCG al multijugador todos contra todos (3 o más
+                jugadores, recomendado 3–6). Es un <strong>battle royale</strong>: cada jugador lucha por sí mismo,
+                la negociación y las alianzas temporales son parte del juego, y gana el último jugador en pie.</p>
+            <ul class="lang-en">
                 <li>Decks are <strong>100-card singleton</strong> decks built around a <strong>Totem Pokémon</strong>
                     that defines the deck's type identity.</li>
                 <li>Prize cards work as your <strong>life total</strong>: when your Pokémon are Knocked Out,
@@ -80,23 +88,40 @@
                     (see Section 7).</li>
                 <li>Anything not modified by these rules works exactly as in the official Pokémon TCG rulebook.</li>
             </ul>
+            <ul class="lang-es">
+                <li>Los mazos son <strong>singleton de 100 cartas</strong>, construidos alrededor de un
+                    <strong>Pokémon Tótem</strong> que define la identidad de tipos del mazo.</li>
+                <li>Las cartas de Premio funcionan como tu <strong>vida</strong>: cuando tus Pokémon quedan Fuera de
+                    Combate, <em>tú</em> robas tus propias cartas de Premio, y quedas eliminado cuando se acaban
+                    (ver Sección 7).</li>
+                <li>Todo lo que estas reglas no modifiquen funciona exactamente igual que en el reglamento oficial de
+                    Pokémon TCG.</li>
+            </ul>
         </section>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 2</div>
-            <h2>2. Card Pool and Deck Construction</h2>
+            <div class="section-tag" data-en="Section 2" data-es="Sección 2">Section 2</div>
+            <h2 data-en="2. Card Pool and Deck Construction" data-es="2. Cartas Legales y Construcción del Mazo">2. Card Pool and Deck Construction</h2>
 
-            <h3>Legal Card Pool</h3>
-            <ul>
+            <h3 data-en="Legal Card Pool" data-es="Cartas Legales">Legal Card Pool</h3>
+            <ul class="lang-en">
                 <li><strong>Every Pokémon TCG card ever printed is legal</strong>, from the original Base Set to the
                     newest expansion, except the cards on the <a href="banlist.html">Banlist</a>.</li>
                 <li><strong>Exception:</strong> Pokémon V-UNION and Pokémon LEGEND cards are <strong>not legal</strong>
                     for now. Specific rules for them may be added in a future revision.</li>
             </ul>
+            <ul class="lang-es">
+                <li><strong>Todas las cartas de Pokémon TCG jamás impresas son legales</strong>, desde el Set Base
+                    original hasta la expansión más reciente, excepto las cartas de la
+                    <a href="banlist.html">Lista Prohibida</a>.</li>
+                <li><strong>Excepción:</strong> las cartas de Pokémon V-UNION y Pokémon LEGEND <strong>no son
+                    legales</strong> por ahora. Puede que se añadan reglas específicas para ellas en una futura
+                    revisión.</li>
+            </ul>
 
-            <h3>Deck Rules</h3>
-            <ul>
+            <h3 data-en="Deck Rules" data-es="Reglas del Mazo">Deck Rules</h3>
+            <ul class="lang-en">
                 <li><strong>Size:</strong> 100 cards (99 deck cards + 1 Totem Pokémon, which starts outside the
                     deck).</li>
                 <li><strong>Singleton:</strong> Only one copy of each card, except Basic Energy, which can be included
@@ -118,18 +143,45 @@
                 <li><strong>Type identity:</strong> All Pokémon and Energy in the deck must respect the Totem's type
                     identity (see Section 3).</li>
             </ul>
+            <ul class="lang-es">
+                <li><strong>Tamaño:</strong> 100 cartas (99 cartas de mazo + 1 Pokémon Tótem, que empieza fuera del
+                    mazo).</li>
+                <li><strong>Singleton:</strong> solo una copia de cada carta, excepto la Energía Básica, que puede
+                    incluirse en cualquier cantidad.</li>
+                <li><strong>Pokémon repetidos:</strong> se permiten dos cartas con el mismo nombre de Pokémon solo si
+                    vienen de expansiones distintas <em>y</em> son mecánicamente diferentes (distintos PS, ataques o
+                    Habilidades).</li>
+                <li><strong>Cartas con Rule Box:</strong> los Pokémon con Rule Box (recuadro de reglas) se permiten en
+                    el mazo y siguen sus reglas estándar de Pokémon TCG (incluidas las cartas de Premio que dan al
+                    quedar Fuera de Combate).</li>
+                <li><strong>Los límites globales oficiales siguen aplicándose, y tu Tótem cuenta para ellos:</strong>
+                    <ul>
+                        <li>Máximo <strong>1 carta <em>ACE SPEC</em> en total</strong> por mazo.</li>
+                        <li>Máximo <strong>1 Pokémon Radiante en total</strong> por mazo. Si tu Tótem es un Pokémon
+                            Radiante, no puedes incluir otro en las 99.</li>
+                        <li>Máximo 1 carta Prism Star de cada nombre (y van a la Zona Perdida en lugar de a la pila de
+                            descartes, como indica la carta).</li>
+                    </ul>
+                </li>
+                <li><strong>Identidad de tipos:</strong> todos los Pokémon y Energías del mazo deben respetar la
+                    identidad de tipos del Tótem (ver Sección 3).</li>
+            </ul>
         </section>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 3</div>
-            <h2>3. Deck Type Identity</h2>
+            <div class="section-tag" data-en="Section 3" data-es="Sección 3">Section 3</div>
+            <h2 data-en="3. Deck Type Identity" data-es="3. Identidad de Tipos del Mazo">3. Deck Type Identity</h2>
 
-            <p>Your deck is built <strong>around your Totem</strong>. The Totem defines a set of allowed types
-                — its <strong>type identity</strong> — and every Pokémon in your deck must belong to those types.</p>
+            <p class="lang-en">Your deck is built <strong>around your Totem</strong>. The Totem defines a set of allowed
+                types — its <strong>type identity</strong> — and every Pokémon in your deck must belong to those
+                types.</p>
+            <p class="lang-es">Tu mazo se construye <strong>alrededor de tu Tótem</strong>. El Tótem define un conjunto
+                de tipos permitidos — su <strong>identidad de tipos</strong> — y todos los Pokémon de tu mazo deben
+                pertenecer a esos tipos.</p>
 
-            <h3>What Defines Your Identity</h3>
-            <ol>
+            <h3 data-en="What Defines Your Identity" data-es="Qué Define Tu Identidad">What Defines Your Identity</h3>
+            <ol class="lang-en">
                 <li><strong>The Totem's own type</strong> is always allowed. If the Totem is a dual-type Pokémon,
                     <strong>both</strong> of its types are allowed.</li>
                 <li><strong>Every Energy type required by the Totem's attacks</strong> is also allowed
@@ -146,9 +198,27 @@
                     type, so you do not "spend" a retreat point on it: you may choose extra types equal to the full
                     Retreat Cost.</li>
             </ol>
+            <ol class="lang-es">
+                <li><strong>El propio tipo del Tótem</strong> siempre está permitido. Si el Tótem es un Pokémon de
+                    doble tipo, <strong>ambos</strong> tipos están permitidos.</li>
+                <li><strong>Todos los tipos de Energía que requieren los ataques del Tótem</strong> también están
+                    permitidos (el Incoloro no cuenta aquí — ver más abajo).</li>
+                <li><strong>Incoloro:</strong> si el Coste de Retirada del Tótem es <strong>1 o más</strong>, el
+                    Incoloro forma parte de tu identidad. Si su Coste de Retirada es <strong>0</strong>, el Incoloro
+                    <strong>no está permitido</strong>: no puedes incluir Pokémon de tipo Incoloro ni Energías
+                    Especiales que proporcionen Energía Incolora — aunque los propios ataques del Tótem muestren
+                    símbolos incoloros.</li>
+                <li><strong>Tipos extra:</strong> si el Coste de Retirada del Tótem es 2 o más, puedes añadir
+                    <strong>tipos extra de libre elección</strong> iguales a su Coste de Retirada menos 1
+                    (el primer punto de retirada otorga el Incoloro; cada punto adicional otorga un tipo a tu
+                    elección).</li>
+                <li><strong>Tótem Incoloro:</strong> si el propio Tótem es un Pokémon Incoloro, el Incoloro es su tipo
+                    base, así que no "gastas" un punto de retirada en él: puedes elegir tantos tipos extra como su
+                    Coste de Retirada completo.</li>
+            </ol>
 
-            <h3>Clarifications</h3>
-            <ul>
+            <h3 data-en="Clarifications" data-es="Aclaraciones">Clarifications</h3>
+            <ul class="lang-en">
                 <li><strong>Colorless symbols in attack costs are generic.</strong> An attack cost like
                     <strong>[W][C][C]</strong> only <em>requires</em> Water; the Colorless symbols can be paid with
                     any Energy. They never add a type to (or break) your identity. Only named Energy types count as
@@ -158,37 +228,60 @@
                 <li><strong>Dragon Totems:</strong> there is no Dragon Energy, so a Dragon Totem's identity comes from
                     the Energy types its attacks require, plus its retreat bonuses.</li>
             </ul>
+            <ul class="lang-es">
+                <li><strong>Los símbolos incoloros en los costes de ataque son genéricos.</strong> Un coste de ataque
+                    como <strong>[W][C][C]</strong> solo <em>requiere</em> Agua; los símbolos incoloros pueden pagarse
+                    con cualquier Energía. Nunca añaden un tipo a tu identidad (ni la rompen). Solo los tipos de
+                    Energía con nombre cuentan como "requeridos".</li>
+                <li><strong>Pokémon de doble tipo en el mazo:</strong> ambos tipos deben estar permitidos por tu
+                    identidad. (Un <em>Tótem</em> de doble tipo otorga sus dos tipos, como se indica arriba.)</li>
+                <li><strong>Tótems de tipo Dragón:</strong> no existe la Energía Dragón, así que la identidad de un
+                    Tótem Dragón viene de los tipos de Energía que requieren sus ataques, más sus bonos de
+                    retirada.</li>
+            </ul>
 
-            <h3>Practical Examples</h3>
+            <h3 data-en="Practical Examples" data-es="Ejemplos Prácticos">Practical Examples</h3>
             <ul>
-                <li>Totem type Dragon, attack requires Fire + Psychic + Colorless, Retreat Cost 1 → your deck can
-                    include Dragon, Fire, Psychic, and Colorless Pokémon.</li>
+                <li class="lang-en">Totem type Dragon, attack requires Fire + Psychic + Colorless, Retreat Cost 1 →
+                    your deck can include Dragon, Fire, Psychic, and Colorless Pokémon.</li>
+                <li class="lang-es">Tótem de tipo Dragón, ataque que requiere Fuego + Psíquico + Incoloro, Coste de
+                    Retirada 1 → tu mazo puede incluir Pokémon de tipo Dragón, Fuego, Psíquico e Incoloro.</li>
                 <img src="ruleImages/dragapult-ex.png" alt="DragapultEX" class="section-image" />
-                <li>Totem type Water, attacks require Water only, Retreat Cost 2 → Water and Colorless are allowed,
-                    plus 1 extra type of your choice (e.g., Fire).</li>
+                <li class="lang-en">Totem type Water, attacks require Water only, Retreat Cost 2 → Water and Colorless
+                    are allowed, plus 1 extra type of your choice (e.g., Fire).</li>
+                <li class="lang-es">Tótem de tipo Agua, ataques que solo requieren Agua, Coste de Retirada 2 → se
+                    permiten Agua e Incoloro, más 1 tipo extra a tu elección (p. ej., Fuego).</li>
                 <img src="ruleImages/Chienpao-ex.png" alt="Chien-PaoEX" class="section-image" />
-                <li>Colorless Totem, Retreat Cost 2 → Colorless counts as its base type; you may freely choose 2 extra
-                    types for the deck.</li>
+                <li class="lang-en">Colorless Totem, Retreat Cost 2 → Colorless counts as its base type; you may freely
+                    choose 2 extra types for the deck.</li>
+                <li class="lang-es">Tótem Incoloro, Coste de Retirada 2 → el Incoloro cuenta como su tipo base; puedes
+                    elegir libremente 2 tipos extra para el mazo.</li>
                 <img src="ruleImages/Kangaskhan-ex.png" alt="KangaskhanEX" class="section-image" />
-                <li>Totem with Retreat Cost 0 → Colorless is <strong>not allowed</strong>, even though its attacks show
-                    Colorless symbols in their costs.</li>
+                <li class="lang-en">Totem with Retreat Cost 0 → Colorless is <strong>not allowed</strong>, even though
+                    its attacks show Colorless symbols in their costs.</li>
+                <li class="lang-es">Tótem con Coste de Retirada 0 → el Incoloro <strong>no está permitido</strong>,
+                    aunque sus ataques muestren símbolos incoloros en sus costes.</li>
                 <img src="ruleImages/Noivern-ex.png" alt="NoivernEX" class="section-image" />
             </ul>
         </section>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 4</div>
-            <h2>4. The Totem Pokémon</h2>
+            <div class="section-tag" data-en="Section 4" data-es="Sección 4">Section 4</div>
+            <h2 data-en="4. The Totem Pokémon" data-es="4. El Pokémon Tótem">4. The Totem Pokémon</h2>
 
-            <h3>Definition</h3>
-            <p>Your Totem is a <strong>Pokémon with a Rule Box</strong> (see the Appendix for the full list;
-                V-UNION and LEGEND cards cannot be Totems for now). It starts the game in the
+            <h3 data-en="Definition" data-es="Definición">Definition</h3>
+            <p class="lang-en">Your Totem is a <strong>Pokémon with a Rule Box</strong> (see the Appendix for the full
+                list; V-UNION and LEGEND cards cannot be Totems for now). It starts the game in the
                 <strong>Totem Zone</strong>: a special area in the top-right corner of your side of the table,
                 outside your deck.</p>
+            <p class="lang-es">Tu Tótem es un <strong>Pokémon con Rule Box</strong> (ver el Apéndice para la lista
+                completa; las cartas V-UNION y LEGEND no pueden ser Tótems por ahora). Empieza la partida en la
+                <strong>Zona del Tótem</strong>: un área especial en la esquina superior derecha de tu lado de la
+                mesa, fuera de tu mazo.</p>
 
-            <h3>The Totem Zone</h3>
-            <ul>
+            <h3 data-en="The Totem Zone" data-es="La Zona del Tótem">The Totem Zone</h3>
+            <ul class="lang-en">
                 <li>While in the Totem Zone, the Totem is <strong>not in play</strong>: it cannot attack, cannot use
                     Abilities, and its Abilities have no effect.</li>
                 <li>It cannot be targeted, damaged, or affected by any card, attack, or Ability while it is in the
@@ -196,9 +289,17 @@
                 <li>It does not count toward the limit of 6 Pokémon in play, and it is ignored by any effect that
                     counts or refers to Pokémon in play.</li>
             </ul>
+            <ul class="lang-es">
+                <li>Mientras está en la Zona del Tótem, el Tótem <strong>no está en juego</strong>: no puede atacar,
+                    no puede usar Habilidades y sus Habilidades no tienen efecto.</li>
+                <li>No puede ser objetivo, dañado ni afectado por ninguna carta, ataque o Habilidad mientras esté en
+                    la Zona del Tótem.</li>
+                <li>No cuenta para el límite de 6 Pokémon en juego, y es ignorado por cualquier efecto que cuente o
+                    haga referencia a Pokémon en juego.</li>
+            </ul>
 
-            <h3>Charging the Totem</h3>
-            <ul>
+            <h3 data-en="Charging the Totem" data-es="Cargar el Tótem">Charging the Totem</h3>
+            <ul class="lang-en">
                 <li>During your turn, you may attach your <strong>manual Energy attachment of the turn</strong> to the
                     Totem instead of to one of your Pokémon in play.</li>
                 <li>The Totem <strong>cannot receive Energy from card effects</strong> while it is in the Totem Zone —
@@ -213,24 +314,42 @@
                         src="ruleImages/neo-upper-energy.png" alt="Neo Upper Energy" class="tooltip-image" /></div>
                     provides its printed Energy again).</li>
             </ul>
+            <ul class="lang-es">
+                <li>Durante tu turno, puedes unir tu <strong>Energía manual del turno</strong> al Tótem en lugar de a
+                    uno de tus Pokémon en juego.</li>
+                <li>El Tótem <strong>no puede recibir Energía de efectos de cartas</strong> mientras está en la Zona
+                    del Tótem — solo tu unión manual.</li>
+                <li>Cada carta de Energía en la Zona del Tótem cuenta como <strong>exactamente 1 Energía</strong> para
+                    el Coste de Invocación, sin importar su tipo ni cuánta Energía proporcione en juego.</li>
+                <li>Las <strong>Energías Especiales</strong> pueden unirse al Tótem, pero mientras están en la Zona del
+                    Tótem cuentan como <strong>1 Energía Incolora</strong> y son completamente inertes: no tienen
+                    efectos, y cualquier efecto de "cuando unes esta carta" nunca se activa (la unión ocurrió fuera
+                    del juego). Cuando el Tótem entra en juego, las Energías Especiales unidas funcionan con
+                    normalidad a partir de ese momento
+                    (por ejemplo, la <div class="card-tooltip"><strong>Energía Neo Upper</strong><img
+                        src="ruleImages/neo-upper-energy.png" alt="Neo Upper Energy" class="tooltip-image" /></div>
+                    vuelve a proporcionar la Energía impresa en la carta).</li>
+            </ul>
 
-            <h3>Invocation Cost</h3>
-            <p>The Energy required to summon the Totem depends on its <strong>Stage</strong> and
+            <h3 data-en="Invocation Cost" data-es="Coste de Invocación">Invocation Cost</h3>
+            <p class="lang-en">The Energy required to summon the Totem depends on its <strong>Stage</strong> and
                 <strong>Retreat Cost</strong>:</p>
+            <p class="lang-es">La Energía necesaria para invocar el Tótem depende de su <strong>Fase</strong> y de su
+                <strong>Coste de Retirada</strong>:</p>
 
             <table>
                 <thead>
                 <tr>
-                    <th>Retreat</th>
-                    <th>Basic</th>
-                    <th>Stage 1</th>
-                    <th>Stage 2</th>
-                    <th>Stage 3</th>
+                    <th data-en="Retreat" data-es="Retirada">Retreat</th>
+                    <th data-en="Basic" data-es="Básico">Basic</th>
+                    <th data-en="Stage 1" data-es="Fase 1">Stage 1</th>
+                    <th data-en="Stage 2" data-es="Fase 2">Stage 2</th>
+                    <th data-en="Stage 3" data-es="Fase 3">Stage 3</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>None</td>
+                    <td data-en="None" data-es="Ninguno">None</td>
                     <td>1</td>
                     <td>2</td>
                     <td>3</td>
@@ -274,8 +393,8 @@
                 </tbody>
             </table>
 
-            <h3>Which Stage Does My Totem Use?</h3>
-            <ul>
+            <h3 data-en="Which Stage Does My Totem Use?" data-es="¿Qué Fase Usa Mi Tótem?">Which Stage Does My Totem Use?</h3>
+            <ul class="lang-en">
                 <li><strong>Printed Stage:</strong> Basic, Stage 1, and Stage 2 Pokémon use their printed Stage.
                     (Basic Pokémon V, EX, ex, GX, and TAG TEAM all count as Basic.)</li>
                 <li><strong>VMAX and VSTAR:</strong> they evolve from a Basic Pokémon V, so they count as
@@ -287,16 +406,33 @@
                     Mega Pokémon ex): they represent the peak of Evolution, so they count as
                     <strong>Stage 3</strong>.</li>
             </ul>
+            <ul class="lang-es">
+                <li><strong>Fase impresa:</strong> los Pokémon Básicos, de Fase 1 y de Fase 2 usan su Fase impresa.
+                    (Los Pokémon V, EX, ex, GX y TAG TEAM Básicos cuentan todos como Básicos.)</li>
+                <li><strong>VMAX y VSTAR:</strong> evolucionan de un Pokémon V Básico, así que cuentan como
+                    <strong>Fase 1</strong>.</li>
+                <li><strong>BREAK:</strong> una Fase por encima del Pokémon del que evolucionan. Un BREAK de un Básico
+                    cuenta como Fase 1, un BREAK de una Fase 1 cuenta como Fase 2, y un BREAK de una Fase 2 cuenta
+                    como <strong>Fase 3</strong>.</li>
+                <li><strong>Pokémon de Megaevolución y Regresión Primigenia</strong> (M Pokémon-EX, Pokémon-EX
+                    Primigenio y Mega Pokémon ex): representan la cúspide de la Evolución, así que cuentan como
+                    <strong>Fase 3</strong>.</li>
+            </ul>
 
-            <h3>Prize Modifier</h3>
-            <ul>
+            <h3 data-en="Prize Modifier" data-es="Modificador por Premios">Prize Modifier</h3>
+            <ul class="lang-en">
                 <li>If the Totem gives <strong>3 Prize cards</strong> when Knocked Out, its Invocation Cost increases
                     by <strong>+1 Energy</strong>.</li>
                 <li>This modifier is applied after finding the base cost on the table.</li>
             </ul>
+            <ul class="lang-es">
+                <li>Si el Tótem da <strong>3 cartas de Premio</strong> al quedar Fuera de Combate, su Coste de
+                    Invocación aumenta en <strong>+1 Energía</strong>.</li>
+                <li>Este modificador se aplica después de buscar el coste base en la tabla.</li>
+            </ul>
 
-            <h3>Entering Play</h3>
-            <ul>
+            <h3 data-en="Entering Play" data-es="Entrada en Juego">Entering Play</h3>
+            <ul class="lang-en">
                 <li>When the Totem has enough Energy and there is space on your side of the field, it
                     <strong>automatically enters play</strong>. You choose whether it enters on your Bench or in the
                     Active Spot; if it enters the Active Spot, your current Active Pokémon moves to the Bench for
@@ -310,9 +446,23 @@
                     it may attack the same turn it enters play, if its attack costs are met.</li>
                 <li>Once in play, the Totem follows all standard Pokémon TCG rules like any other Pokémon.</li>
             </ul>
+            <ul class="lang-es">
+                <li>Cuando el Tótem tiene suficiente Energía y hay espacio en tu lado del campo,
+                    <strong>entra en juego automáticamente</strong>. Tú eliges si entra en tu Banca o en el Puesto
+                    Activo; si entra en el Puesto Activo, tu Pokémon Activo actual pasa a la Banca gratis.</li>
+                <li>Si ya tienes 6 Pokémon en juego, el Tótem no puede entrar — y <strong>no puedes unirle la Energía
+                    final</strong> hasta que se libere un espacio.</li>
+                <li>El Tótem entra en juego <strong>tal cual es, sin evolucionar</strong>. No necesita
+                    pre-Evoluciones (no necesitas un Drakloak en juego para invocar tu Tótem Dragapult ex).</li>
+                <li>El Tótem <strong>nunca puede evolucionar ni involucionar</strong>, por ningún medio.</li>
+                <li>Como no evoluciona, el Tótem <strong>no</strong> sufre el mareo de evolución: puede atacar el
+                    mismo turno en que entra en juego, si cumple los costes de su ataque.</li>
+                <li>Una vez en juego, el Tótem sigue todas las reglas estándar de Pokémon TCG como cualquier otro
+                    Pokémon.</li>
+            </ul>
 
-            <h3>Totem Defeat and Leaving Play</h3>
-            <ul>
+            <h3 data-en="Totem Defeat and Leaving Play" data-es="Derrota del Tótem y Salida del Juego">Totem Defeat and Leaving Play</h3>
+            <ul class="lang-en">
                 <li>When your Totem is Knocked Out, <strong>you</strong> take Prize cards from your own Prize pile
                     according to its printed Rule Box (see Section 7), and then <strong>you choose</strong> where the
                     Totem goes: back to the <strong>Totem Zone</strong>, or to the <strong>discard pile</strong>.</li>
@@ -330,21 +480,46 @@
                     it again (you may redirect it to the Totem Zone at that moment), and it can
                     <strong>only enter play by invocation from the Totem Zone</strong>.</li>
             </ul>
+            <ul class="lang-es">
+                <li>Cuando tu Tótem queda Fuera de Combate, <strong>tú</strong> robas cartas de Premio de tu propia
+                    pila según su Rule Box impreso (ver Sección 7), y después <strong>tú eliges</strong> adónde va el
+                    Tótem: de vuelta a la <strong>Zona del Tótem</strong>, o a la <strong>pila de
+                    descartes</strong>.</li>
+                <li>Lo mismo se aplica a cualquier efecto que mueva tu Tótem fuera del juego (a la mano, al mazo, a la
+                    pila de descartes o a la Zona Perdida): puedes enviarlo adonde diga el efecto, <strong>o</strong>
+                    ponerlo en la Zona del Tótem en su lugar.</li>
+                <li>Siempre que el Tótem sale del juego, todas las cartas unidas a él se descartan, y todo el daño y
+                    los efectos sobre él se eliminan.</li>
+                <li><strong>Aumento de coste:</strong> la primera vez que tu Tótem Fuera de Combate vuelve a la Zona
+                    del Tótem, su Coste de Invocación <strong>no</strong> aumenta. A partir de entonces, cada vez que
+                    vuelva a la Zona del Tótem su Coste de Invocación aumenta <strong>permanentemente en 1</strong>.
+                    Este aumento no puede reducirse con efectos de cartas.</li>
+                <li>Si en su lugar envías tu Tótem a otra zona (p. ej., la pila de descartes), su coste no aumenta —
+                    pero se queda allí. Solo puede volver a la Zona del Tótem cuando un efecto de carta vaya a moverlo
+                    de nuevo (puedes redirigirlo a la Zona del Tótem en ese momento), y
+                    <strong>solo puede entrar en juego mediante invocación desde la Zona del Tótem</strong>.</li>
+            </ul>
 
-            <h3>Example</h3>
-            <ul>
+            <h3 data-en="Example" data-es="Ejemplo">Example</h3>
+            <ul class="lang-en">
                 <li>A Stage 2 Totem with Retreat Cost <strong>oo</strong> requires 4 Energy.</li>
                 <li>If it gives 3 Prize cards, it requires <strong>5 Energy</strong> instead.</li>
                 <li>The first time it is Knocked Out and returns to the Totem Zone, its cost stays the same. The second
                     time, its cost increases permanently by +1.</li>
             </ul>
+            <ul class="lang-es">
+                <li>Un Tótem de Fase 2 con Coste de Retirada <strong>oo</strong> requiere 4 Energías.</li>
+                <li>Si da 3 cartas de Premio, requiere <strong>5 Energías</strong> en su lugar.</li>
+                <li>La primera vez que queda Fuera de Combate y vuelve a la Zona del Tótem, su coste no cambia. La
+                    segunda vez, su coste aumenta permanentemente en +1.</li>
+            </ul>
         </section>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 5</div>
-            <h2>5. Game Setup</h2>
-            <ol>
+            <div class="section-tag" data-en="Section 5" data-es="Sección 5">Section 5</div>
+            <h2 data-en="5. Game Setup" data-es="5. Preparación de la Partida">5. Game Setup</h2>
+            <ol class="lang-en">
                 <li>Place your <strong>Totem</strong> in the Totem Zone (top-right corner, outside the deck).</li>
                 <li>Shuffle your 99-card deck and draw a hand of <strong>7 cards</strong>.</li>
                 <li><strong>Mulligans are free:</strong> if you have no Basic Pokémon in hand, reveal your hand,
@@ -359,17 +534,35 @@
                     from that player.</li>
                 <li>All players flip their Active and Benched Pokémon face up and the game begins.</li>
             </ol>
+            <ol class="lang-es">
+                <li>Coloca tu <strong>Tótem</strong> en la Zona del Tótem (esquina superior derecha, fuera del
+                    mazo).</li>
+                <li>Baraja tu mazo de 99 cartas y roba una mano de <strong>7 cartas</strong>.</li>
+                <li><strong>Los mulligans son gratis:</strong> si no tienes ningún Pokémon Básico en la mano, enseña tu
+                    mano, barájala de vuelta al mazo y roba 7 cartas nuevas. Repite hasta tener un Pokémon Básico. Los
+                    rivales <strong>no</strong> roban cartas extra por tus mulligans.</li>
+                <li>Pon un Pokémon Básico boca abajo como tu <strong>Pokémon Activo</strong>, y hasta 5 más boca abajo
+                    en tu <strong>Banca</strong>.</li>
+                <li>Coloca las <strong>6 cartas</strong> superiores de tu mazo boca abajo como tus <strong>cartas de
+                    Premio</strong>. Cada jugador tiene exactamente 6 cartas de Premio, sin importar cuántos jugadores
+                    haya en la partida.</li>
+                <li>Todos los jugadores lanzan un dado: <strong>el resultado más alto empieza</strong>, y el juego
+                    continúa en el sentido de las agujas del reloj desde ese jugador.</li>
+                <li>Todos los jugadores voltean boca arriba sus Pokémon Activos y de Banca, y la partida
+                    comienza.</li>
+            </ol>
 
             <img src="ruleImages/Tablero.png" alt="Totem Format Setup example" class="section-image" />
         </section>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 6</div>
-            <h2>6. Turn Structure</h2>
+            <div class="section-tag" data-en="Section 6" data-es="Sección 6">Section 6</div>
+            <h2 data-en="6. Turn Structure" data-es="6. Estructura del Turno">6. Turn Structure</h2>
 
-            <p>Turns follow the standard Pokémon TCG structure:</p>
-            <ol>
+            <p class="lang-en">Turns follow the standard Pokémon TCG structure:</p>
+            <p class="lang-es">Los turnos siguen la estructura estándar de Pokémon TCG:</p>
+            <ol class="lang-en">
                 <li><strong>Draw Phase:</strong> Draw 1 card. If you cannot draw because your deck is empty, you are
                     eliminated (see Section 13).</li>
                 <li><strong>Action Phase</strong> — in any order:
@@ -387,33 +580,66 @@
                 <li><strong>Pokémon Checkup:</strong> Apply Special Conditions and end-of-turn effects, in the standard
                     official order.</li>
             </ol>
+            <ol class="lang-es">
+                <li><strong>Fase de Robo:</strong> roba 1 carta. Si no puedes robar porque tu mazo está vacío, quedas
+                    eliminado (ver Sección 13).</li>
+                <li><strong>Fase de Acciones</strong> — en cualquier orden:
+                    <ul>
+                        <li>Jugar Pokémon Básicos a tu Banca</li>
+                        <li>Evolucionar Pokémon</li>
+                        <li>Unir 1 Energía (a un Pokémon en juego, o a tu Tótem)</li>
+                        <li>Usar Habilidades</li>
+                        <li>Jugar cartas de Entrenador (1 Partidario y 1 Estadio por turno)</li>
+                        <li>Hacer retirada de tu Pokémon Activo (una vez por turno)</li>
+                    </ul>
+                </li>
+                <li><strong>Fase de Ataque:</strong> puedes declarar un ataque contra <strong>un rival de tu
+                    elección</strong>. Atacar termina tu turno.</li>
+                <li><strong>Chequeo Pokémon:</strong> aplica las Condiciones Especiales y los efectos de final de
+                    turno, en el orden oficial estándar.</li>
+            </ol>
 
-            <h3>First Round Rule</h3>
-            <ul>
+            <h3 data-en="First Round Rule" data-es="Regla de la Primera Ronda">First Round Rule</h3>
+            <ul class="lang-en">
                 <li>During the <strong>first round of the game</strong>, no player may <strong>attack</strong> or
                     <strong>play Supporter cards</strong>.</li>
                 <li>All other actions are allowed as normal.</li>
             </ul>
+            <ul class="lang-es">
+                <li>Durante la <strong>primera ronda de la partida</strong>, ningún jugador puede
+                    <strong>atacar</strong> ni <strong>jugar cartas de Partidario</strong>.</li>
+                <li>Todas las demás acciones se permiten con normalidad.</li>
+            </ul>
 
-            <h3>Evolution Sickness</h3>
-            <ul>
+            <h3 data-en="Evolution Sickness" data-es="Mareo de Evolución">Evolution Sickness</h3>
+            <ul class="lang-en">
                 <li>A Pokémon that evolves during a turn <strong>cannot attack</strong> that same turn (standard TCG
                     rule), and no Pokémon can evolve the turn it comes into play or during each player's first turn.</li>
                 <li>The Totem is exempt when it enters play, because it <strong>does not evolve</strong> — it is
                     summoned as it is and may attack immediately.</li>
             </ul>
+            <ul class="lang-es">
+                <li>Un Pokémon que evoluciona durante un turno <strong>no puede atacar</strong> ese mismo turno (regla
+                    estándar del TCG), y ningún Pokémon puede evolucionar el turno en que entra en juego ni durante el
+                    primer turno de cada jugador.</li>
+                <li>El Tótem está exento cuando entra en juego, porque <strong>no evoluciona</strong> — se invoca tal
+                    cual es y puede atacar inmediatamente.</li>
+            </ul>
         </section>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 7</div>
-            <h2>7. Prize Cards Are Your Life</h2>
+            <div class="section-tag" data-en="Section 7" data-es="Sección 7">Section 7</div>
+            <h2 data-en="7. Prize Cards Are Your Life" data-es="7. Las Cartas de Premio Son Tu Vida">7. Prize Cards Are Your Life</h2>
 
-            <p>In Totem Format, Prize cards work as your <strong>life total</strong>. This is the biggest difference
-                from the official 1v1 game, where you take Prize cards when you Knock Out your
+            <p class="lang-en">In Totem Format, Prize cards work as your <strong>life total</strong>. This is the
+                biggest difference from the official 1v1 game, where you take Prize cards when you Knock Out your
                 <em>opponent's</em> Pokémon.</p>
+            <p class="lang-es">En el Formato Tótem, las cartas de Premio funcionan como tu <strong>vida</strong>. Esta
+                es la mayor diferencia respecto al juego oficial 1 contra 1, donde robas cartas de Premio cuando dejas
+                Fuera de Combate a los Pokémon de <em>tu rival</em>.</p>
 
-            <ul>
+            <ul class="lang-en">
                 <li>Every player starts with <strong>6 Prize cards</strong>, regardless of the number of players.</li>
                 <li>When one of <strong>your</strong> Pokémon is Knocked Out — by an attack, an Ability, a Special
                     Condition like Poison, or any other effect — <strong>you</strong> take Prize cards from
@@ -427,20 +653,45 @@
                 <li>When you take your <strong>last</strong> Prize card (or you must take more Prize cards than you
                     have left), you are <strong>eliminated</strong> (see Section 13).</li>
             </ul>
+            <ul class="lang-es">
+                <li>Cada jugador empieza con <strong>6 cartas de Premio</strong>, sin importar el número de
+                    jugadores.</li>
+                <li>Cuando uno de <strong>tus</strong> Pokémon queda Fuera de Combate — por un ataque, una Habilidad,
+                    una Condición Especial como el Envenenamiento, o cualquier otro efecto — <strong>tú</strong> robas
+                    cartas de Premio de <strong>tu propia</strong> pila de Premios y las pones en tu mano:
+                    <ul>
+                        <li>Pokémon de 1 Premio: robas <strong>1</strong> carta de Premio.</li>
+                        <li>Pokémon con Rule Box (incluido tu Tótem): robas <strong>2 o 3</strong> cartas de Premio,
+                            según su regla impresa.</li>
+                    </ul>
+                </li>
+                <li>Cuando robas tu <strong>última</strong> carta de Premio (o debes robar más cartas de Premio de las
+                    que te quedan), quedas <strong>eliminado</strong> (ver Sección 13).</li>
+            </ul>
 
-            <h3>Why This Design?</h3>
-            <ul>
+            <h3 data-en="Why This Design?" data-es="¿Por Qué Este Diseño?">Why This Design?</h3>
+            <ul class="lang-en">
                 <li>In a battle royale, rewarding the attacker with Prize draws would encourage
                     <strong>kill stealing</strong>. Here, no one "profits" from a Knock Out except by pushing that
                     player closer to elimination.</li>
                 <li>Taking your own Prize cards when you get hit is a small <strong>comeback mechanic</strong>: the
                     player being attacked gains resources.</li>
             </ul>
+            <ul class="lang-es">
+                <li>En un battle royale, recompensar al atacante con Premios fomentaría el
+                    <strong>robo de bajas (kill stealing)</strong>. Aquí nadie "gana" nada con un Fuera de Combate,
+                    salvo acercar a ese jugador a la eliminación.</li>
+                <li>Robar tus propias cartas de Premio cuando te golpean es una pequeña <strong>mecánica de
+                    remontada</strong>: el jugador atacado gana recursos.</li>
+            </ul>
 
-            <h3>Cards That Reference Prize Cards</h3>
-            <p>Effects that reference Prize cards always use the <strong>real, current</strong> number of remaining
-                Prize cards, at the moment the effect resolves:</p>
-            <ul>
+            <h3 data-en="Cards That Reference Prize Cards" data-es="Cartas que Mencionan las Cartas de Premio">Cards That Reference Prize Cards</h3>
+            <p class="lang-en">Effects that reference Prize cards always use the <strong>real, current</strong> number
+                of remaining Prize cards, at the moment the effect resolves:</p>
+            <p class="lang-es">Los efectos que mencionan las cartas de Premio siempre usan el número
+                <strong>real y actual</strong> de cartas de Premio restantes, en el momento en que el efecto se
+                resuelve:</p>
+            <ul class="lang-en">
                 <li>"<strong>Your</strong> Prize cards" → your actual remaining Prize count.</li>
                 <li>"<strong>Your opponent's</strong> Prize cards" → in multiplayer, this means <strong>one opponent
                     you choose (or the opponent you are targeting)</strong> when the effect resolves. It never
@@ -448,30 +699,52 @@
                 <li>"<strong>Each player's</strong> Prize cards" → each player uses their own count.</li>
                 <li>Prize values are never swapped, inverted, or reinterpreted.</li>
             </ul>
+            <ul class="lang-es">
+                <li>"<strong>Tus</strong> cartas de Premio" → tu número real de Premios restantes.</li>
+                <li>"Las cartas de Premio de <strong>tu rival</strong>" → en multijugador significa <strong>un rival
+                    que tú eliges (o el rival al que estás atacando)</strong> cuando el efecto se resuelve. Nunca te
+                    compara contra toda la mesa a la vez.</li>
+                <li>"Las cartas de Premio de <strong>cada jugador</strong>" → cada jugador usa su propio número.</li>
+                <li>Los valores de Premio nunca se intercambian, invierten ni reinterpretan.</li>
+            </ul>
 
-            <h3>Example 1: Iono</h3>
-            <p><span class="card-tooltip"><strong>Iono</strong><img src="ruleImages/iono.png" alt="Iono"
+            <h3 data-en="Example 1: Iono" data-es="Ejemplo 1: Iono">Example 1: Iono</h3>
+            <p class="lang-en"><span class="card-tooltip"><strong>Iono</strong><img src="ruleImages/iono.png" alt="Iono"
                 class="tooltip-image" /></span> makes each player shuffle their hand and draw cards equal to their
                 remaining Prize cards. Each player simply counts their own remaining Prizes and draws that many. Note
                 that in this format, players who have taken many hits have <em>fewer</em> Prizes left — so Iono hits
                 the weakened players hardest. Choose your moment.</p>
+            <p class="lang-es"><span class="card-tooltip"><strong>Iono</strong><img src="ruleImages/iono.png" alt="Iono"
+                class="tooltip-image" /></span> hace que cada jugador baraje su mano y robe tantas cartas como cartas
+                de Premio le queden. Cada jugador simplemente cuenta sus propios Premios restantes y roba esa
+                cantidad. Ten en cuenta que en este formato los jugadores que han recibido muchos golpes tienen
+                <em>menos</em> Premios — así que Iono castiga más a los jugadores debilitados. Elige bien el
+                momento.</p>
 
-            <h3>Example 2: Prize Comparison</h3>
-            <p>A card that says "if you have more Prize cards remaining than your opponent" compares your count against
-                <strong>the one opponent</strong> you choose or are targeting with that card or attack — not against
-                every player. Since players who are <em>winning</em> keep more Prizes in this format, these "comeback"
-                cards now work best against the table leader: use them to gang up on whoever is ahead.</p>
+            <h3 data-en="Example 2: Prize Comparison" data-es="Ejemplo 2: Comparación de Premios">Example 2: Prize Comparison</h3>
+            <p class="lang-en">A card that says "if you have more Prize cards remaining than your opponent" compares
+                your count against <strong>the one opponent</strong> you choose or are targeting with that card or
+                attack — not against every player. Since players who are <em>winning</em> keep more Prizes in this
+                format, these "comeback" cards now work best against the table leader: use them to gang up on whoever
+                is ahead.</p>
+            <p class="lang-es">Una carta que diga "si te quedan más cartas de Premio que a tu rival" compara tu número
+                contra <strong>el único rival</strong> que eliges o al que apuntas con esa carta o ataque — no contra
+                todos los jugadores. Como en este formato los jugadores que van <em>ganando</em> conservan más
+                Premios, estas cartas de "remontada" ahora funcionan mejor contra el líder de la mesa: úsalas para
+                aliarte contra quien vaya en cabeza.</p>
         </section>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 8</div>
-            <h2>8. Rounds and Free Interaction</h2>
+            <div class="section-tag" data-en="Section 8" data-es="Sección 8">Section 8</div>
+            <h2 data-en="8. Rounds and Free Interaction" data-es="8. Rondas e Interacción Libre">8. Rounds and Free Interaction</h2>
 
-            <p>Matches are divided into <strong>full rounds</strong>: each active player takes one turn, in
-                order.</p>
+            <p class="lang-en">Matches are divided into <strong>full rounds</strong>: each active player takes one
+                turn, in order.</p>
+            <p class="lang-es">Las partidas se dividen en <strong>rondas completas</strong>: cada jugador activo juega
+                un turno, en orden.</p>
 
-            <ul>
+            <ul class="lang-en">
                 <li>During your turn, you may attack <strong>any opponent</strong>, following standard Pokémon TCG
                     rules. Declare your target when you attack.</li>
                 <li>Players are free to negotiate, form temporary alliances, or shift aggression based on the board
@@ -479,18 +752,29 @@
                 <li>Eliminated players are immediately removed from the game and are no longer considered for any
                     effect (see Section 13).</li>
             </ul>
+            <ul class="lang-es">
+                <li>Durante tu turno, puedes atacar a <strong>cualquier rival</strong>, siguiendo las reglas estándar
+                    de Pokémon TCG. Declara tu objetivo al atacar.</li>
+                <li>Los jugadores son libres de negociar, formar alianzas temporales o cambiar de objetivo según el
+                    estado de la mesa. Los pactos no son vinculantes.</li>
+                <li>Los jugadores eliminados se retiran de la partida inmediatamente y dejan de considerarse para
+                    cualquier efecto (ver Sección 13).</li>
+            </ul>
         </section>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 9</div>
-            <h2>9. Multiplayer Effect Resolution</h2>
+            <div class="section-tag" data-en="Section 9" data-es="Sección 9">Section 9</div>
+            <h2 data-en="9. Multiplayer Effect Resolution" data-es="9. Resolución de Efectos en Multijugador">9. Multiplayer Effect Resolution</h2>
 
-            <p>Card effects resolve <strong>exactly according to their printed text</strong>. The scope of an effect is
-                determined solely by its wording — no reinterpretation is applied.</p>
+            <p class="lang-en">Card effects resolve <strong>exactly according to their printed text</strong>. The scope
+                of an effect is determined solely by its wording — no reinterpretation is applied.</p>
+            <p class="lang-es">Los efectos de las cartas se resuelven <strong>exactamente según su texto
+                impreso</strong>. El alcance de un efecto lo determina únicamente su redacción — no se aplica ninguna
+                reinterpretación.</p>
 
-            <h3>Player Scope</h3>
-            <ul>
+            <h3 data-en="Player Scope" data-es="Alcance sobre Jugadores">Player Scope</h3>
+            <ul class="lang-en">
                 <li>"<strong>Each player</strong>" / "<strong>all players</strong>" → applies to every player in the
                     game.</li>
                 <li>"<strong>Your opponent</strong>" → applies to <strong>one</strong> opponent. The player resolving
@@ -499,26 +783,50 @@
                 <li>If a card requires choosing an opponent, the controller selects one legal opponent when it
                     resolves.</li>
             </ul>
+            <ul class="lang-es">
+                <li>"<strong>Cada jugador</strong>" / "<strong>todos los jugadores</strong>" → se aplica a todos los
+                    jugadores de la partida.</li>
+                <li>"<strong>Tu rival</strong>" → se aplica a <strong>un</strong> rival. El jugador que resuelve el
+                    efecto elige un rival legal en la resolución (o el rival al que ya está atacando, en el caso de
+                    los ataques).</li>
+                <li>Si una carta requiere elegir un rival, su controlador selecciona un rival legal cuando se
+                    resuelve.</li>
+            </ul>
 
-            <h3>Pokémon Scope</h3>
-            <ul>
+            <h3 data-en="Pokémon Scope" data-es="Alcance sobre Pokémon">Pokémon Scope</h3>
+            <ul class="lang-en">
                 <li>"<strong>All Pokémon in play</strong>" → affects Pokémon belonging to all players.</li>
                 <li>"<strong>Each Pokémon</strong>" meeting a condition → all Pokémon that satisfy it, regardless of
                     controller.</li>
                 <li>"<strong>Your opponent's Pokémon</strong>" → only Pokémon belonging to the chosen opponent.</li>
             </ul>
+            <ul class="lang-es">
+                <li>"<strong>Todos los Pokémon en juego</strong>" → afecta a los Pokémon de todos los jugadores.</li>
+                <li>"<strong>Cada Pokémon</strong>" que cumpla una condición → todos los Pokémon que la cumplan, sin
+                    importar su controlador.</li>
+                <li>"<strong>Los Pokémon de tu rival</strong>" → solo los Pokémon del rival elegido.</li>
+            </ul>
 
-            <h3>Continuous Abilities</h3>
-            <ul>
+            <h3 data-en="Continuous Abilities" data-es="Habilidades Continuas">Continuous Abilities</h3>
+            <ul class="lang-en">
                 <li>Continuous Abilities apply per their printed wording while their source is in play.</li>
                 <li>If a Continuous Ability says "your opponent", its controller chooses the affected opponent when it
                     comes into play, and it affects only that opponent while it remains in play.</li>
                 <li>If it says "each player" or affects all Pokémon in play, it applies globally.</li>
                 <li>Game state legality is checked immediately after any action resolves.</li>
             </ul>
+            <ul class="lang-es">
+                <li>Las Habilidades continuas se aplican según su redacción impresa mientras su fuente esté en
+                    juego.</li>
+                <li>Si una Habilidad continua dice "tu rival", su controlador elige al rival afectado cuando entra en
+                    juego, y afecta solo a ese rival mientras permanezca en juego.</li>
+                <li>Si dice "cada jugador" o afecta a todos los Pokémon en juego, se aplica globalmente.</li>
+                <li>La legalidad del estado del juego se comprueba inmediatamente después de resolver cualquier
+                    acción.</li>
+            </ul>
 
-            <h3>Examples</h3>
-            <ul>
+            <h3 data-en="Examples" data-es="Ejemplos">Examples</h3>
+            <ul class="lang-en">
                 <li>"Each player shuffles their hand into their deck and draws 4 cards." → All players do it.</li>
                 <li>"During Pokémon Checkup, put 1 damage counter on each Pokémon that has an Ability." → Every
                     Pokémon in play that qualifies is affected.</li>
@@ -527,18 +835,29 @@
                 <li>Sudowoodo's Ability "Your opponent can't have more than 4 Benched Pokémon." → Continuous; affects
                     only the one chosen opponent.</li>
             </ul>
+            <ul class="lang-es">
+                <li>"Cada jugador baraja su mano en su mazo y roba 4 cartas." → Todos los jugadores lo hacen.</li>
+                <li>"Durante el Chequeo Pokémon, pon 1 contador de daño en cada Pokémon que tenga una Habilidad." →
+                    Afecta a todos los Pokémon en juego que cumplan la condición.</li>
+                <li>"Cambia 1 de los Pokémon en Banca de tu rival por su Pokémon Activo." → El controlador elige un
+                    rival; solo los Pokémon de ese rival se ven afectados.</li>
+                <li>La Habilidad de Sudowoodo "Tu rival no puede tener más de 4 Pokémon en Banca." → Continua; afecta
+                    solo al único rival elegido.</li>
+            </ul>
         </section>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 10</div>
-            <h2>10. Items Outside Your Turn</h2>
+            <div class="section-tag" data-en="Section 10" data-es="Sección 10">Section 10</div>
+            <h2 data-en="10. Items Outside Your Turn" data-es="10. Objetos Fuera de Tu Turno">10. Items Outside Your Turn</h2>
 
-            <p>Item cards can be played outside of your turn, letting you influence the game even when it is not your
-                turn. This is the heart of the format's political gameplay.</p>
+            <p class="lang-en">Item cards can be played outside of your turn, letting you influence the game even when
+                it is not your turn. This is the heart of the format's political gameplay.</p>
+            <p class="lang-es">Las cartas de Objeto pueden jugarse fuera de tu turno, permitiéndote influir en la
+                partida incluso cuando no es tu turno. Este es el corazón del juego político del formato.</p>
 
-            <h3>Rules</h3>
-            <ul>
+            <h3 data-en="Rules" data-es="Reglas">Rules</h3>
+            <ul class="lang-en">
                 <li>Each player may play a maximum of <strong>1 Item outside of their own turn per round</strong>.</li>
                 <li>Items can target your own Pokémon or another player's Pokémon. Whoever plays the Item
                     <strong>pays all of its costs</strong>.</li>
@@ -550,9 +869,22 @@
                     played, and what it can respond to) are still being playtested — see the FAQ for the current
                     recommendation.</li>
             </ul>
+            <ul class="lang-es">
+                <li>Cada jugador puede jugar un máximo de <strong>1 Objeto fuera de su propio turno por
+                    ronda</strong>.</li>
+                <li>Los Objetos pueden apuntar a tus propios Pokémon o a los Pokémon de otro jugador. Quien juega el
+                    Objeto <strong>paga todos sus costes</strong>.</li>
+                <li>Cuando tu Objeto afecta a las cartas o zonas de otro jugador, ese jugador se considera "tú" al
+                    resolver las instrucciones de la carta, y <strong>él toma todas las decisiones que involucren sus
+                    propias cartas</strong> (su mazo, su mano, su Banca).</li>
+                <li>Por lo demás, los efectos de los Objetos siguen las reglas estándar de Pokémon TCG.</li>
+                <li><strong>Timing:</strong> las ventanas exactas de timing (en qué momento del turno de otro jugador
+                    puede jugarse un Objeto, y a qué puede responder) todavía se están probando — consulta las
+                    Preguntas Frecuentes para la recomendación actual.</li>
+            </ul>
 
-            <h3>Examples</h3>
-            <ul>
+            <h3 data-en="Examples" data-es="Ejemplos">Examples</h3>
+            <ul class="lang-en">
                 <li><strong>Example 1:</strong> Player A uses a "<div class="card-tooltip"><strong>Potion</strong><img
                             src="ruleImages/potion.png" alt="Potion" class="tooltip-image" /></div>" on their own
                     Pokémon during Player B's turn. The Pokémon heals normally.</li>
@@ -565,23 +897,42 @@
                     Active Pokémon. That opponent switches it with one of their Benched Pokémon (their choice), and
                     Player E pays any costs.</li>
             </ul>
+            <ul class="lang-es">
+                <li><strong>Ejemplo 1:</strong> el Jugador A usa una "<div class="card-tooltip"><strong>Poción</strong><img
+                            src="ruleImages/potion.png" alt="Potion" class="tooltip-image" /></div>" en su propio
+                    Pokémon durante el turno del Jugador B. El Pokémon se cura con normalidad.</li>
+                <li><strong>Ejemplo 2:</strong> el Jugador C usa una "<div class="card-tooltip"><strong>Ultra
+                            Ball</strong><img src="ruleImages/ultraball.png" alt="ultraball" class="tooltip-image" />
+                    </div>" en beneficio del Jugador D. El Jugador C paga el coste (descarta 2 cartas de su propia
+                    mano), y el Jugador D busca en su propio mazo y elige qué Pokémon va a su mano.</li>
+                <li><strong>Ejemplo 3:</strong> el Jugador E juega un "<div class="card-tooltip"><strong>Cambio</strong><img
+                            src="ruleImages/switch.png" alt="Switch" class="tooltip-image" /></div>" sobre el Pokémon
+                    Activo de un rival. Ese rival lo cambia por uno de sus Pokémon en Banca (a su elección), y el
+                    Jugador E paga los costes que haya.</li>
+            </ul>
 
-            <h3>Strategic Notes</h3>
-            <ul>
+            <h3 data-en="Strategic Notes" data-es="Notas Estratégicas">Strategic Notes</h3>
+            <ul class="lang-en">
                 <li>This mechanic enables temporary alliances and interference with rival strategies.</li>
                 <li>Since you only get 1 off-turn Item per round, timing is critical.</li>
+            </ul>
+            <ul class="lang-es">
+                <li>Esta mecánica permite alianzas temporales e interferir en las estrategias rivales.</li>
+                <li>Como solo tienes 1 Objeto fuera de turno por ronda, el momento en que lo usas es crítico.</li>
             </ul>
         </section>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 11</div>
-            <h2>11. Stadiums</h2>
+            <div class="section-tag" data-en="Section 11" data-es="Sección 11">Section 11</div>
+            <h2 data-en="11. Stadiums" data-es="11. Estadios">11. Stadiums</h2>
 
-            <p>Stadium cards work as in the standard game, with clarifications for multiplayer.</p>
+            <p class="lang-en">Stadium cards work as in the standard game, with clarifications for multiplayer.</p>
+            <p class="lang-es">Las cartas de Estadio funcionan como en el juego estándar, con aclaraciones para el
+                multijugador.</p>
 
-            <h3>Rules</h3>
-            <ul>
+            <h3 data-en="Rules" data-es="Reglas">Rules</h3>
+            <ul class="lang-en">
                 <li>Only <strong>one Stadium</strong> may be in play at a time, for the whole table. Playing a new one
                     discards the old one and ends its effects.</li>
                 <li>Stadium effects that affect "each player" or "all Pokémon" apply to the whole table, including
@@ -592,25 +943,43 @@
                     </em>), the player who plays it chooses the facing: the chosen effect applies to that player, and
                     the opposite effect applies to all other players.</li>
             </ul>
+            <ul class="lang-es">
+                <li>Solo puede haber <strong>un Estadio</strong> en juego a la vez, para toda la mesa. Jugar uno nuevo
+                    descarta el anterior y termina sus efectos.</li>
+                <li>Los efectos de Estadio que afectan a "cada jugador" o a "todos los Pokémon" se aplican a toda la
+                    mesa, incluidos los Pokémon Tótem en juego (pero nunca a los Tótems en la Zona del Tótem).</li>
+                <li>Para los Estadios con <strong>efectos direccionales</strong> (p. ej., <em>
+                        <div class="card-tooltip"><strong>Parallel City</strong><img src="ruleImages/parallelcity.png"
+                                alt="parallelcity" class="tooltip-image" /></div>
+                    </em>), el jugador que lo juega elige la orientación: el efecto elegido se aplica a ese jugador, y
+                    el efecto contrario se aplica a todos los demás jugadores.</li>
+            </ul>
 
-            <h3>Example</h3>
-            <ul>
+            <h3 data-en="Example" data-es="Ejemplo">Example</h3>
+            <ul class="lang-en">
                 <li>Player A plays <em>Parallel City</em> and chooses the facing that reduces damage from Grass, Fire,
                     and Water Pokémon by 20 for themselves. All other players get the effect that limits them to 3
                     Benched Pokémon.</li>
+            </ul>
+            <ul class="lang-es">
+                <li>El Jugador A juega <em>Parallel City</em> y elige la orientación que reduce en 20 el daño de los
+                    Pokémon de tipo Planta, Fuego y Agua para sí mismo. Todos los demás jugadores reciben el efecto
+                    que los limita a 3 Pokémon en Banca.</li>
             </ul>
         </section>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 12</div>
-            <h2>12. Grace Totem Turn</h2>
+            <div class="section-tag" data-en="Section 12" data-es="Sección 12">Section 12</div>
+            <h2 data-en="12. Grace Totem Turn" data-es="12. Turno de Gracia del Tótem">12. Grace Totem Turn</h2>
 
-            <p>To prevent unfair early eliminations, a player who is left with no Pokémon in play gets one
-                <strong>rescue turn</strong> before being eliminated.</p>
+            <p class="lang-en">To prevent unfair early eliminations, a player who is left with no Pokémon in play gets
+                one <strong>rescue turn</strong> before being eliminated.</p>
+            <p class="lang-es">Para evitar eliminaciones tempranas injustas, un jugador que se quede sin Pokémon en
+                juego recibe un <strong>turno de rescate</strong> antes de ser eliminado.</p>
 
-            <h3>Rules</h3>
-            <ul>
+            <h3 data-en="Rules" data-es="Reglas">Rules</h3>
+            <ul class="lang-en">
                 <li>If you have <strong>no Pokémon in play</strong> at any point outside of your own turn, you are
                     <strong>not</strong> immediately eliminated: you get a <strong>Grace Totem Turn</strong> and stay
                     in the game until the end of your next turn.</li>
@@ -628,22 +997,46 @@
                 <li>If you still have no Pokémon in play at the end of your Grace Totem Turn, you are
                     eliminated.</li>
             </ul>
+            <ul class="lang-es">
+                <li>Si en cualquier momento fuera de tu propio turno te quedas <strong>sin Pokémon en juego</strong>,
+                    <strong>no</strong> quedas eliminado inmediatamente: recibes un <strong>Turno de Gracia del
+                    Tótem</strong> y sigues en la partida hasta el final de tu siguiente turno.</li>
+                <li>Tu Turno de Gracia del Tótem es un <strong>turno restringido</strong>. Robas tu carta con
+                    normalidad, y después <strong>solo</strong> puedes:
+                    <ul>
+                        <li>Poner Pokémon Básicos de tu mano en tu Banca.</li>
+                        <li>Jugar cartas de Entrenador que <strong>busquen Pokémon</strong>.</li>
+                        <li>Unir tu Energía del turno <strong>a tu Tótem</strong>.</li>
+                        <li>Invocar tu Tótem, si su Coste de Invocación está cubierto.</li>
+                    </ul>
+                </li>
+                <li>No se permite ninguna otra carta o acción durante un Turno de Gracia del Tótem. Si tu Tótem entra
+                    en juego este turno, puede atacar con normalidad.</li>
+                <li>Si al final de tu Turno de Gracia del Tótem sigues sin Pokémon en juego, quedas eliminado.</li>
+            </ul>
 
-            <h3>Important Notes</h3>
-            <ul>
+            <h3 data-en="Important Notes" data-es="Notas Importantes">Important Notes</h3>
+            <ul class="lang-en">
                 <li>This rule does <strong>not</strong> prevent elimination from running out of Prize cards or from
                     decking out.</li>
                 <li>The Grace Totem Turn applies once per instance of having no Pokémon in play.</li>
+            </ul>
+            <ul class="lang-es">
+                <li>Esta regla <strong>no</strong> evita la eliminación por quedarse sin cartas de Premio ni por
+                    quedarse sin mazo.</li>
+                <li>El Turno de Gracia del Tótem se aplica una vez por cada ocasión en que te quedes sin Pokémon en
+                    juego.</li>
             </ul>
         </section>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 13</div>
-            <h2>13. Player Elimination</h2>
+            <div class="section-tag" data-en="Section 13" data-es="Sección 13">Section 13</div>
+            <h2 data-en="13. Player Elimination" data-es="13. Eliminación de Jugadores">13. Player Elimination</h2>
 
-            <p>A player is eliminated when any of these happens:</p>
-            <ul>
+            <p class="lang-en">A player is eliminated when any of these happens:</p>
+            <p class="lang-es">Un jugador queda eliminado cuando ocurre cualquiera de estas cosas:</p>
+            <ul class="lang-en">
                 <li>They take their <strong>last Prize card</strong> (or must take more Prize cards than they have
                     left).</li>
                 <li>They cannot <strong>draw a card</strong> at the beginning of their turn because their deck is
@@ -651,29 +1044,45 @@
                 <li>They have <strong>no Pokémon in play</strong> at the end of their Grace Totem Turn (see
                     Section 12).</li>
             </ul>
+            <ul class="lang-es">
+                <li>Roba su <strong>última carta de Premio</strong> (o debe robar más cartas de Premio de las que le
+                    quedan).</li>
+                <li>No puede <strong>robar una carta</strong> al principio de su turno porque su mazo está vacío
+                    (a menos que un efecto de carta diga lo contrario).</li>
+                <li>No tiene <strong>ningún Pokémon en juego</strong> al final de su Turno de Gracia del Tótem (ver
+                    Sección 12).</li>
+            </ul>
 
-            <h3>Cleanup</h3>
-            <ul>
+            <h3 data-en="Cleanup" data-es="Limpieza">Cleanup</h3>
+            <ul class="lang-en">
                 <li>All of the eliminated player's in-play cards (including any Stadium they own) are discarded.
                     These discards do <strong>not</strong> trigger any "when discarded" effects.</li>
                 <li>The eliminated player is removed from all objectives and is no longer considered for any effect.
                     Ongoing effects they controlled end immediately.</li>
             </ul>
+            <ul class="lang-es">
+                <li>Todas las cartas en juego del jugador eliminado (incluido cualquier Estadio suyo) se descartan.
+                    Estos descartes <strong>no</strong> activan ningún efecto de "cuando se descarta".</li>
+                <li>El jugador eliminado se retira de todos los objetivos y deja de considerarse para cualquier
+                    efecto. Los efectos continuos que controlaba terminan inmediatamente.</li>
+            </ul>
         </section>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Section 14</div>
-            <h2>14. Victory Condition</h2>
-            <p><strong>Last player standing wins.</strong></p>
+            <div class="section-tag" data-en="Section 14" data-es="Sección 14">Section 14</div>
+            <h2 data-en="14. Victory Condition" data-es="14. Condición de Victoria">14. Victory Condition</h2>
+            <p class="lang-en"><strong>Last player standing wins.</strong></p>
+            <p class="lang-es"><strong>Gana el último jugador en pie.</strong></p>
         </section>
 
         <!-- ============================================================ -->
         <section class="reveal">
-            <div class="section-tag">Appendix</div>
-            <h2>Appendix: Pokémon with Rule Box</h2>
-            <p>Any of the following can be your Totem, except where noted:</p>
-            <ul>
+            <div class="section-tag" data-en="Appendix" data-es="Apéndice">Appendix</div>
+            <h2 data-en="Appendix: Pokémon with Rule Box" data-es="Apéndice: Pokémon con Rule Box">Appendix: Pokémon with Rule Box</h2>
+            <p class="lang-en">Any of the following can be your Totem, except where noted:</p>
+            <p class="lang-es">Cualquiera de los siguientes puede ser tu Tótem, salvo donde se indique:</p>
+            <ul class="lang-en">
                 <li>Pokémon ex (including Tera Pokémon ex)</li>
                 <li>Pokémon-EX (including M Pokémon-EX and Primal Pokémon-EX)</li>
                 <li>Mega Pokémon ex</li>
@@ -685,16 +1094,30 @@
                 <li>Pokémon V-UNION — <strong>not legal for now</strong></li>
                 <li>Pokémon LEGEND — <strong>not legal for now</strong></li>
             </ul>
+            <ul class="lang-es">
+                <li>Pokémon ex (incluidos los Pokémon ex Teracristal)</li>
+                <li>Pokémon-EX (incluidos los M Pokémon-EX y los Pokémon-EX Primigenios)</li>
+                <li>Mega Pokémon ex</li>
+                <li>Pokémon-GX (incluidos los Pokémon-GX TAG TEAM)</li>
+                <li>Pokémon V, VMAX y VSTAR</li>
+                <li>Pokémon BREAK</li>
+                <li>Pokémon Radiantes</li>
+                <li>Pokémon Prism Star</li>
+                <li>Pokémon V-UNION — <strong>no legales por ahora</strong></li>
+                <li>Pokémon LEGEND — <strong>no legales por ahora</strong></li>
+            </ul>
         </section>
 
     </main>
 
     <footer>
         <p>
-            Totem Format is a fan-made, non-commercial Pokémon TCG format.<br>
-            Pokémon and Pokémon TCG are © The Pokémon Company.
+            <span data-en="Totem Format is a fan-made, non-commercial Pokémon TCG format."
+                data-es="Formato Tótem es un formato de Pokémon TCG hecho por fans y no comercial.">Totem Format is a fan-made, non-commercial Pokémon TCG format.</span><br>
+            <span data-en="Pokémon and Pokémon TCG are © The Pokémon Company."
+                data-es="Pokémon y Pokémon TCG son © The Pokémon Company.">Pokémon and Pokémon TCG are © The Pokémon Company.</span>
         </p>
-        <a class="cta" href="index.html">← Back to Home</a>
+        <a class="cta" href="index.html" data-en="← Back to Home" data-es="← Volver al Inicio">← Back to Home</a>
     </footer>
     <script src="lang.js"></script>
 </body>

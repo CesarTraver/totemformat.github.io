@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Totem Format Banlist</title>
+    <title data-en="Totem Format Banlist" data-es="Lista Prohibida del Formato Tótem">Totem Format Banlist</title>
+    <script>document.documentElement.lang = localStorage.getItem('lang') || 'en';</script>
     <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,600;0,700;1,400&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 
@@ -29,12 +30,12 @@
 
     <!-- Navbar -->
     <nav>
-        <a class="logo" href="index.html">Totem Format</a>
+        <a class="logo" href="index.html" data-en="Totem Format" data-es="Formato Tótem">Totem Format</a>
         <ul class="nav-links">
-            <li><a href="rules.html">Rules</a></li>
-            <li><a href="banlist.html" class="active">Banlist</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="rules.html" data-en="Rules" data-es="Reglas">Rules</a></li>
+            <li><a href="banlist.html" class="active" data-en="Banlist" data-es="Lista Prohibida">Banlist</a></li>
+            <li><a href="faq.html" data-en="FAQ" data-es="Preguntas Frecuentes">FAQ</a></li>
+            <li><a href="about.html" data-en="About" data-es="Acerca de">About</a></li>
         </ul>
         <button id="lang-btn">ES</button>
     </nav>
@@ -42,33 +43,37 @@
     <header class="hero">
         <div class="hero-badge">
             <div class="dot-live"></div>
-            Banlist
+            <span data-en="Banlist" data-es="Lista Prohibida">Banlist</span>
         </div>
         <h1>
-            Banned Cards<br>
-            <span class="hi">Totem Format</span>
+            <span data-en="Banned Cards" data-es="Cartas Prohibidas">Banned Cards</span><br>
+            <span class="hi" data-en="Totem Format" data-es="Formato Tótem">Totem Format</span>
         </h1>
-        <p class="subtitle">
+        <p class="subtitle"
+            data-en="Official list of banned cards in the Totem Format. Updated for easy future expansion."
+            data-es="Lista oficial de cartas prohibidas en el Formato Tótem. Preparada para ampliarse fácilmente en el futuro.">
             Official list of banned cards in the Totem Format. Updated for easy future expansion.
         </p>
-        <p class="subtitle">
+        <p class="subtitle"
+            data-en="Be free to create your own ban list and house rules."
+            data-es="Siéntete libre de crear tu propia lista de prohibiciones y tus reglas de casa.">
             Be free to create your own ban list and house rules.
         </p>
         <div class="hero-actions">
-            <a class="btn btn-fill" href="index.html">← Back to Home</a>
+            <a class="btn btn-fill" href="index.html" data-en="← Back to Home" data-es="← Volver al Inicio">← Back to Home</a>
         </div>
     </header>
 
-    <div class="divider"><div class="divider-line"></div><div class="divider-label">Banned Cards</div><div class="divider-line"></div></div>
+    <div class="divider"><div class="divider-line"></div><div class="divider-label" data-en="Banned Cards" data-es="Cartas Prohibidas">Banned Cards</div><div class="divider-line"></div></div>
 
     <main>
         <section class="reveal">
             <table>
                 <thead>
                     <tr>
-                        <th>Card Name</th>
-                        <th>Set</th>
-                        <th>Number(s)</th>
+                        <th data-en="Card Name" data-es="Nombre de la Carta">Card Name</th>
+                        <th data-en="Set" data-es="Expansión">Set</th>
+                        <th data-en="Number(s)" data-es="Número(s)">Number(s)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -248,10 +253,12 @@
 
     <footer>
         <p>
-            Totem Format is a fan-made, non-commercial Pokémon TCG format.<br>
-            Pokémon and Pokémon TCG are © The Pokémon Company.
+            <span data-en="Totem Format is a fan-made, non-commercial Pokémon TCG format."
+                data-es="Formato Tótem es un formato de Pokémon TCG hecho por fans y no comercial.">Totem Format is a fan-made, non-commercial Pokémon TCG format.</span><br>
+            <span data-en="Pokémon and Pokémon TCG are © The Pokémon Company."
+                data-es="Pokémon y Pokémon TCG son © The Pokémon Company.">Pokémon and Pokémon TCG are © The Pokémon Company.</span>
         </p>
-        <a class="cta" href="index.html">← Back to Home</a>
+        <a class="cta" href="index.html" data-en="← Back to Home" data-es="← Volver al Inicio">← Back to Home</a>
     </footer>
 
     <script src="lang.js"></script>

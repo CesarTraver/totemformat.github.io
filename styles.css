@@ -364,3 +364,9 @@ footer .cta {
   .hero h1 { font-size: 1.8rem; }
   .subtitle { font-size: 0.95rem; }
 }
+
+/* ---------- LANGUAGE TOGGLE ---------- */
+/* lang.js sets <html lang="en|es">; blocks with rich markup are duplicated
+   per language and toggled here (data-en/data-es only works for plain text) */
+html[lang="es"] .lang-en { display: none !important; }
+html:not([lang="es"]) .lang-es { display: none !important; }
