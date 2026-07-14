@@ -302,6 +302,8 @@ tbody tr:last-child td { border-bottom: none; }
 .card-tooltip:hover .tooltip-image { visibility: visible; }
 
 /* ---------- SECTION IMAGE ---------- */
+li.image-item { list-style: none; margin-bottom: 1rem; }
+
 .section-image {
   display: block; max-width: 100%; margin: 1.5rem auto 0;
   border-radius: 8px; border: 1px solid var(--border);
